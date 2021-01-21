@@ -326,7 +326,12 @@
                 $('#topik').val(data.id_topik);
                 if(data.tipe==3){
                     $('#form-tambah-jawaban').removeClass('hide');
+                    $('#form-tambah-jawaban-esai').addClass('hide');
                     $('#tambah-kunci-jawaban-singkat').val(data.kunci);
+                } else if(data.tipe == 2) {
+                    $('#form-tambah-jawaban').addClass('hide');
+                    $('#form-tambah-jawaban-esai').removeClass('hide');
+                    $('#tambah-kunci-jawaban-esai').val(data.kunci);
                 }
 
                 $('html, body').animate({
