@@ -59,7 +59,7 @@
                                     <p class="help-block">File gambar dapat di copy langsung atau di upload terlebih dahulu. File gambar yang didukung adalah jpg dan png.</p>
                                 </div>
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label class="col-sm-2 control-label">File Audio</label>
                                 <div class="col-sm-4">
                                     <input type="text" class="form-control input-sm" id="tambah-nama-audio" name="tambah-nama-audio" readonly>
@@ -78,17 +78,19 @@
                                     </select>
                                     <p class="help-block">Memutar Audio sebanyak satu kali dalam satu Tes</p>
                                 </div>
-                            </div>
+                            </div> -->
+                            <input type="hidden" name="tambah-putar" id="tambah-putar" value="0">
                             <div class="form-group">
                                 <label class="col-sm-2 control-label">Tipe Soal</label>
                                 <div class="col-sm-4">
                                     <select class="form-control input-sm" id="tambah-tipe" name="tambah-tipe">
-                                        <option value="1">Pilihan Ganda</option>
+                                        <!-- <option value="1">Pilihan Ganda</option> -->
                                         <option value="2">Esai</option>
                                         <option value="3">Jawaban Singkat</option>
                                     </select>
                                 </div>
-                                <label class="col-sm-2 control-label">Tingkat Kesulitan</label>
+                                <input type="hidden" id="tambah-kesulitan" name="tambah-kesulitan" value="1">
+                                <!-- <label class="col-sm-2 control-label">Tingkat Kesulitan</label>
                                 <div class="col-sm-4">
                                     <select class="form-control input-sm" id="tambah-kesulitan" name="tambah-kesulitan">
                                         <option value="1">1</option>
@@ -97,6 +99,15 @@
                                         <option value="4">4</option>
                                         <option value="5">5</option>
                                     </select>
+                                </div> -->
+                            </div>
+                            <div class="form-group" id="form-tambah-jawaban-esai">
+                                <label class="col-sm-2 control-label">Kunci Jawaban Esai</label>
+                                <div class="col-sm-6">
+                                    <textarea type="text" class="form-control input-sm" id="tambah-kunci-jawaban-esai" name="tambah-kunci-jawaban-esai" ></textarea>
+                                    <p class="help-block">
+                                        Kunci Jawaban untuk Tipe Soal Jawaban Esai.<br />
+                                    </p>
                                 </div>
                             </div>
                             <div class="form-group hide" id="form-tambah-jawaban">
@@ -408,7 +419,11 @@
 
             if(tipe==3){
                 $('#form-tambah-jawaban').removeClass('hide');
-            }else{
+                $('#form-tambah-jawaban-esai').addClass('hide');
+            } else if(tipe==2) {
+                $('#form-tambah-jawaban').addClass('hide');
+                $('#form-tambah-jawaban-esai').removeClass('hide');
+            } else{
                 $('#form-tambah-jawaban').addClass('hide');
             }
         });
