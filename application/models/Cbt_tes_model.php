@@ -55,17 +55,19 @@ class Cbt_tes_model extends CI_Model{
         return $this->db->get();
     }
 	
-	function get_datatable($start, $rows, $kolom, $isi){
-		$this->db->where('('.$kolom.' LIKE "%'.$isi.'%")')
+	function get_datatable($start, $rows, $kolom, $isi, $userId = 0){
+        $this->db->where('('.$kolom.' LIKE "%'.$isi.'%")')
+                ->where('tes_create_by', $userId)
                  ->from($this->table)
 				 ->order_by('tes_id', 'DESC')
                  ->limit($rows, $start);
         return $this->db->get();
 	}
     
-    function get_datatable_count($kolom, $isi){
+    function get_datatable_count($kolom, $isi, $userId = 0){
 		$this->db->select('COUNT(*) AS hasil')
                  ->where('('.$kolom.' LIKE "%'.$isi.'%")')
+                 ->where('tes_create_by', $userId)
                  ->from($this->table);
         return $this->db->get();
 	}

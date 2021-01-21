@@ -126,10 +126,10 @@ class Tes_daftar extends Member_Controller {
 		$rows = $this->get_rows();
 
 		// run query to get user listing
-		$query = $this->cbt_tes_model->get_datatable($start, $rows, 'tes_nama', $search);
+		$query = $this->cbt_tes_model->get_datatable($start, $rows, 'tes_nama', $search, $this->session->userdata('cbt_userid'));
 		$iFilteredTotal = $query->num_rows();
 		
-		$iTotal= $this->cbt_tes_model->get_datatable_count('tes_nama', $search)->row()->hasil;
+		$iTotal= $this->cbt_tes_model->get_datatable_count('tes_nama', $search, $this->session->userdata('cbt_userid'))->row()->hasil;
 	    
 		$output = array(
 			"sEcho" => intval($_GET['sEcho']),
