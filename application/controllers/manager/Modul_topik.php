@@ -236,7 +236,7 @@ class Modul_topik extends Member_Controller
 		$query = $this->cbt_topik_model->get_datatable($start, $rows, 'topik_nama', $search, $modul, $this->session->userdata('cbt_userid'));
 		$iFilteredTotal = $query->num_rows();
 
-		$iTotal = $this->cbt_topik_model->get_datatable_count('topik_nama', $search, $modul)->row()->hasil;
+		$iTotal = $this->cbt_topik_model->get_datatable_count('topik_nama', $search, $modul, $this->session->userdata('cbt_userid'))->row()->hasil;
 
 		$output = array(
 			"sEcho" => intval($_GET['sEcho']),

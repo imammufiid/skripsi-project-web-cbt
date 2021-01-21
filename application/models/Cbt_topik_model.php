@@ -82,9 +82,10 @@ class Cbt_topik_model extends CI_Model{
         return $this->db->get();
 	}
     
-    function get_datatable_count($kolom, $isi, $modul){
+    function get_datatable_count($kolom, $isi, $modul, $userId = 0){
 		$this->db->select('COUNT(*) AS hasil')
                  ->where('('.$kolom.' LIKE "%'.$isi.'%" AND topik_modul_id='.$modul.')')
+                 ->where('topik_create_by', $userId)
                  ->from($this->table);
         return $this->db->get();
 	}
