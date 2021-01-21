@@ -299,6 +299,13 @@ class Modul_daftar extends Member_Controller
 		                      	<td colspan="3">' . $temp->soal_kunci . '</td>
 		                    </tr>
 	            		';
+			} else if ($temp->soal_tipe == 2) {
+				$jawaban_table = $jawaban_table . '
+	            			<tr>
+		                      	<td width="20%"><b>Kunci Jawaban</b></td>
+		                      	<td colspan="3">' . $temp->soal_kunci . '</td>
+		                    </tr>
+	            		';
 			}
 
 			$jawaban_table = $jawaban_table . '</table>';
