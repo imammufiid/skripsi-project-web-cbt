@@ -29,7 +29,7 @@ class Modul_daftar extends Member_Controller {
             if(!empty($query_user->opsi1)){
                 $user_topik = explode(',', $query_user->opsi1);
                 foreach ($user_topik as $topik_id) {
-                    $query_topik = $this->cbt_topik_model->get_by_kolom_join_modul('topik_id', $topik_id);
+                    $query_topik = $this->cbt_topik_model->get_by_kolom_join_modul('topik_id', $topik_id, $this->session->userdata('cbt_userid'));
                     if($query_topik->num_rows()>0){
                         $topik = $query_topik->row();
                         
@@ -45,7 +45,7 @@ class Modul_daftar extends Member_Controller {
                     $select = '';
                     $query_modul = $query_modul->result();
                     foreach ($query_modul as $temp) {
-                        $query_topik = $this->cbt_topik_model->get_by_kolom_join_modul('topik_modul_id', $temp->modul_id);
+                        $query_topik = $this->cbt_topik_model->get_by_kolom_join_modul('topik_modul_id', $temp->modul_id, $this->session->userdata('cbt_userid'));
                         if($query_topik->num_rows()){
                             $select = $select.'<optgroup label="Modul '.$temp->modul_nama.'">';
 

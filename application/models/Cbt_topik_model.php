@@ -61,12 +61,16 @@ class Cbt_topik_model extends CI_Model
         return $this->db->get();
     }
 
-    function get_by_kolom_join_modul($kolom, $isi)
+    function get_by_kolom_join_modul($kolom, $isi, $userId = 0)
     {
         $this->db->select('cbt_topik.*, cbt_modul.*')
             ->join('cbt_modul', 'cbt_topik.topik_modul_id = cbt_modul.modul_id')
             ->from($this->table)
             ->where($kolom, $isi);
+
+        if($userId != 1) {
+            $this->db->where('cbt_topik.topik_create_by', $userId);
+        }
         return $this->db->get();
     }
 
