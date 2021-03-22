@@ -140,6 +140,7 @@ class Tes_kerjakan extends Tes_Controller
 
     /**
      * Menyimpan jawaban yang dipilih oleh User
+     * Proses Text Mining dan Synonym Recognition
      */
     function simpan_jawaban()
     {
