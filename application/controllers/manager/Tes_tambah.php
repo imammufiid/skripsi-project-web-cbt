@@ -157,6 +157,7 @@ class Tes_tambah extends Member_Controller {
             $tanggal = explode(" - ", $rentang_waktu);
             $data['tes_begin_time'] = $tanggal[0];
             $data['tes_end_time'] = $tanggal[1];
+            $data['tes_create_by'] = $this->session->userdata('cbt_userid');
 
             $cek_nama = 1;
             if(!empty($nama_lama)){
