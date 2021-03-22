@@ -235,10 +235,10 @@ class Tes_tambah extends Member_Controller {
         
         $this->form_validation->set_rules('soal-tes-id', 'Tes','required|strip_tags');
         $this->form_validation->set_rules('soal-topik', 'Topik','required|strip_tags');
-        $this->form_validation->set_rules('soal-jml', 'Jumlah Soal','required|greater_than[1]|integer|strip_tags');
+        $this->form_validation->set_rules('soal-jml', 'Jumlah Soal','required|greater_than[0]|integer|strip_tags');
         $this->form_validation->set_rules('soal-tipe', 'Tipe Soal','required|strip_tags');
         $this->form_validation->set_rules('soal-kesulitan', 'Tingkat Kesulitan','required|strip_tags');
-        $this->form_validation->set_rules('soal-jml-jawaban', 'Jumlah Jawaban','required|greater_than[2]|integer|strip_tags');
+        $this->form_validation->set_rules('soal-jml-jawaban', 'Jumlah Jawaban','required|greater_than[0]|integer|strip_tags');
         
         if($this->form_validation->run() == TRUE){
         	$data['tset_tes_id'] = $this->input->post('soal-tes-id', true);

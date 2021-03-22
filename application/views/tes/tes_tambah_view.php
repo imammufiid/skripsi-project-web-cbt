@@ -172,13 +172,13 @@
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Jml Soal</label>
                             <div class="col-sm-9">
-                                <input type="text" name="soal-jml" id="soal-jml" class="form-control input-sm" value="2" >
+                                <input type="text" name="soal-jml" id="soal-jml" class="form-control input-sm" value="1" >
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Jml Jawaban</label>
                             <div class="col-sm-9">
-                                <input type="text" name="soal-jml-jawaban" id="soal-jml-jawaban" class="form-control input-sm" value="3" >
+                                <input type="text" name="soal-jml-jawaban" id="soal-jml-jawaban" class="form-control input-sm" value="2" >
                             </div>
                         </div>
                         <div class="form-group">
