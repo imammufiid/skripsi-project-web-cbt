@@ -492,7 +492,7 @@ class Tes_kerjakan extends Tes_Controller
                                 }
                             }
                         }
-                    } else if ($query_soal->soal_tipe == 2) {
+                    } else if ($query_soal->soal_tipe == 2) { // soal tipe essay
                         if (!empty($query_soal->tessoal_jawaban_text)) {
                             $soal = $soal . '<textarea class="textarea" id="soal-jawaban" name="soal-jawaban" style="width: 100%; height: 150px; font-size: 13px; line-height: 25px; border: 1px solid #dddddd; padding: 10px;">' . $query_soal->tessoal_jawaban_text . '</textarea>
                                 <button type="button" onclick="jawab()" class="btn btn-default" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
@@ -502,7 +502,7 @@ class Tes_kerjakan extends Tes_Controller
                                 <button type="button" onclick="jawab()" class="btn btn-default" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
                                 ';
                         }
-                    } else if ($query_soal->soal_tipe == 3) {
+                    } else if ($query_soal->soal_tipe == 3) { 
                         if (!empty($query_soal->tessoal_jawaban_text)) {
                             $soal = $soal . '
                                 <input type="text" class="form-control" style="max-width: 500px;" id="soal-jawaban" name="soal-jawaban" value="' . $query_soal->tessoal_jawaban_text . '" autocomplete="off" />
