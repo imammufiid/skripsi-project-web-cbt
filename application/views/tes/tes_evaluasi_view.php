@@ -127,6 +127,7 @@
     function evaluasi(id, nilai_min, nilai_max){
 
         // proses algoritma one by one
+        // proses tampilan before perhitungan 
         
         $("#modal-proses").modal('show');
 

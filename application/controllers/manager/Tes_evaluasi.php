@@ -44,6 +44,12 @@ class Tes_evaluasi extends Member_Controller {
         $this->template->display_admin($this->kelompok.'/tes_evaluasi_view', 'Evaluasi Jawaban', $data);
     }
 
+
+	 /**
+	  * proses perhitungan algoritma cosine similarity
+	  *
+	  * @return void
+	  */
     function simpan_nilai(){
         $this->load->library('form_validation');
         
