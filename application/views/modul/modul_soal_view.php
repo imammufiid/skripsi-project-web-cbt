@@ -103,8 +103,8 @@
                             </div>
                             <div class="form-group" id="form-tambah-jawaban-esai">
                                 <label class="col-sm-2 control-label">Kunci Jawaban Esai</label>
-                                <div class="col-sm-6">
-                                    <textarea type="text" class="form-control input-sm" id="tambah-kunci-jawaban-esai" name="tambah-kunci-jawaban-esai" ></textarea>
+                                <div class="col-sm-10">
+                                    <textarea type="text" class="form-control input-sm" id="tambah-kunci-jawaban-esai" name="tambah-kunci-jawaban-esai" style="width: 100%; height: 150px; font-size: 13px; line-height: 25px; border: 1px solid #dddddd; padding: 10px;"></textarea>
                                     <p class="help-block">
                                         Kunci Jawaban untuk Tipe Soal Jawaban Esai.<br />
                                     </p>
