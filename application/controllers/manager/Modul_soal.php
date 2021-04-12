@@ -180,6 +180,11 @@ class Modul_soal extends Member_Controller
 				}
 			}
 
+			/**
+			 * Prepocessing answer key
+			 */
+			$this->prepocessing($kunci_jawaban);
+
 			if ($id_topik == 'kosong') {
 				$status['status'] = 0;
 				$status['pesan'] = 'Topik belum tersedia';
@@ -563,5 +568,37 @@ class Modul_soal extends Member_Controller
 		}
 
 		return $sort_dir;
+	}
+
+	private function prepocessing($kunci_jawaban = "")
+	{
+		/** case folding
+		 * @param String $jawaban
+		 * @return string
+		 */
+		$returnCF = $this->prepocessing->caseFolding($kunci_jawaban);
+		// insert into db case folding
+
+		/** tokenization
+		 * @param String $retunCF
+		 * @return json
+		 */
+		$returnToken = $this->prepocessing->tokenization($returnCF);
+		// insert into db tokenization
+
+		/** filtering
+		 * @param json $returnToken
+		 * @return json
+		 */
+		$returnFiltering = $this->prepocessing->filtering($returnToken);
+		// insert into db tokenization
+
+		/** filtering
+		 * @param json $returnFiltering
+		 * @return json
+		 */
+		$returnStemming = $this->prepocessing->stemming($returnFiltering);
+		// insert into db tokenization
+		return $returnStemming;
 	}
 }
