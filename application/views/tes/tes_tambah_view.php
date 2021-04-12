@@ -72,35 +72,35 @@
                                 <input type="text" name="tambah-poin" id="tambah-poin" class="form-control input-sm" value="1.00" />
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="visibility: hidden;">
                             <label class="col-sm-3 control-label">Jawaban Salah</label>
                             <div class="col-sm-9">
                                 <input type="text" name="tambah-poin-salah" id="tambah-poin-salah" class="form-control input-sm" value="0.00" />
                                 <p class="help-block">Poin untuk jawaban salah</p>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="visibility: hidden;">
                             <label class="col-sm-3 control-label">Jawaban Kosong</label>
                             <div class="col-sm-9">
                                 <input type="text" name="tambah-poin-kosong" id="tambah-poin-kosong" class="form-control input-sm" value="0.00" />
                                 <p class="help-block">Poin untuk jawaban kosong</p>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="visibility: hidden;">
                             <label class="col-sm-3 control-label">Tunjukkan Hasil</label>
                             <div class="col-sm-9">
                                 <input type="checkbox" name="tambah-tunjukkan-hasil" id="tambah-tunjukkan-hasil" value="1" checked>
                                 <p class="help-block">Menunjukkan hasil ke user saat tes sudah selesai</p>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="visibility: hidden;">
                             <label class="col-sm-3 control-label">Detail Hasil</label>
                             <div class="col-sm-9">
                                 <input type="checkbox" name="tambah-detail-hasil" id="tambah-detail-hasil" value="1" >
                                 <p class="help-block">Menunjukkan detail jawaban ke user saat tes sudah selesai</p>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="visibility: hidden;">
                             <label class="col-sm-3 control-label">Token</label>
                             <div class="col-sm-9">
                                 <input type="checkbox" name="tambah-token" id="tambah-token" value="1" >
