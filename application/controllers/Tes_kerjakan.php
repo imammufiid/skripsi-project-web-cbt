@@ -158,6 +158,35 @@ class Tes_kerjakan extends Tes_Controller
             $tes_user_id = $this->input->post('tes-user-id', TRUE);
             $tes_soal_id = $this->input->post('tes-soal-id', TRUE);
             $tes_soal_nomor = $this->input->post('tes-soal-nomor', TRUE);
+            
+            /** case folding
+             * @param String $jawaban
+             * @return string
+             */
+            $returnCF = $this->prepocessing->caseFolding($jawaban);
+            // insert into db case folding
+            
+            /** tokenization
+             * @param String $retunCF
+             * @return json
+             */
+            $returnToken = $this->prepocessing->tokenization($returnCF);
+            // insert into db tokenization
+            
+            /** filtering
+             * @param json $returnToken
+             * @return json
+             */
+            $returnFiltering = $this->prepocessing->filtering($returnToken);
+            // insert into db tokenization
+            
+            /** filtering
+             * @param json $returnFiltering
+             * @return json
+             */
+            $returnStemming = $this->prepocessing->stemming($returnFiltering);
+            // insert into db tokenization
+            // echo $returnStemming;die;
 
             // Mengecek apakah tes masih berjalan dan waktu masih mencukupi
             //if($this->cbt_tes_user_model->count_by_status_waktu($tes_user_id)->row()->hasil>0){
