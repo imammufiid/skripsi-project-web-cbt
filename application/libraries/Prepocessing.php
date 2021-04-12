@@ -5,8 +5,6 @@
  * email
  * Computer Based-Test
  */
-use \Sastrawi\Stemmer\StemmerFactory;
-
 class Prepocessing
 {
 
@@ -63,7 +61,7 @@ class Prepocessing
    {
       // require_once('Filtering.php');
       // $filtering = new Filtering();
-      $this->CI =& get_instance();
+      $this->CI = &get_instance();
 
       $hasilFilter = [];
       foreach (json_decode($resultTokenization) as $key => $value) {
@@ -88,6 +86,44 @@ class Prepocessing
       }
 
       $result = json_encode($hasilStem);
+      return $result;
+   }
+
+   function create($sentence = "", $type)
+   {
+      if ($sentence == null || empty($sentence)) {
+         $result = [
+            "status"    => true,
+            "message"   => "Sucess",
+            "data"      => null
+         ];
+         return $result;
+      }
+
+      if ($type == ANSWER) {
+         $start = start_time();
+         $returnCF = $this->caseFolding($sentence);
+         // insert to db
+         $returnToken = $this->tokenization($returnCF);
+         // insert to db
+         $returnFiltering = $this->filtering($returnToken);
+         // insert to db
+         $returnStemming = $this->stemming($returnFiltering);
+         // insert to db
+         $end = end_time($start);
+
+         $result = [
+            "status"    => true,
+            "message"   => "Sucess Prepocessing",
+            "time"      => $end,
+            "data"      => $returnStemming
+         ];
+      } else if ($type == KEY_ANSWER) {
+         // for key answer
+      } else {
+         // exception
+      }
+
       return $result;
    }
 }
