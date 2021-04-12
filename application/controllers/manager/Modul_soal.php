@@ -168,12 +168,12 @@ class Modul_soal extends Member_Controller
 			$kunci_jawaban = '';
 			$status_jawaban_singkat = 1;
 			$status_jawaban_esai = 1;
-			if ($tipe == 3) {
+			if ($tipe == 3) { // singkat
 				$kunci_jawaban = $this->input->post('tambah-kunci-jawaban-singkat', TRUE);
 				if (empty($kunci_jawaban)) {
 					$status_jawaban_singkat = 0;
 				}
-			} else if ($tipe == 2) {
+			} else if ($tipe == 2) { // esai
 				$kunci_jawaban = $this->input->post('tambah-kunci-jawaban-esai', TRUE);
 				if (empty($kunci_jawaban)) {
 					$status_jawaban_esai = 0;
