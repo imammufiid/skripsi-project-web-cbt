@@ -1,5 +1,13 @@
 {
+    "name": "imamm/application",
+    "description": "project Skripsi",
+    "authors": [
+        {
+            "name": "imufiid",
+            "email": "imufiid98@gmail.com"
+        }
+    ],
     "require": {
-       "phpoffice/phpword": "v0.14.*"
+        "sastrawi/sastrawi": "1"
     }
 }
