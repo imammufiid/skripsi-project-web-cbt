@@ -24,6 +24,7 @@ class Tes_dashboard extends Tes_Controller
 		$this->load->model('cbt_jawaban_model');
 		$this->load->model('cbt_tes_soal_model');
 		$this->load->model('cbt_tes_soal_jawaban_model');
+		$this->load->model('cbt_text_mining_model');
 	}
 
 	public function index()
@@ -219,6 +220,7 @@ class Tes_dashboard extends Tes_Controller
 								if ($query_soal->num_rows() > 0) {
 									$query_soal = $query_soal->result();
 									$insert_soal = array();
+									$insertTextMining = [];
 									foreach ($query_soal as $soal) {
 										// Memasukkan data soal ke table tests_logs
 										$data_soal['tessoal_tesuser_id'] = $tests_users_id;
@@ -228,9 +230,18 @@ class Tes_dashboard extends Tes_Controller
 										$data_soal['tessoal_creation_time'] = date('Y-m-d H:i:s');
 										$data_soal['tessoal_order'] = ++$i_soal;
 
+										// data text mining ---------------
+										$dataTextMining = [
+											"tm_tesuser_id"	=> $tests_users_id,
+											"tm_soal_id"		=> $soal->soal_id
+										];
+
 										$insert_soal[] = $data_soal;
+										$insertTextMining[] = $dataTextMining;
 									}
+
 									// menggunakan batch query langsung untuk mengehemat waktu dan memory
+									$this->cbt_text_mining_model->save_batch($insertTextMining);
 									$this->cbt_tes_soal_model->save_batch($insert_soal);
 
 									// Mengambil data soal pada test_log 
