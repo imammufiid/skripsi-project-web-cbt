@@ -161,7 +161,7 @@ class Tes_kerjakan extends Tes_Controller
             $tes_user_id = $this->input->post('tes-user-id', TRUE);
             $tes_soal_id = $this->input->post('tes-soal-id', TRUE);
             $tes_soal_nomor = $this->input->post('tes-soal-nomor', TRUE);
-            
+
             /**
              * prepocessing process
              * @param String $jawaban
@@ -221,7 +221,7 @@ class Tes_kerjakan extends Tes_Controller
                         // Mengupdate change time, dan jawaban essay
                         $data_tes_soal['tessoal_jawaban_text'] = $jawaban;
                         $data_tes_soal['tessoal_nilai'] = 0;
-                        
+
                         // save to text mining table
                         $dataTm = [
                             "tm_answer" => $jawaban,
@@ -236,7 +236,7 @@ class Tes_kerjakan extends Tes_Controller
 
                         $this->cbt_tes_soal_model->update('tessoal_id', $tes_soal_id, $data_tes_soal);
                         $this->cbt_text_mining_model->save($dataTm);
-                        
+
                         $status['status'] = 1;
                         $status['nomor_soal'] = $tes_soal_nomor;
                         $status['pesan'] = 'Jawaban yang dimasukkan berhasil disimpan';
@@ -527,7 +527,7 @@ class Tes_kerjakan extends Tes_Controller
                                 <button type="button" onclick="jawab()" class="btn btn-default" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
                                 ';
                         }
-                    } else if ($query_soal->soal_tipe == 3) { 
+                    } else if ($query_soal->soal_tipe == 3) {
                         if (!empty($query_soal->tessoal_jawaban_text)) {
                             $soal = $soal . '
                                 <input type="text" class="form-control" style="max-width: 500px;" id="soal-jawaban" name="soal-jawaban" value="' . $query_soal->tessoal_jawaban_text . '" autocomplete="off" />
@@ -569,36 +569,36 @@ class Tes_kerjakan extends Tes_Controller
     private function prepocessing($jawaban)
     {
         /** case folding
-             * @param String $jawaban
-             * @return string
-             */
-            $returnCF = $this->prepocessing->caseFolding($jawaban);
-            // insert into db case folding
-            $data['case_folding'] = $returnCF;
-            
-            /** tokenization
-             * @param String $retunCF
-             * @return json
-             */
-            $returnToken = $this->prepocessing->tokenization($returnCF);
-            // insert into db tokenization
-            $data['tokenization'] = $returnToken;
-            
-            /** filtering
-             * @param json $returnToken
-             * @return json
-             */
-            $returnFiltering = $this->prepocessing->filtering($returnToken);
-            // insert into db tokenization
-            $data['filtering'] = $returnFiltering;
-            
-            /** filtering
-             * @param json $returnFiltering
-             * @return json
-             */
-            $returnStemming = $this->prepocessing->stemming($returnFiltering);
-            // insert into db tokenization
-            $data['stemming'] = $returnStemming;
-            return $data;
+         * @param String $jawaban
+         * @return string
+         */
+        $returnCF = $this->prepocessing->caseFolding($jawaban);
+        // insert into db case folding
+        $data['case_folding'] = $returnCF;
+
+        /** tokenization
+         * @param String $retunCF
+         * @return json
+         */
+        $returnToken = $this->prepocessing->tokenization($returnCF);
+        // insert into db tokenization
+        $data['tokenization'] = $returnToken;
+
+        /** filtering
+         * @param json $returnToken
+         * @return json
+         */
+        $returnFiltering = $this->prepocessing->filtering($returnToken);
+        // insert into db tokenization
+        $data['filtering'] = $returnFiltering;
+
+        /** filtering
+         * @param json $returnFiltering
+         * @return json
+         */
+        $returnStemming = $this->prepocessing->stemming($returnFiltering);
+        // insert into db tokenization
+        $data['stemming'] = $returnStemming;
+        return $data;
     }
 }
