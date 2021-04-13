@@ -89,41 +89,39 @@ class Prepocessing
       return $result;
    }
 
-   function create($sentence = "", $type)
+   function create($sentence = "")
    {
-      if ($sentence == null || empty($sentence)) {
-         $result = [
-            "status"    => true,
-            "message"   => "Sucess",
-            "data"      => null
-         ];
-         return $result;
-      }
+      /** case folding
+         * @param String $jawaban
+         * @return string
+         */
+        $returnCF = $this->caseFolding($sentence);
+        // insert into db case folding
+        $data['case_folding'] = $returnCF;
 
-      if ($type == ANSWER) {
-         $start = start_time();
-         $returnCF = $this->caseFolding($sentence);
-         // insert to db
-         $returnToken = $this->tokenization($returnCF);
-         // insert to db
-         $returnFiltering = $this->filtering($returnToken);
-         // insert to db
-         $returnStemming = $this->stemming($returnFiltering);
-         // insert to db
-         $end = end_time($start);
+        /** tokenization
+         * @param String $retunCF
+         * @return json
+         */
+        $returnToken = $this->tokenization($returnCF);
+        // insert into db tokenization
+        $data['tokenization'] = $returnToken;
 
-         $result = [
-            "status"    => true,
-            "message"   => "Sucess Prepocessing",
-            "time"      => $end,
-            "data"      => $returnStemming
-         ];
-      } else if ($type == KEY_ANSWER) {
-         // for key answer
-      } else {
-         // exception
-      }
+        /** filtering
+         * @param json $returnToken
+         * @return json
+         */
+        $returnFiltering = $this->filtering($returnToken);
+        // insert into db tokenization
+        $data['filtering'] = $returnFiltering;
 
-      return $result;
+        /** filtering
+         * @param json $returnFiltering
+         * @return json
+         */
+        $returnStemming = $this->stemming($returnFiltering);
+        // insert into db tokenization
+        $data['stemming'] = $returnStemming;
+        return $data;
    }
 }
