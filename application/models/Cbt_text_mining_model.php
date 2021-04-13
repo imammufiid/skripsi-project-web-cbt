@@ -14,6 +14,12 @@ class Cbt_text_mining_model extends CI_Model
       return $this->db->insert_id();
    }
 
+   function update($kolom, $isi, $data)
+    {
+        $this->db->where($kolom, $isi)
+            ->update($this->table, $data);
+    }
+
    function save_batch($data)
    {
       //$this->db->query($sql);
