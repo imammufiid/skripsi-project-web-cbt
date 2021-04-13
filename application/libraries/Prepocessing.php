@@ -92,36 +92,36 @@ class Prepocessing
    function create($sentence = "")
    {
       /** case folding
-         * @param String $jawaban
-         * @return string
-         */
-        $returnCF = $this->caseFolding($sentence);
-        // insert into db case folding
-        $data['case_folding'] = $returnCF;
+       * @param String $jawaban
+       * @return string
+       */
+      $returnCF = $this->caseFolding($sentence);
+      // insert into db case folding
+      $data['case_folding'] = $returnCF;
 
-        /** tokenization
-         * @param String $retunCF
-         * @return json
-         */
-        $returnToken = $this->tokenization($returnCF);
-        // insert into db tokenization
-        $data['tokenization'] = $returnToken;
+      /** tokenization
+       * @param String $retunCF
+       * @return json
+       */
+      $returnToken = $this->tokenization($returnCF);
+      // insert into db tokenization
+      $data['tokenization'] = $returnToken;
 
-        /** filtering
-         * @param json $returnToken
-         * @return json
-         */
-        $returnFiltering = $this->filtering($returnToken);
-        // insert into db tokenization
-        $data['filtering'] = $returnFiltering;
+      /** filtering
+       * @param json $returnToken
+       * @return json
+       */
+      $returnFiltering = $this->filtering($returnToken);
+      // insert into db tokenization
+      $data['filtering'] = $returnFiltering;
 
-        /** filtering
-         * @param json $returnFiltering
-         * @return json
-         */
-        $returnStemming = $this->stemming($returnFiltering);
-        // insert into db tokenization
-        $data['stemming'] = $returnStemming;
-        return $data;
+      /** filtering
+       * @param json $returnFiltering
+       * @return json
+       */
+      $returnStemming = $this->stemming($returnFiltering);
+      // insert into db tokenization
+      $data['stemming'] = $returnStemming;
+      return $data;
    }
 }
