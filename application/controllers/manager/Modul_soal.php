@@ -16,6 +16,7 @@ class Modul_soal extends Member_Controller
 		$this->load->model('users_model');
 		$this->load->model('cbt_tes_soal_model');
 		$this->load->model('cbt_tes_topik_set_model');
+		$this->load->model('cbt_text_mining_model');
 		$this->load->helper('directory');
 		$this->load->helper('file');
 
@@ -183,7 +184,17 @@ class Modul_soal extends Member_Controller
 			/**
 			 * Prepocessing answer key
 			 */
-			$this->prepocessing($kunci_jawaban);
+			$tmProcess = $this->prepocessing->create($kunci_jawaban);
+			$dataTm = [
+				"tm_answer" 			=> $kunci_jawaban,
+				// "tm_tessoal_id"     => $tes_soal_id,
+				"tm_is_key"         => 1,
+				"tm_case_folding"   => $tmProcess['case_folding'],
+				"tm_tokenization"   => $tmProcess['tokenization'],
+				"tm_filtering"      => $tmProcess['filtering'],
+				"tm_stemming"       => $tmProcess['stemming'],
+				"created_at"        => date('Y-m-d H:i:s')
+		  ];
 
 			if ($id_topik == 'kosong') {
 				$status['status'] = 0;
@@ -236,11 +247,15 @@ class Modul_soal extends Member_Controller
 					 * Jika soal update
 					 */
 					$this->cbt_soal_model->update('soal_id', $id_soal, $data);
+					$this->cbt_text_mining_model->update('tm_soal_id', $id_soal, $dataTm);
 				} else {
 					/**
 					 * Jika soal baru
 					 */
 					$this->cbt_soal_model->save($data);
+					$idSoal = $this->db->insert_id();
+					$dataTm["tm_soal_id"] = $idSoal;
+					$this->cbt_text_mining_model->save($dataTm);
 				}
 
 				if ($upload == 0) {
