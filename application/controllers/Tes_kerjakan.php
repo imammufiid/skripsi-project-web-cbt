@@ -167,7 +167,7 @@ class Tes_kerjakan extends Tes_Controller
              * @param String $jawaban
              * @return json stemming result
              */
-            $tmProcess = $this->prepocessing($jawaban);
+            $tmProcess = $this->prepocessing->create($jawaban);
 
             // Mengecek apakah tes masih berjalan dan waktu masih mencukupi
             //if($this->cbt_tes_user_model->count_by_status_waktu($tes_user_id)->row()->hasil>0){
@@ -564,41 +564,5 @@ class Tes_kerjakan extends Tes_Controller
             $data['pesan'] = 'Audio berhasil diputar';
         }
         echo json_encode($data);
-    }
-
-    private function prepocessing($jawaban)
-    {
-        /** case folding
-             * @param String $jawaban
-             * @return string
-             */
-            $returnCF = $this->prepocessing->caseFolding($jawaban);
-            // insert into db case folding
-            $data['case_folding'] = $returnCF;
-            
-            /** tokenization
-             * @param String $retunCF
-             * @return json
-             */
-            $returnToken = $this->prepocessing->tokenization($returnCF);
-            // insert into db tokenization
-            $data['tokenization'] = $returnToken;
-            
-            /** filtering
-             * @param json $returnToken
-             * @return json
-             */
-            $returnFiltering = $this->prepocessing->filtering($returnToken);
-            // insert into db tokenization
-            $data['filtering'] = $returnFiltering;
-            
-            /** filtering
-             * @param json $returnFiltering
-             * @return json
-             */
-            $returnStemming = $this->prepocessing->stemming($returnFiltering);
-            // insert into db tokenization
-            $data['stemming'] = $returnStemming;
-            return $data;
     }
 }
