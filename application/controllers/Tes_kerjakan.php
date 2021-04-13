@@ -26,6 +26,7 @@ class Tes_kerjakan extends Tes_Controller
         $this->load->model('cbt_jawaban_model');
         $this->load->model('cbt_tes_soal_model');
         $this->load->model('cbt_tes_soal_jawaban_model');
+        $this->load->model('cbt_text_mining_model');
 
         $this->username = $this->access_tes->get_username();
         $this->user_id = $this->cbt_user_model->get_by_kolom_limit('user_name', $this->username, 1)->row()->user_id;
@@ -87,11 +88,13 @@ class Tes_kerjakan extends Tes_Controller
 
                     // Mengambil data soal ke 1
                     $tessoal = $this->cbt_tes_soal_model->get_by_testuser_limit($query_tes->tesuser_id, 1)->row();
+                    // $textMining = $this->cbt_text_mining_model->get_by_testuser_limit($query_tes->tesuser_id, 1)->row();
                     $data_soal = $this->get_soal($tessoal->tessoal_id, $query_tes->tesuser_id);
 
                     $data['tes_soal'] = $data_soal['tes_soal'];
                     $data['tes_ragu'] = $data_soal['tes_ragu'];
                     $data['tes_soal_id'] = $tessoal->tessoal_id;
+                    // $data['tm_id'] = $textMining->tm_id;
                     $data['tes_soal_nomor'] = $tessoal->tessoal_order;
 
 
@@ -161,8 +164,10 @@ class Tes_kerjakan extends Tes_Controller
             
             /**
              * prepocessing process
+             * @param String $jawaban
+             * @return json stemming result
              */
-            $this->prepocessing($jawaban);
+            $tmProcess = $this->prepocessing($jawaban);
 
             // Mengecek apakah tes masih berjalan dan waktu masih mencukupi
             //if($this->cbt_tes_user_model->count_by_status_waktu($tes_user_id)->row()->hasil>0){
@@ -216,8 +221,22 @@ class Tes_kerjakan extends Tes_Controller
                         // Mengupdate change time, dan jawaban essay
                         $data_tes_soal['tessoal_jawaban_text'] = $jawaban;
                         $data_tes_soal['tessoal_nilai'] = 0;
-                        $this->cbt_tes_soal_model->update('tessoal_id', $tes_soal_id, $data_tes_soal);
+                        
+                        // save to text mining table
+                        $dataTm = [
+                            "tm_answer" => $jawaban,
+                            "tm_tessoal_id"     => $tes_soal_id,
+                            "tm_is_key"         => 0,
+                            "tm_case_folding"   => $tmProcess['case_folding'],
+                            "tm_tokenization"   => $tmProcess['tokenization'],
+                            "tm_filtering"      => $tmProcess['filtering'],
+                            "tm_stemming"       => $tmProcess['stemming'],
+                            "created_at"        => date('Y-m-d H:i:s')
+                        ];
 
+                        $this->cbt_tes_soal_model->update('tessoal_id', $tes_soal_id, $data_tes_soal);
+                        $this->cbt_text_mining_model->save($dataTm);
+                        
                         $status['status'] = 1;
                         $status['nomor_soal'] = $tes_soal_nomor;
                         $status['pesan'] = 'Jawaban yang dimasukkan berhasil disimpan';
@@ -555,6 +574,7 @@ class Tes_kerjakan extends Tes_Controller
              */
             $returnCF = $this->prepocessing->caseFolding($jawaban);
             // insert into db case folding
+            $data['case_folding'] = $returnCF;
             
             /** tokenization
              * @param String $retunCF
@@ -562,6 +582,7 @@ class Tes_kerjakan extends Tes_Controller
              */
             $returnToken = $this->prepocessing->tokenization($returnCF);
             // insert into db tokenization
+            $data['tokenization'] = $returnToken;
             
             /** filtering
              * @param json $returnToken
@@ -569,6 +590,7 @@ class Tes_kerjakan extends Tes_Controller
              */
             $returnFiltering = $this->prepocessing->filtering($returnToken);
             // insert into db tokenization
+            $data['filtering'] = $returnFiltering;
             
             /** filtering
              * @param json $returnFiltering
@@ -576,6 +598,7 @@ class Tes_kerjakan extends Tes_Controller
              */
             $returnStemming = $this->prepocessing->stemming($returnFiltering);
             // insert into db tokenization
-            return $returnStemming;
+            $data['stemming'] = $returnStemming;
+            return $data;
     }
 }
