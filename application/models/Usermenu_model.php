@@ -3,7 +3,7 @@
 * KUISKU
 * name
 * email
-* Computer Based-Test
+* 
 */
 class Usermenu_model extends CI_Model{
     function save($data){

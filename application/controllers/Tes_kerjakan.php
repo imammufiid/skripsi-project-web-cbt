@@ -3,7 +3,7 @@
  * KUISKU
  * name
  * email
- * Computer Based-Test
+ * 
  */
 class Tes_kerjakan extends Tes_Controller
 {

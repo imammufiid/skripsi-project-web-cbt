@@ -3,7 +3,7 @@
 * KUISKU
 * name
 * email
-* Computer Based-Test
+* 
 */
 class Usermenu extends Member_Controller {
     function __construct(){

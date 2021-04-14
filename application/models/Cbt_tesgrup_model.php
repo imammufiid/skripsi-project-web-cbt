@@ -3,7 +3,7 @@
 * KUISKU
 * name
 * email
-* Computer Based-Test
+* 
 */
 class Cbt_tesgrup_model extends CI_Model{
 	public $table = 'cbt_tesgrup';

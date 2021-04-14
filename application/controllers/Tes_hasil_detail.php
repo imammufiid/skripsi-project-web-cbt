@@ -3,7 +3,7 @@
 * KUISKU
 * name
 * email
-* Computer Based-Test
+* 
 */
 class Tes_hasil_detail extends Tes_Controller {
 	private $kelompok = 'ujian';

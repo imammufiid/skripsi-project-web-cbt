@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 * KUISKU
 * name
 * email
-* Computer Based-Test
+* 
 */
 class Tes extends CI_Controller {
 

@@ -3,7 +3,7 @@
  * KUISKU
  * name
  * email
- * Computer Based-Test
+ * 
  */
 class Cbt_topik_model extends CI_Model
 {

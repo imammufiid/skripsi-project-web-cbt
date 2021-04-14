@@ -3,7 +3,7 @@
 * KUISKU
 * name
 * email
-* Computer Based-Test
+* 
 */
 class Tes_daftar extends Member_Controller {
 	private $kode_menu = 'tes-daftar';

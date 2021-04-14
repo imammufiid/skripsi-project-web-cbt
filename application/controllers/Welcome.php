@@ -3,7 +3,7 @@
  * KUISKU
  * name
  * email
- * Computer Based-Test
+ * 
  */
 class Welcome extends CI_Controller
 {

@@ -3,7 +3,7 @@
 * KUISKU
 * name
 * email
-* Computer Based-Test
+* 
 */
 class Tool_exportimport_soal extends Member_Controller {
 	private $kode_menu = 'tool-exportimport-soal';

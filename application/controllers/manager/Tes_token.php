@@ -3,7 +3,7 @@
 * KUISKU
 * name
 * email
-* Computer Based-Test
+* 
 */
 class Tes_token extends Member_Controller {
 	private $kode_menu = 'tes-token';

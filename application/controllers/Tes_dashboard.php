@@ -3,7 +3,7 @@
  * KUISKU
  * name
  * email
- * Computer Based-Test
+ * 
  */
 class Tes_dashboard extends Tes_Controller
 {

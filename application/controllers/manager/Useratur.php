@@ -3,7 +3,7 @@
 * KUISKU
 * name
 * email
-* Computer Based-Test
+* 
 */
 class Useratur extends Member_Controller {
     private $url = 'manager/useratur';

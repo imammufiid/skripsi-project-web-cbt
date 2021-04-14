@@ -3,7 +3,7 @@
  * KUISKU
  * name
  * email
- * Computer Based-Test
+ * 
  */
 class Sinonim extends CI_Controller
 {

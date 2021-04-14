@@ -3,7 +3,7 @@
 * KUISKU
 * name
 * email
-* Computer Based-Test
+* 
 */
 class Tes_hasil_operator extends Member_Controller {
 	private $kode_menu = 'tes-hasil-operator';
