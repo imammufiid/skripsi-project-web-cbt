@@ -60,6 +60,7 @@
 						<thead>
                             <tr>
                                 <th>No.</th>
+                                <th>Nama Siswa</th>
                                 <th>Soal</th>
                                 <th>Jawaban</th>
                                 <th></th>
@@ -178,10 +179,11 @@
                   "bServerSide": true, 
                   "searching": false,
                   "aoColumns": [
-    					{"bSearchable": false, "bSortable": false, "sWidth":"20px"},
-    					{"bSearchable": false, "bSortable": false, "sWidth":"40%"},
-                        {"bSearchable": false, "bSortable": false},
-                        {"bSearchable": false, "bSortable": false, "sWidth":"30px"}],
+    					{"bSearchable": false, "bSortable": false, "sWidth":"20px"}, // no
+    					{"bSearchable": false, "bSortable": false, "sWidth":"20%"}, // nama siswa
+    					{"bSearchable": false, "bSortable": false, "sWidth":"30%"}, // soal
+                        {"bSearchable": false, "bSortable": false}, // jawaban
+                        {"bSearchable": false, "bSortable": false, "sWidth":"30px"}], // action
                   "sAjaxSource": "<?php echo site_url().'/'.$url; ?>/get_datatable/",
                   "autoWidth": false,
                   "aLengthMenu": [[10, 25, 50, 100, 200], [10, 25, 50, 100, 200]],
