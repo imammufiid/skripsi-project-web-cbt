@@ -82,7 +82,8 @@ class Cbt_tes_soal_model extends CI_Model{
     function get_by_tessoal_limit($tessoal_id, $limit){
         $this->db->select('tessoal_id,tessoal_tesuser_id,tessoal_user_ip,tessoal_soal_id,tessoal_jawaban_text,tessoal_nilai,tessoal_ragu,tessoal_creation_time,tessoal_display_time,tessoal_change_time,tessoal_reaction_time,tessoal_order,tessoal_num_answers,tessoal_comment,tessoal_audio_play,soal_id,soal_topik_id,soal_detail,soal_tipe,soal_kunci,soal_difficulty,soal_aktif,soal_audio,soal_audio_play,soal_timer,soal_inline_answers,soal_auto_next')
                  ->where('tessoal_id="'.$tessoal_id.'"')
-                 ->join('cbt_soal', 'cbt_tes_soal.tessoal_soal_id = cbt_soal.soal_id')
+                 ->join('cbt_soal', 'cbt_tes_soal.tessoal_soal_id = cbt_soal.
+                 ')
                  ->from($this->table)
                  ->limit($limit);
         return $this->db->get();
@@ -114,6 +115,7 @@ class Cbt_tes_soal_model extends CI_Model{
 		$this->db->where('('.$kolom.' LIKE "%'.$isi.'%" AND tessoal_tesuser_id="'.$tesuser_id.'")')
                  ->from($this->table)
                  ->join('cbt_soal', 'cbt_tes_soal.tessoal_soal_id = cbt_soal.soal_id')
+                 ->join('text_mining_answer_view', 'cbt_tes_soal.tessoal_id = text_mining_answer_view.tessoal_id')
 				 ->order_by('tessoal_order', 'ASC')
                  ->limit($rows, $start);
         return $this->db->get();
