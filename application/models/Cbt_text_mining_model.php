@@ -15,10 +15,10 @@ class Cbt_text_mining_model extends CI_Model
    }
 
    function update($kolom, $isi, $data)
-    {
-        $this->db->where($kolom, $isi)
-            ->update($this->table, $data);
-    }
+   {
+      $this->db->where($kolom, $isi)
+         ->update($this->table, $data);
+   }
 
    function save_batch($data)
    {
@@ -35,11 +35,12 @@ class Cbt_text_mining_model extends CI_Model
       return $this->db->get();
    }
 
-   function get_by_tessoal_limit($tm_tesuser_id, $limit){
-      $this->db->where('tm_tesuser_id="'.$tm_tesuser_id.'"')
-               ->join('cbt_soal', 'cbt_tes_soal.tessoal_soal_id = cbt_soal.soal_id')
-               ->from($this->table)
-               ->limit($limit);
+   function get_by_tessoal_limit($tm_tesuser_id, $limit)
+   {
+      $this->db->where('tm_tesuser_id="' . $tm_tesuser_id . '"')
+         ->join('cbt_soal', 'cbt_tes_soal.tessoal_soal_id = cbt_soal.soal_id')
+         ->from($this->table)
+         ->limit($limit);
       return $this->db->get();
-  }
+   }
 }
