@@ -25,6 +25,7 @@ class Tes_evaluasi extends Member_Controller
 		$this->load->model('cbt_jawaban_model');
 		$this->load->model('cbt_tes_soal_model');
 		$this->load->model('cbt_tes_soal_jawaban_model');
+		$this->load->model('cbt_text_mining_model');
 
 		parent::cek_akses($this->kode_menu);
 	}
@@ -86,6 +87,51 @@ class Tes_evaluasi extends Member_Controller
 		}
 
 		echo json_encode($status);
+	}
+
+	/**
+	 * Proses algoritma Cosine Similarity
+	 * 
+	 */
+	function cosine_similarity($tessoalID = 0)
+	{
+		$result = [];
+		if ($tessoalID == 0) {
+			$result = [
+				"status"	=> 0,
+				"pesan"	=> "ID soal tidak ditemukan"
+			];
+		} else {
+			// load helper
+			$this->load->helper('intersect_helper');
+			// 1. get (result text mining, soal_id) from table text_mining_view by tessoalID
+			$studentAnswer = $this->cbt_text_mining_model->getStudentAnswerByTessoalID($tessoalID);
+
+			// 2. get result text mining answer_key from table text_mining_kunci_view by soal_id
+			$teacherAnswer = $this->cbt_text_mining_model->getTeacherAnswerBySoalID($studentAnswer['soal_id']);
+			// 3. calculate term frekuensi
+			$intersectAnswer = intersect(json_decode($studentAnswer['stemming']), json_decode($teacherAnswer['tm_stemming']));
+			$intersectKey = intersect(json_decode($teacherAnswer['tm_stemming']), json_decode($teacherAnswer['tm_stemming']));
+
+			// 4. calculate cosine similarity with lib Cosine_Similarity
+			if (empty($intersectAnswer) || empty($intersectKey)) {
+				$calc = 0;
+				$data['tessoal_nilai'] = $calc;
+			} else {
+				$this->load->library("MyCs");
+				$calc = $this->mycs->calculate($intersectAnswer, $intersectKey);
+				$data['tessoal_nilai'] = $calc;
+			}
+			$data['tessoal_comment'] = 'Sudah di koreksi ' . $this->access->get_username();
+
+			$this->cbt_tes_soal_model->update('tessoal_id', $tessoalID, $data);
+
+			$result = [
+				"status"	=> 1,
+				"pesan"	=> "Nilai berhasil disimpan => " . $calc
+			];
+		}
+		echo json_encode($result);
 	}
 
 	/**
@@ -162,7 +208,9 @@ class Tes_evaluasi extends Member_Controller
 
 			$record[] = $jawaban;
 
-			$record[] = '<a onclick="evaluasi(\'' . $temp->tessoal_id . '\',\'' . $temp->tes_score_wrong . '\',\'' . $temp->tes_score_right . '\')" style="cursor: pointer;" class="btn btn-default btn-xs">Evaluasi</a>';
+			$buttonCosineSimilarity = '<a onclick="cosine_similarity(' . $temp->tessoal_id . ')" style="cursor: pointer;" class="btn btn-success btn-xs">Otomatis</a>';
+
+			$record[] = $buttonCosineSimilarity . '<br><a onclick="evaluasi(\'' . $temp->tessoal_id . '\',\'' . $temp->tes_score_wrong . '\',\'' . $temp->tes_score_right . '\')" style="cursor: pointer;" class="btn btn-default btn-xs">Manual</a>';
 
 
 			$output['aaData'][] = $record;
