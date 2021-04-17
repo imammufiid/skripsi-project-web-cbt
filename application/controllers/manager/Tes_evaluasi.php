@@ -109,18 +109,24 @@ class Tes_evaluasi extends Member_Controller
 
 			// 2. get result text mining answer_key from table text_mining_kunci_view by soal_id
 			$teacherAnswer = $this->cbt_text_mining_model->getTeacherAnswerBySoalID($studentAnswer['soal_id']);
+			
 			// 3. calculate term frekuensi
-			$intersectAnswer = intersect(json_decode($studentAnswer['stemming']), json_decode($teacherAnswer['tm_stemming']));
-			$intersectKey = intersect(json_decode($teacherAnswer['tm_stemming']), json_decode($teacherAnswer['tm_stemming']));
+
+			$termFrecuency = term_frecuency(
+				json_decode($studentAnswer['stemming']),
+				json_decode($teacherAnswer['tm_stemming'])
+			);
 
 			// 4. calculate cosine similarity with lib Cosine_Similarity
-			if (empty($intersectAnswer) || empty($intersectKey)) {
-				$calc = 0;
-				$data['tessoal_nilai'] = $calc;
+			if (empty($termFrecuency["answer"]) || empty($termFrecuency["key"])) {
+				$data['tessoal_nilai'] = 0;
+				$data['tessoal_human_point'] = 0;
 			} else {
 				$this->load->library("MyCs");
-				$calc = $this->mycs->calculate($intersectAnswer, $intersectKey);
+				$calc = $this->mycs->calculate($termFrecuency["answer"], $termFrecuency["key"]);
+				$humanRate = human_rate($calc);
 				$data['tessoal_nilai'] = $calc;
+				$data['tessoal_human_point'] = $humanRate;
 			}
 			$data['tessoal_comment'] = 'Sudah di koreksi ' . $this->access->get_username();
 
