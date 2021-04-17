@@ -110,7 +110,8 @@
                                 <th>Nama Tes</th>
                                 <th>Group</th>
                                 <th class="all">Nama User</th>
-                                <th>Poin</th>
+                                <th>Poin (Cosine Similarity)</th>
+                                <th>Poin (Human Rate)</th>
                                 <th>Status</th>
                                 <th class="all"></th>
                             </tr>
@@ -284,6 +285,7 @@
                   "aoColumns": [
     					{"bSearchable": false, "bSortable": false, "sWidth":"20px"},
     					{"bSearchable": false, "bSortable": false},
+                        {"bSearchable": false, "bSortable": false},
                         {"bSearchable": false, "bSortable": false},
                         {"bSearchable": false, "bSortable": false},
                         {"bSearchable": false, "bSortable": false},

@@ -234,6 +234,11 @@ class Tes_hasil extends Member_Controller {
 			}else{
 				$record[] = $temp->nilai;
 			}
+			if(empty($temp->human_rate)){
+				$record[] = '0';
+			}else{
+				$record[] = $temp->human_rate;
+			}
 			
 			if(empty($temp->tesuser_status)){
 				$record[] = 'Belum memulai';

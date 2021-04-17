@@ -203,7 +203,7 @@ class Cbt_tes_user_model extends CI_Model{
 			$sql = $sql.' AND user_detail LIKE "%'.$keterangan.'%"';
 		}
 
-		$this->db->select('cbt_tes_user.*,cbt_user_grup.grup_nama, cbt_tes.*, cbt_user.*, SUM(`cbt_tes_soal`.`tessoal_nilai`) AS nilai ')
+		$this->db->select('cbt_tes_user.*,cbt_user_grup.grup_nama, cbt_tes.*, cbt_user.*, SUM(`cbt_tes_soal`.`tessoal_nilai`) AS nilai, cbt_tes_soal.tessoal_human_point AS human_rate')
                  ->where('( '.$sql.' )')
                  ->from($this->table)
                  ->join('cbt_user', 'cbt_tes_user.tesuser_user_id = cbt_user.user_id')

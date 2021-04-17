@@ -170,45 +170,47 @@ class Tes_hasil_detail extends Member_Controller
 				$jawaban_table = $jawaban_table . '
             		<tr>
 		            	<td width="5%"></td>
-		                <td width="5%">Skor</td>
+		                <td width="5%">Skor CS</td>
+		                <td width="5%">Skor HR</td>
 		                <td width="90%" colspan="2">Jawaban</td>
 		            </tr>
 	            	<tr>
 		            	<td width="5%"></td>
 		                <td width="5%">' . $temp->tessoal_nilai . '</td>
+		                <td width="5%"><b>' . $temp->tessoal_human_point . '</b></td>
 		                <td width="90%" colspan="2"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->tessoal_jawaban_text . '</pre></div></td>
 		            </tr>
 						<tr>
 		            	<td width="5%"></td>
-		                <td width="90%" colspan="3">Case Folding</td>
+		                <td width="90%" colspan="4">Case Folding</td>
 		            </tr>
 						<tr>
 		            	<td width="5%"></td>
-		                <td width="90%" colspan="3"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->case_folding . '</pre></div></td>
+		                <td width="90%" colspan="4"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->case_folding . '</pre></div></td>
 		            </tr>
 						<tr>
 		            	<td width="5%"></td>
-		                <td width="90%" colspan="3">Tokenization</td>
+		                <td width="90%" colspan="4">Tokenization</td>
 		            </tr>
 						<tr>
 		            	<td width="5%"></td>
-		                <td width="90%" colspan="3"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->tokenization . '</pre></div></td>
+		                <td width="90%" colspan="4"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->tokenization . '</pre></div></td>
 		            </tr>
 						<tr>
 		            	<td width="5%"></td>
-		                <td width="90%" colspan="3">Filtering</td>
+		                <td width="90%" colspan="4">Filtering</td>
 		            </tr>
 						<tr>
 		            	<td width="5%"></td>
-		                <td width="90%" colspan="3"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->filtering . '</pre></div></td>
+		                <td width="90%" colspan="4"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->filtering . '</pre></div></td>
 		            </tr>
 						<tr>
 		            	<td width="5%"></td>
-		                <td width="90%" colspan="3">Stemming</td>
+		                <td width="90%" colspan="4">Stemming</td>
 		            </tr>
 						<tr>
 		            	<td width="5%"></td>
-		                <td width="90%" colspan="3"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->stemming . '</pre></div></td>
+		                <td width="90%" colspan="4"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->stemming . '</pre></div></td>
 		            </tr>
 	            ';
 			} else if ($temp->soal_tipe == 3) {
