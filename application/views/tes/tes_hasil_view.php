@@ -14,7 +14,7 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box">
+            <div class="box box-danger">
                 <div class="box-header with-border">
                     <div class="box-title">Filter Hasil</div>
                 </div><!-- /.box-header -->
@@ -30,7 +30,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">Group</label>
+                            <label class="col-sm-3 control-label">Kelas</label>
                             <div class="col-sm-9">
                                 <select name="pilih-group" id="pilih-group" class="form-control input-sm">
                                     <?php if(!empty($select_group)){ echo $select_group; } ?>
@@ -60,12 +60,12 @@
                                 </select>
                             </div>
                         </div>
-						<div class="form-group">
+						<!-- <div class="form-group">
                             <label class="col-sm-4 control-label">Keterangan Peserta</label>
                             <div class="col-sm-8">
                                 <input type="text" name="pilih-keterangan" id="pilih-keterangan" placeholder="Keterangan Peserta Tes" class="form-control input-sm" />
                             </div>
-                        </div>
+                        </div> -->
                         <div class="form-group">
                             <label class="col-sm-4 control-label">Urutkan</label>
                             <div class="col-sm-8">
@@ -89,7 +89,7 @@
 	<div class="row">
         <?php echo form_open($url.'/edit_tes','id="form-edit"'); ?>
         <div class="col-xs-12">
-			<div class="box">
+			<div class="box box-warning">
 				<div class="box-header with-border">
 					<div class="box-title">Daftar Hasil Tes</div>
                     <div class="box-tools pull-right">
@@ -133,10 +133,10 @@
 				</div>
                 <div class="box-footer">
                     <button type="button" id="btn-edit-pilih" title="Pilih Hasil Tes" class="btn btn-default pull-right">Pilih Semua</button>
-                    <button type="button" id="btn-edit-hapus" title="Hapus Hasil" class="btn btn-primary">Hapus</button>
-                    <button type="button" id="btn-edit-hentikan" class="btn btn-primary">Hentikan</button>
+                    <button type="button" id="btn-edit-hapus" title="Hapus Hasil" class="btn btn-danger">Hapus</button>
+                    <!-- <button type="button" id="btn-edit-hentikan" class="btn btn-primary">Hentikan</button>
                     <button type="button" id="btn-edit-buka-tes" class="btn btn-primary">Buka Tes</button>
-                    <button type="button" id="btn-edit-waktu" class="btn btn-primary">Tambah Waktu</button>
+                    <button type="button" id="btn-edit-waktu" class="btn btn-primary">Tambah Waktu</button> -->
                 </div>
 			</div>
         </div>
