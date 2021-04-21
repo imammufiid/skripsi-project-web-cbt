@@ -1,8 +1,8 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        Evaluasi Jawaban Essay
-        <small>Evaluasi jawaban essay dari user masukkan</small>
+        Evaluasi Jawaban
+        <small>Evaluasi jawaban dari siswa</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="<?php echo site_url(); ?>/"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -14,7 +14,7 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box">
+            <div class="box box-danger">
                 <div class="box-header with-border">
                     <div class="box-title">Filter Jawaban</div>
                 </div><!-- /.box-header -->
@@ -23,17 +23,15 @@
                     </div>
                     <div class="col-xs-8">
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">Tes</label>
-                            <div class="col-sm-9">
+                            <label class="col-sm-3 control-label">Nama Tes</label>
+                            <div class="col-sm-6">
                                 <input type="hidden" name="check" id="check" value="0">
                                 <select name="pilih-tes" id="pilih-tes" onclick="refresh_table()" class="form-control input-sm">
-                                    <?php if (!empty($select_tes)) {
-                                        echo $select_tes;
-                                    } ?>
+                                    <?php if (!empty($select_tes)) echo $select_tes; ?>
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <label class="col-sm-3 control-label">Urutkan</label>
                             <div class="col-sm-5">
                                 <select name="pilih-urutkan" id="pilih-urutkan" onclick="refresh_table()" class="form-control input-sm">
@@ -41,7 +39,7 @@
                                     <option value="user">User</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-xs-2">
                     </div>
@@ -51,7 +49,7 @@
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <div class="box">
+            <div class="box box-warning">
                 <div class="box-header with-border">
                     <div class="box-title">Daftar Jawaban</div>
                 </div><!-- /.box-header -->
