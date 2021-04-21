@@ -13,7 +13,7 @@
 <!-- Main content -->
 <section class="content">
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" style="display: none;">
             <div class="box">
                 <div class="box-header with-border">
                     <div class="box-title">Pilih Modul</div>
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div class="col-md-9">
+        <div class="col-md-12">
             <div class="box">
                 <div class="box-header with-border">
                     <div class="box-title">Daftar Topik</div>
@@ -78,7 +78,7 @@
                     </form>
                 </div>
                 <div class="box-footer">
-                    <button type="button" id="btn-edit-hapus" class="btn btn-primary" title="Hapus Siswa yang dipilih">Hapus</button>
+                    <button type="button" id="btn-edit-hapus" class="btn btn-danger" title="Hapus Siswa yang dipilih">Hapus</button>
                     <button type="button" id="btn-edit-pilih" class="btn btn-default pull-right">Pilih Semua</button>
                 </div>
             </div>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="submit" id="tambah-simpan" class="btn btn-primary">Tambah</button>
-                    <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-danger" data-dismiss="modal">Close</a>
                 </div>
             </div>
         </div>
