@@ -14,7 +14,7 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box">
+            <div class="box box-danger">
                 <div class="box-header with-border">
                     <div class="box-title">Pilih Topik</div>
                 </div><!-- /.box-header -->
@@ -41,7 +41,7 @@
     </div>
 	<div class="row">
         <div class="col-xs-12">
-                <div class="box">
+                <div class="box box-warning">
                     <?php echo form_open_multipart($url.'/tambah','id="form-tambah" class="form-horizontal"'); ?>
                         <div class="box-header with-border">
                             <div class="box-title">Mengelola Soal <span id="judul-tambah-soal"></span></div>
@@ -56,7 +56,7 @@
                                     <input type="hidden" name="tambah-soal-id" id="tambah-soal-id" >
                                     <input type="hidden" name="tambah-soal" id="tambah-soal" >
                                     <textarea class="textarea" id="tambah_soal" name="tambah_soal" style="width: 100%; height: 150px; font-size: 13px; line-height: 25px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                                    <p class="help-block">File gambar dapat di copy langsung atau di upload terlebih dahulu. File gambar yang didukung adalah jpg dan png.</p>
+                                    <!-- <p class="help-block">File gambar dapat di copy langsung atau di upload terlebih dahulu. File gambar yang didukung adalah jpg dan png.</p> -->
                                 </div>
                             </div>
                             <!-- <div class="form-group">
@@ -86,7 +86,7 @@
                                     <select class="form-control input-sm" id="tambah-tipe" name="tambah-tipe">
                                         <!-- <option value="1">Pilihan Ganda</option> -->
                                         <option value="2">Esai</option>
-                                        <option value="3">Jawaban Singkat</option>
+                                        <!-- <option value="3">Jawaban Singkat</option> -->
                                     </select>
                                 </div>
                                 <input type="hidden" id="tambah-kesulitan" name="tambah-kesulitan" value="1">
@@ -105,9 +105,9 @@
                                 <label class="col-sm-2 control-label">Kunci Jawaban Esai</label>
                                 <div class="col-sm-10">
                                     <textarea type="text" class="form-control input-sm" id="tambah-kunci-jawaban-esai" name="tambah-kunci-jawaban-esai" style="width: 100%; height: 150px; font-size: 13px; line-height: 25px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                                    <p class="help-block">
+                                    <!-- <p class="help-block">
                                         Kunci Jawaban untuk Tipe Soal Jawaban Esai.<br />
-                                    </p>
+                                    </p> -->
                                 </div>
                             </div>
                             <div class="form-group hide" id="form-tambah-jawaban">
@@ -134,12 +134,12 @@
     </div>
     <div class="row">
         <div class="col-xs-12">
-                <div class="box">
+                <div class="box box-success">
                     <div class="box-header with-border">
                         <div class="box-title">Daftar Soal <span id="judul-daftar-soal"></span></div>
                         <div class="box-tools pull-right">
                             <div class="dropdown pull-right">
-                                <a style="cursor: pointer;" onclick="refresh_table()">Refresh Data Soal</a>
+                                <!-- <a style="cursor: pointer;" onclick="refresh_table()">Refresh Data Soal</a> -->
                             </div>
                         </div>
                     </div><!-- /.box-header -->
