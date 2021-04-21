@@ -2,11 +2,11 @@
 <section class="content-header">
 	<h1>
 		Group
-		<small>Daftar group, penambahan group, pengubahan group, dan penghapusan group</small>
+		<small>Daftar kelas, penambahan kelas, pengubahan kelas, dan penghapusan kelas</small>
 	</h1>
 	<ol class="breadcrumb">
 		<li><a href="<?php echo site_url(); ?>/"><i class="fa fa-dashboard"></i> Home</a></li>
-		<li class="active">Group</li>
+		<li class="active">Kelas</li>
 	</ol>
 </section>
 
@@ -14,12 +14,12 @@
 <section class="content">
 	<div class="row">
         <div class="col-md-12">
-                <div class="box">
+                <div class="box box-warning">
                     <div class="box-header with-border">
-    						<div class="box-title">Daftar Group</div>
+    						<div class="box-title">Daftar Kelas</div>
     						<div class="box-tools pull-right">
     							<div class="dropdown pull-right">
-    								<a style="cursor: pointer;" onclick="tambah()">Tambah Group</a>
+    								<a style="cursor: pointer;" onclick="tambah()">Tambah Kelas</a>
     							</div>
     						</div>
                     </div><!-- /.box-header -->
@@ -29,7 +29,7 @@
                             <thead>
                                 <tr>
                                     <th>No.</th>
-                                    <th>Nama Group</th>
+                                    <th>Nama Kelas</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
