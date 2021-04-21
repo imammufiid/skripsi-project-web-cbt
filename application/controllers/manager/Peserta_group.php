@@ -17,7 +17,7 @@ class Peserta_group extends Member_Controller {
         $data['kode_menu'] = $this->kode_menu;
         $data['url'] = $this->url;
         
-        $this->template->display_admin($this->kelompok.'/peserta_group_view', 'Daftar Group', $data);
+        $this->template->display_admin($this->kelompok.'/peserta_group_view', 'Daftar Kelas', $data);
     }
 
     function tambah(){
