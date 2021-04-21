@@ -14,7 +14,7 @@
         <div class="callout callout-info">
             <h4>Informasi</h4>
             <p>
-                Selamat datang di Halaman Login Aplikasi Computer Based-Test. Untuk memulai silahkan melakukan
+                Selamat datang di Halaman Login Aplikasi <?php echo (!empty($site_name)) ? $site_name : "" ?>. Untuk memulai silahkan melakukan
                 proses Login dengan menggunakan username dan password yang sudah dimiliki.
             </p>
         </div>
@@ -47,7 +47,7 @@
                         </div>
                     </div><!-- /.box-body -->
                     <div class="box-footer">
-                        <button type="submit" id="btn-login" class="btn btn-info pull-right">Login</button>
+                        <button type="submit" id="btn-login" class="btn btn-success pull-right">Login</button>
                     </div><!-- /.box-footer -->
                     </form>
                 </div><!-- /.box -->
