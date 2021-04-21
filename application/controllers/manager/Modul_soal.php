@@ -457,7 +457,7 @@ class Modul_soal extends Member_Controller
 			} else {
 				$record[] = '<div style="text-align: center;">
 	            	<a onclick="edit(\'' . $temp->soal_id . '\')" title="Edit Soal" style="cursor: pointer;"><span class="glyphicon glyphicon-edit"></span></a>
-	            	<a onclick="hapus(\'' . $temp->soal_id . '\')" title="Hapus Soal" style="cursor: pointer;"><span class="glyphicon glyphicon-remove"></span></a>
+	            	<a onclick="hapus(\'' . $temp->soal_id . '\')" title="Hapus Soal" style="cursor: pointer;"><span class="glyphicon glyphicon-remove" style="color: red;"></span></a>
 	            	</div>
 	            ';
 			}
