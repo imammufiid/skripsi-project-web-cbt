@@ -14,7 +14,7 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box">
+            <div class="box box-danger">
                 <div class="box-header with-border">
                     <div class="box-title">Daftar Tes</div>
                     <div class="box-tools pull-right">
@@ -28,9 +28,7 @@
                     <?php echo form_open($url . '/hapus_daftar_tes', 'id="form-hapus-pilih"'); ?>
                     <input type="hidden" name="check" id="check" value="0">
                     <input type="hidden" name="centang" id="centang" value="0">
-                    <div id="form-pesan"><?php if (!empty($pesan_hapus)) {
-                                                echo $pesan_hapus;
-                                            } ?></div>
+                    <div id="form-pesan"><?php if (!empty($pesan_hapus)) echo $pesan_hapus; ?></div>
                     <table id="table-tes" class="table table-bordered table-hover">
                         <thead>
                             <tr>
@@ -66,7 +64,7 @@
                     </form>
                 </div>
                 <div class="box-footer">
-                    <button type="button" id="btn-edit-hapus" class="btn btn-primary" title="Hapus Siswa yang dipilih">Hapus</button>
+                    <button type="button" id="btn-edit-hapus" class="btn btn-danger" title="Hapus Siswa yang dipilih">Hapus</button>
                     <button type="button" id="btn-edit-pilih" class="btn btn-default pull-right">Pilih Semua</button>
                 </div>
             </div>
