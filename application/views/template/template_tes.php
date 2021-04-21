@@ -149,7 +149,7 @@
           <?php if(!empty($nama)){ echo $nama; } ?> | <strong> <a href="<?php echo site_url(); ?>/welcome/logout" >Log out</a></strong>
         </div>
         <div class="container">
-          <strong>&copy; 2020 Computer Based-Test</strong>
+          <strong>&copy; 2020 Ujian Online</strong>
         </div><!-- /.container -->
       </footer>
     </div><!-- ./wrapper -->
