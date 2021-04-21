@@ -14,7 +14,7 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box">
+            <div class="box box-danger">
                 <?php echo form_open($url . '/tambah_tes', 'id="form-tambah-tes"  class="form-horizontal"'); ?>
                 <div class="box-header with-border">
                     <div class="box-title">Mengelola Tes</div>
@@ -28,7 +28,7 @@
                             <div class="col-sm-9">
                                 <input type="hidden" name="tambah-id" id="tambah-id" />
                                 <input type="hidden" name="tambah-nama-lama" id="tambah-nama-lama" />
-                                <input type="text" name="tambah-nama" id="tambah-nama" class="form-control input-sm" />
+                                <input type="text" name="tambah-nama" id="tambah-nama" class="form-control input-sm" autocomplete="off"/>
                             </div>
                         </div>
                         <div class="form-group">
@@ -44,9 +44,7 @@
                                     <div class="input-group-addon">
                                         <i class="fa fa-clock-o"></i>
                                     </div>
-                                    <input type="text" name="tambah-rentang-waktu" id="tambah-rentang-waktu" class="form-control input-sm" value="<?php if (!empty($rentang_waktu)) {
-                                                                                                                                                        echo $rentang_waktu;
-                                                                                                                                                    } ?>" readonly />
+                                    <input type="text" name="tambah-rentang-waktu" id="tambah-rentang-waktu" class="form-control input-sm" value="<?php if (!empty($rentang_waktu)) echo $rentang_waktu; ?>" readonly />
                                 </div>
                                 <p class="help-block">Rentang waktu tes dilaksanakan</p>
                             </div>
@@ -59,7 +57,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">Group</label>
+                            <label class="col-sm-3 control-label">Kelas</label>
                             <div class="col-sm-9">
                                 <select class="form-control input-sm" id="tambah-group" name="tambah-group[]" size="8" multiple>
                                     <?php if (!empty($select_group)) {
