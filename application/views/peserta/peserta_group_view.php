@@ -1,7 +1,7 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
 	<h1>
-		Group
+		Kelas
 		<small>Daftar kelas, penambahan kelas, pengubahan kelas, dan penghapusan kelas</small>
 	</h1>
 	<ol class="breadcrumb">
