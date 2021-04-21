@@ -150,7 +150,7 @@
                                 <tr>
                                     <th>No.</th>
                                     <th>Soal</th>
-                                    <th>Jawaban</th>
+                                    <th>Kunci Jawaban</th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -551,7 +551,7 @@
                   "aoColumns": [
                         {"bSearchable": false, "bSortable": false, "sWidth":"20px"},
                         {"bSearchable": false, "bSortable": false},
-                        {"bSearchable": false, "bSortable": false, "sWidth":"50px"},
+                        {"bSearchable": false, "bSortable": false},
                         {"bSearchable": false, "bSortable": false, "sWidth":"50px"}],
                   "sAjaxSource": "<?php echo site_url().'/'.$url; ?>/get_datatable/",
                   "autoWidth": false,

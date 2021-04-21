@@ -439,8 +439,8 @@ class Modul_soal extends Member_Controller
 			$record[] = $soal;
 
 			$query_jawaban = $this->cbt_jawaban_model->count_by_kolom('jawaban_soal_id', $temp->soal_id)->row();
-
-			$record[] = '<div style="text-align: center;">' . $query_jawaban->hasil . '</div>';
+         
+			$record[] = '<div">' . $temp->soal_kunci . '</div>';
 			/**$record[] = '
             	<a onclick="jawaban(\''.$temp->soal_id.'\')" style="cursor: pointer;" class="btn btn-default btn-xs">Tambah Jawaban</a>
             	<a onclick="edit(\''.$temp->soal_id.'\')" style="cursor: pointer;" class="btn btn-default btn-xs">Edit Soal</a>
