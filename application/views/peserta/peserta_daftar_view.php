@@ -1,12 +1,12 @@
 <!-- Content Header (Page header) -->
 <section class="content-header">
 	<h1>
-		Peserta
-		<small>Daftar peserta, penambahan peserta, pengubahan data peserta, dan penghapusan data peserta</small>
+		Siswa
+		<small>Daftar siswa, penambahan siswa, pengubahan data siswa, dan penghapusan data siswa</small>
 	</h1>
 	<ol class="breadcrumb">
 		<li><a href="<?php echo site_url(); ?>/"><i class="fa fa-dashboard"></i> Home</a></li>
-		<li class="active">Peserta</li>
+		<li class="active">siswa</li>
 	</ol>
 </section>
 
@@ -14,35 +14,35 @@
 <section class="content">
 	<div class="row">
         <div class="col-md-3">
-                <div class="box">
+                <div class="box box-danger">
                     <div class="box-header with-border">
-                        <div class="box-title">Pilih Group</div>
+                        <div class="box-title">Pilih Kelas</div>
                     </div><!-- /.box-header -->
 
                     <div class="box-body">
                         <div class="form-group">
-                            <label>Group</label>
+                            <label>Kelas</label>
                             <div id="data-kelas">
                                 <select name="group" id="group" class="form-control input-sm">
-                                    <option value="semua">Semua Group</option>
+                                    <option value="semua">Semua Kelas</option>
                                     <?php if(!empty($select_group)){ echo $select_group; } ?>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div class="box-footer">
-                        <p>Pilih group terlebih dahulu untuk menampilkan dan menambah data Peserta</p>
+                        <p>Pilih kelas terlebih dahulu untuk menampilkan dan menambah data siswa</p>
                     </div>
                 </div>
         </div>
 
         <div class="col-md-9">
-                <div class="box">
+                <div class="box box-warning">
                     <div class="box-header with-border">
-    						<div class="box-title">Daftar Peserta</div>
+    						<div class="box-title">Daftar Siswa</div>
     						<div class="box-tools pull-right">
     							<div class="dropdown pull-right">
-    								<a style="cursor: pointer;" onclick="tambah()">Tambah Peserta</a>
+    								<a style="cursor: pointer;" onclick="tambah()">Tambah Siswa</a>
     							</div>
     						</div>
                     </div><!-- /.box-header -->
@@ -56,8 +56,8 @@
                                     <th>No.</th>
                                     <th>Username</th>
                                     <th class="all">Nama</th>
-                                    <th>Kelompok</th>
-									<th>Keterangan</th>
+                                    <th>Kelas</th>
+									<!-- <th>Keterangan</th> -->
                                     <th class="all">Action</th>
                                     <th class="all"></th>
                                 </tr>
@@ -68,7 +68,7 @@
                                     <td> </td>
 									<td> </td>
                                     <td> </td>
-									<td> </td>
+									<!-- <td> </td> -->
                                     <td> </td>
                                     <td> </td>
                                 </tr>
@@ -77,7 +77,7 @@
                         </form>                      
                     </div>
                     <div class="box-footer">
-                        <button type="button" id="btn-edit-hapus" class="btn btn-primary" title="Hapus Siswa yang dipilih">Hapus</button>
+                        <button type="button" id="btn-edit-hapus" class="btn btn-danger" title="Hapus Siswa yang dipilih">Hapus</button>
                         <button type="button" id="btn-edit-pilih" class="btn btn-default pull-right">Pilih Semua</button>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button class="close" type="button" data-dismiss="modal">&times;</button>
-                    <div id="trx-judul">Hapus Peserta</div>
+                    <div id="trx-judul">Hapus Siswa</div>
                 </div>
                 <div class="modal-body">
                     <div class="row-fluid">
@@ -141,11 +141,11 @@
                                 <input type="text" class="form-control" id="tambah-email" name="tambah-email" placeholder="Email Peserta (Boleh dikosongkan)">
                             </div>
 							
-							<div class="form-group">
+							<!-- <div class="form-group">
                                 <label>Keterangan</label>
                                 <input type="text" class="form-control" id="tambah-detail" name="tambah-detail" placeholder="Keterangan peserta. (Bisa disi ruang dan sesi)">
 								<p class="help-block">Dapat diisi Ruang dan Sesi Peserta. Contoh : Ruang 1, Sesi 1</p>
-                            </div>
+                            </div> -->
 
                             <div class="form-group">
                                 <label>Group</label>
@@ -158,7 +158,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="submit" id="tambah-simpan" class="btn btn-primary">Tambah</button>
-                    <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
                 </div>
             </div>
         </div>
@@ -205,11 +205,11 @@
                                 <input type="text" class="form-control" id="edit-email" name="edit-email" placeholder="Email Peserta (Boleh dikosongkan)">
                             </div>
 							
-							<div class="form-group">
+							<!-- <div class="form-group">
                                 <label>Keterangan</label>
                                 <input type="text" class="form-control" id="edit-detail" name="edit-detail" placeholder="Keterangan peserta. (Bisa disi ruang dan sesi)">
 								<p class="help-block">Dapat diisi Ruang dan Sesi Peserta. Contoh : Ruang 1, Sesi 1</p>
-                            </div>
+                            </div> -->
 
                             <div class="form-group">
                                 <label>Group</label>
@@ -401,7 +401,7 @@
     					{"bSearchable": false, "bSortable": false},
                         {"bSearchable": false, "bSortable": false},
     					{"bSearchable": false, "bSortable": false, "sWidth":"80px"},
-						{"bSearchable": false, "bSortable": false},
+						// {"bSearchable": false, "bSortable": false},
                         {"bSearchable": false, "bSortable": false, "sWidth":"30px"},
                         {"bSearchable": false, "bSortable": false, "sWidth":"20px"}],
                   "sAjaxSource": "<?php echo site_url().'/'.$url; ?>/get_datatable/",
