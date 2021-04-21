@@ -38,7 +38,7 @@
         </div>
 
         <div class="col-md-12">
-            <div class="box">
+            <div class="box box-warning">
                 <div class="box-header with-border">
                     <div class="box-title">Daftar Topik</div>
                     <div class="box-tools pull-right">
