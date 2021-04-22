@@ -2,8 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $config['upload_path'] = 'uploads';
-$config['site_name'] = 'Computer Based-Test';
-$config['site_version'] = '2020.05.14';
+$config['site_name'] = 'Ujian Online';
+$config['site_version'] = '17-04-2021';
 
 /*
 |--------------------------------------------------------------------------
