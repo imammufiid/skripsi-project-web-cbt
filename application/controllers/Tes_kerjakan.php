@@ -443,7 +443,7 @@ class Tes_kerjakan extends Tes_Controller
             // mengambil tesuser_id terus mendapatkan datanya, dicek statusnya dan waktunya
             //if($this->cbt_tes_user_model->count_by_status_waktu($tesuser_id)->row()->hasil>0){
             //
-            // revisi 2018-11-15
+            
             // agar waktu mengambil dari waktu php, bukan mysql
             $waktuuser = date('Y-m-d H:i:s');
             if ($this->cbt_tes_user_model->count_by_status_waktuuser($tesuser_id, $waktuuser)->row()->hasil > 0) {
@@ -520,11 +520,11 @@ class Tes_kerjakan extends Tes_Controller
                     } else if ($query_soal->soal_tipe == 2) { // soal tipe essay
                         if (!empty($query_soal->tessoal_jawaban_text)) {
                             $soal = $soal . '<textarea class="textarea" id="soal-jawaban" name="soal-jawaban" style="width: 100%; height: 150px; font-size: 13px; line-height: 25px; border: 1px solid #dddddd; padding: 10px;">' . $query_soal->tessoal_jawaban_text . '</textarea>
-                                <button type="button" onclick="jawab()" class="btn btn-default" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
+                                <button type="button" onclick="jawab()" class="btn btn-success" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
                                 ';
                         } else {
                             $soal = $soal . '<textarea class="textarea" id="soal-jawaban" name="soal-jawaban" style="width: 100%; height: 150px; font-size: 13px; line-height: 25px; border: 1px solid #dddddd; padding: 10px;"></textarea>
-                                <button type="button" onclick="jawab()" class="btn btn-default" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
+                                <button type="button" onclick="jawab()" class="btn btn-success" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
                                 ';
                         }
                     } else if ($query_soal->soal_tipe == 3) {
@@ -532,13 +532,13 @@ class Tes_kerjakan extends Tes_Controller
                             $soal = $soal . '
                                 <input type="text" class="form-control" style="max-width: 500px;" id="soal-jawaban" name="soal-jawaban" value="' . $query_soal->tessoal_jawaban_text . '" autocomplete="off" />
                                 <br />
-                                <button type="button" onclick="jawab()" class="btn btn-default" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
+                                <button type="button" onclick="jawab()" class="btn btn-success" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
                                 ';
                         } else {
                             $soal = $soal . '
                                 <input type="text" class="form-control" style="max-width: 500px;" id="soal-jawaban" name="soal-jawaban" autocomplete="off" />
                                 <br />
-                                <button type="button" onclick="jawab()" class="btn btn-default" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
+                                <button type="button" onclick="jawab()" class="btn btn-success" style="margin-bottom: 5px;" title="Simpan Jawaban">Simpan Jawaban</button>
                                 ';
                         }
                     }

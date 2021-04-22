@@ -11,7 +11,7 @@
 
 <!-- Main content -->
 <section class="content">
-    <div class="callout callout-info">
+    <div class="callout callout-danger">
         <h4>Informasi</h4>
         <p>
             Selamat datang di Halaman Dashboard Aplikasi <?php echo (!empty($site_name)) ? $site_name : "" ?>.

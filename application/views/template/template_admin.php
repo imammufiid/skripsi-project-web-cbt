@@ -125,7 +125,7 @@
 		} 
   </script>
   </head>
-  <body class="skin-green sidebar-mini">
+  <body class="sidebar-mini skin-yellow-light sidebar-collapse">
     <div class="wrapper">
 
       <header class="main-header">
@@ -133,7 +133,7 @@
         <!-- Logo -->
         <a href="<?php echo site_url(); ?>/manager" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>KK</b></span>
+          <span class="logo-mini"><b>K</b></span>
           <!-- logo for regular state and mobile devices -->
           <span class="logo-lg"><b>KUISKU</b></span>
         </a>
@@ -164,11 +164,11 @@
                   </li>
                   <!-- Menu Footer-->
                   <li class="user-footer">
-                    <div class="pull-left">
+                    <!-- <div class="pull-left">
                       <a data-toggle="modal" href="#modal-password" class="btn btn-default btn-flat">Password</a>
-                    </div>
+                    </div> -->
                     <div class="pull-right">
-                      <a href="<?php echo site_url(); ?>/manager/welcome/logout" class="btn btn-default btn-flat">Sign out</a>
+                      <a href="<?php echo site_url(); ?>/manager/welcome/logout" class="btn btn-danger btn-flat">Sign out</a>
                     </div>
                   </li>
                 </ul>
