@@ -130,7 +130,7 @@
                     <div class="col-xs-6">
                         <?php echo form_open($url . '/tambah_soal', 'id="form-tambah-soal"  class="form-horizontal"'); ?>
                         <div id="form-pesan-soal"></div>
-                        <div class="form-group">
+                        <div class="form-group" style="display: none;">
                             <label class="col-sm-3 control-label">Modul</label>
                             <div class="col-sm-9">
                                 <input type="hidden" name="soal-tes-id" id="soal-tes-id">
@@ -155,14 +155,14 @@
                             <label class="col-sm-3 control-label">Tipe Soal</label>
                             <div class="col-sm-9">
                                 <select class="form-control input-sm" id="soal-tipe" name="soal-tipe">
-                                    <option value="0">Semua</option>
-                                    <option value="1">Pilihan Ganda</option>
+                                    <!-- <option value="0">Semua</option> -->
+                                    <!-- <option value="1">Pilihan Ganda</option> -->
                                     <option value="2">Essay</option>
-                                    <option value="3">Jawaban Singkat</option>
+                                    <!-- <option value="3">Jawaban Singkat</option> -->
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="display: none;">
                             <label class="col-sm-3 control-label">Tingkat Kesulitan</label>
                             <div class="col-sm-9">
                                 <select class="form-control input-sm" id="soal-kesulitan" name="soal-kesulitan">
@@ -180,7 +180,7 @@
                                 <input type="text" name="soal-jml" id="soal-jml" class="form-control input-sm" value="1">
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="display: none;">
                             <label class="col-sm-3 control-label">Jml Jawaban</label>
                             <div class="col-sm-9">
                                 <input type="text" name="soal-jml-jawaban" id="soal-jml-jawaban" class="form-control input-sm" value="2">
@@ -193,7 +193,7 @@
                                 <p class="help-block">Mengacak Soal Tes</p>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="display: none;">
                             <label class="col-sm-3 control-label">Acak Jawaban</label>
                             <div class="col-sm-9">
                                 <input type="checkbox" name="soal-acak-jawaban" id="soal-acak-jawaban" class="input-sm" value="1" checked>
