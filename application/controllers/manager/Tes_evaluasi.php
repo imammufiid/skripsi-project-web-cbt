@@ -118,6 +118,7 @@ class Tes_evaluasi extends Member_Controller
 			);
 
 			// 4. calculate cosine similarity with lib Cosine_Similarity
+			$calc = 0;
 			if (empty($termFrecuency["answer"]) || empty($termFrecuency["key"])) {
 				$data['tessoal_nilai'] = 0;
 				$data['tessoal_human_point'] = 0;
