@@ -52,6 +52,8 @@
             <div class="box box-warning">
                 <div class="box-header with-border">
                     <div class="box-title">Daftar Jawaban</div>
+                    <input type="hidden" id="tes-id">
+                    <button class="btn btn-info pull-right btn-sm" onclick="koreksi_semua(<?php echo $tes_id; ?>)">Koreksi Otomatis</button>
                 </div><!-- /.box-header -->
 
                 <div class="box-body">
@@ -121,8 +123,13 @@
 
 
 <script lang="javascript">
+    $(document).ready(function() {
+        $('#tes-id').val($('#pilih-tes').val())
+    });
+
     function refresh_table() {
         $('#table-jawaban').dataTable().fnReloadAjax();
+        $('#tes-id').val($('#pilih-tes').val())
     }
 
     function evaluasi(id, nilai_min, nilai_max) {
@@ -144,6 +151,28 @@
         $("#evaluasi-nilai").focus();
 
         $("#modal-proses").modal('hide');
+    }
+
+    function koreksi_semua() {
+        let tesId = $('#tes-id').val();
+        $.ajax({
+            url: "<?php echo site_url() . '/' . $url; ?>/cosine_similarity_all_corection/" + tesId,
+            type: "POST",
+            cache: false,
+            success: function(respon) {
+                var obj = $.parseJSON(respon);
+                if (obj.status == 1) {
+                    refresh_table();
+                    $("#modal-proses").modal('hide');
+                    $("#modal-evaluasi").modal('hide');
+                    notify_success(obj.pesan);
+                } else {
+                    $("#modal-proses").modal('hide');
+                    notify_error(obj.pesan);
+                }
+            }
+        });
+        return false;
     }
 
     /**

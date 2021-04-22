@@ -42,8 +42,10 @@ class Tes_evaluasi extends Member_Controller
 			foreach ($query_tes as $temp) {
 				$select = $select . '<option value="' . $temp->tes_id . '">' . $temp->tes_nama . '</option>';
 			}
+			$tesId = $temp->tes_id;
 		}
 		$data['select_tes'] = $select;
+		$data['tes_id'] = $tesId;
 
 		$this->template->display_admin($this->kelompok . '/tes_evaluasi_view', 'Evaluasi Jawaban', $data);
 	}
@@ -91,6 +93,31 @@ class Tes_evaluasi extends Member_Controller
 
 	/**
 	 * Proses algoritma Cosine Similarity
+	 * auto all student
+	 * 
+	 */
+	function cosine_similarity_all_corection($tesId = 0) {
+		// 1. get all soal by tesId
+		$allSoal = $this->cbt_text_mining_model->getAllSoalByTesId($tesId);
+		// 2. get all answer student by soal id in tesId
+		$allStudent = $this->cbt_text_mining_model->getAllStudentByTest($tesId);
+		foreach ($allSoal as $key => $soal) {
+			foreach ($allStudent as $key => $answer) {
+				// 3. check if soal_id in soal == soal_id in answer
+				if ($soal->soal_id == $answer->soal_id) {
+					$stemmingKey = $soal->tm_stemming;
+					$stemmingAnswer = $answer->stemming;
+					
+					// 4. term frecuency
+					// 5. calculate cosine similarity with lib Cosine_Similarity
+					// 6. return
+				}
+			}
+		}
+	}
+
+	/**
+	 * Proses algoritma Cosine Similarity
 	 * 
 	 */
 	function cosine_similarity($tessoalID = 0)
@@ -111,7 +138,6 @@ class Tes_evaluasi extends Member_Controller
 			$teacherAnswer = $this->cbt_text_mining_model->getTeacherAnswerBySoalID($studentAnswer['soal_id']);
 			
 			// 3. calculate term frekuensi
-
 			$termFrecuency = term_frecuency(
 				json_decode($studentAnswer['stemming']),
 				json_decode($teacherAnswer['tm_stemming'])
@@ -215,9 +241,9 @@ class Tes_evaluasi extends Member_Controller
 
 			$record[] = $jawaban;
 
-			$buttonCosineSimilarity = '<a onclick="cosine_similarity(' . $temp->tessoal_id . ')" style="cursor: pointer;" class="btn btn-success btn-xs">Otomatis</a>';
+			$record[] = '<a onclick="cosine_similarity(' . $temp->tessoal_id . ')" style="cursor: pointer;" class="btn btn-success btn-xs">Otomatis</a>';
 
-			$record[] = $buttonCosineSimilarity . '<br><a onclick="evaluasi(\'' . $temp->tessoal_id . '\',\'' . $temp->tes_score_wrong . '\',\'' . $temp->tes_score_right . '\')" style="cursor: pointer;" class="btn btn-default btn-xs">Manual</a>';
+			// $record[] = $buttonCosineSimilarity . '<br><a onclick="evaluasi(\'' . $temp->tessoal_id . '\',\'' . $temp->tes_score_wrong . '\',\'' . $temp->tes_score_right . '\')" style="cursor: pointer;" class="btn btn-default btn-xs">Manual</a>';
 
 
 			$output['aaData'][] = $record;
