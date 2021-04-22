@@ -100,12 +100,12 @@
                             <div class="form-group">
                                 <label>Nama Topik</label>
                                 <input type="hidden" name="tambah-modul-id" id="tambah-modul-id">
-                                <input type="text" class="form-control" id="tambah-topik" name="tambah-topik" placeholder="Nama Topik">
+                                <input type="text" class="form-control" id="tambah-topik" name="tambah-topik" placeholder="Nama Topik" autocomplete="off">
                             </div>
 
                             <div class="form-group">
                                 <label>Deskripsi</label>
-                                <input type="text" class="form-control" id="tambah-deskripsi" name="tambah-deskripsi" placeholder="Deskripsi Topik">
+                                <input type="text" class="form-control" id="tambah-deskripsi" name="tambah-deskripsi" placeholder="Deskripsi Topik" autocomplete="off">
                             </div>
 
                             <div class="form-group">
