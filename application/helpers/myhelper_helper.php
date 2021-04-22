@@ -18,8 +18,8 @@ if (!function_exists("end_time")) {
 
 if (!function_exists("human_rate")) {
    function human_rate($resultCS = 0.0): float {
-      $rate  = $resultCS == 1;
-      $rate1 = $resultCS < 1 && $resultCS > 0.9;
+      $rate  = $resultCS == 1.0;
+      $rate1 = $resultCS <= 1.0 && $resultCS > 0.9;
       $rate2 = $resultCS < 0.9 && $resultCS > 0.8;
       $rate3 = $resultCS < 0.8 && $resultCS > 0.7;
       $rate4 = $resultCS < 0.7 && $resultCS > 0.6;
