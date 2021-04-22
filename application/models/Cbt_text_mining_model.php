@@ -58,4 +58,14 @@ class Cbt_text_mining_model extends CI_Model
    {
       return $this->db->get_where("text_mining_answer_view", ["soal_id" => $soalID])->result_array();
    }
+
+   public function getAllSoalByTesId($testId = 0)
+   {
+      return $this->db->get_where("all_question_by_tes_view", ["tes_id" => $testId])->result();
+   }
+
+   public function getAllStudentByTest($testId = 0)
+   {
+      return $this->db->get_where("text_mining_answer_view", ["tes_id" => $testId])->result();
+   }
 }
