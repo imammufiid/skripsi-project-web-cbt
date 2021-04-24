@@ -18,34 +18,25 @@ if (!function_exists("end_time")) {
 
 if (!function_exists("human_rate")) {
    function human_rate($resultCS = 0.0): float {
-      $rate  = $resultCS == 1.0;
-      $rate1 = $resultCS <= 1.0 && $resultCS > 0.9;
-      $rate2 = $resultCS < 0.9 && $resultCS > 0.8;
-      $rate3 = $resultCS < 0.8 && $resultCS > 0.7;
-      $rate4 = $resultCS < 0.7 && $resultCS > 0.6;
-      $rate5 = $resultCS < 0.6 && $resultCS > 0.5;
-      $rate6 = $resultCS < 0.5 && $resultCS > 0.4;
-      $rate7 = $resultCS < 0.4 && $resultCS > 0.3;
-      $rate8 = $resultCS < 0.3 && $resultCS > 0.2;
-      $rate9 = $resultCS < 0.2 && $resultCS > 0.1;
-      
-      if ($rate && $rate1) {
+      $cs = round($resultCS, 2);
+            
+      if ($cs <= 1.0 && $cs > 0.9) {
          return 100.0;
-      } else if ($rate2) {
+      } else if ($cs < 0.9 && $cs > 0.8) {
          return 90.0;
-      } else if ($rate3) {
+      } else if ($cs < 0.8 && $cs > 0.7) {
          return 80.0;
-      } else if ($rate4) {
+      } else if ($cs < 0.7 && $cs > 0.6) {
          return 70.0;
-      } else if ($rate5) {
+      } else if ($cs < 0.6 && $cs > 0.5) {
          return 60.0;
-      } else if ($rate6) {
+      } else if ($cs < 0.5 && $cs > 0.4) {
          return 50.0;
-      } else if ($rate7) {
+      } else if ($cs < 0.4 && $cs > 0.3) {
          return 40.0;
-      } else if ($rate8) {
+      } else if ($cs < 0.3 && $cs > 0.2) {
          return 30.0;
-      } else if ($rate9) {
+      } else if ($cs < 0.2 && $cs > 0.1) {
          return 20.0;
       } else {
          return 0.0;

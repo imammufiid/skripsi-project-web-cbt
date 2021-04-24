@@ -96,24 +96,44 @@ class Tes_evaluasi extends Member_Controller
 	 * auto all student
 	 * 
 	 */
-	function cosine_similarity_all_corection($tesId = 0) {
+	function cosine_similarity_all_corection($tesId = 0)
+	{
 		// 1. get all soal by tesId
 		$allSoal = $this->cbt_text_mining_model->getAllSoalByTesId($tesId);
 		// 2. get all answer student by soal id in tesId
 		$allStudent = $this->cbt_text_mining_model->getAllStudentByTest($tesId);
+		
+		$counter = 0;
 		foreach ($allSoal as $key => $soal) {
 			foreach ($allStudent as $key => $answer) {
 				// 3. check if soal_id in soal == soal_id in answer
 				if ($soal->soal_id == $answer->soal_id) {
 					$stemmingKey = $soal->tm_stemming;
 					$stemmingAnswer = $answer->stemming;
-					
+
 					// 4. term frecuency
 					// 5. calculate cosine similarity with lib Cosine_Similarity
 					// 6. return
+					$calc = $this->calculateCosineSimilarity($stemmingAnswer, $stemmingKey);
+					
+					if ($calc['status'] == 1) {
+						$this->cbt_tes_soal_model->update('tessoal_id', $answer->tessoal_id, $calc['data']);
+						$counter++;
+					}
 				}
 			}
 		}
+
+		$result = [
+			"status"	=> 1,
+			"pesan"	=> "Selesai Koreksi",
+			"total_soal"	=> "Total soal : " . sizeof($allSoal),
+			"total_siswa"	=> "Total siswa : " . sizeof($allStudent),
+			"jawaban_koreksi_success"	=> "Jawaban Berhasil Koreksi : ".$counter,
+			"jawaban_koreksi_failed"	=> "Jawaban Gagal Koreksi : " . ((int)sizeof($allStudent) - (int)$counter)
+		];
+
+		echo json_encode($result);
 	}
 
 	/**
@@ -136,7 +156,7 @@ class Tes_evaluasi extends Member_Controller
 
 			// 2. get result text mining answer_key from table text_mining_kunci_view by soal_id
 			$teacherAnswer = $this->cbt_text_mining_model->getTeacherAnswerBySoalID($studentAnswer['soal_id']);
-			
+
 			// 3. calculate term frekuensi
 			$termFrecuency = term_frecuency(
 				json_decode($studentAnswer['stemming']),
@@ -165,6 +185,46 @@ class Tes_evaluasi extends Member_Controller
 			];
 		}
 		echo json_encode($result);
+	}
+
+	/**
+	 * Calculate Cosine Similarity
+	 * @param Json $answer result stemming answer student
+	 * @param Json $answerKey result stemming answer key teacher
+	 *
+	 * @return void
+	 */
+	private function calculateCosineSimilarity($answer, $answerKey)
+	{
+		// load helper
+		$this->load->helper('intersect_helper');
+		// 3. calculate term frekuensi
+		$termFrecuency = term_frecuency(
+			json_decode($answer),
+			json_decode($answerKey)
+		);
+		// 4. calculate cosine similarity with lib Cosine_Similarity
+		$calc = 0;
+		if (empty($termFrecuency["answer"]) || empty($termFrecuency["key"])) {
+			$data['tessoal_nilai'] = 0;
+			$data['tessoal_human_point'] = 0;
+		} else {
+			$this->load->library("MyCs");
+			$calc = $this->mycs->calculate($termFrecuency["answer"], $termFrecuency["key"]);
+			$humanRate = human_rate($calc);
+			$data['tessoal_nilai'] = $calc;
+			$data['tessoal_human_point'] = $humanRate;
+		}
+		$data['tessoal_comment'] = 'Sudah di koreksi ' . $this->access->get_username();
+
+		// $this->cbt_tes_soal_model->update('tessoal_id', $tessoalID, $data);
+
+		$result = [
+			"status"	=> 1,
+			"point"	=> "success",
+			"data"	=> $data
+		];
+		return $result;
 	}
 
 	/**

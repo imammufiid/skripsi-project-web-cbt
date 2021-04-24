@@ -165,7 +165,7 @@
                     refresh_table();
                     $("#modal-proses").modal('hide');
                     $("#modal-evaluasi").modal('hide');
-                    notify_success(obj.pesan);
+                    notify_success(obj.pesan + obj.jawaban_koreksi_success);
                 } else {
                     $("#modal-proses").modal('hide');
                     notify_error(obj.pesan);
