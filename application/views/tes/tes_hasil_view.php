@@ -110,7 +110,7 @@
                                 <th>Nama Tes</th>
                                 <th>Group</th>
                                 <th class="all">Nama User</th>
-                                <th>Poin (Cosine Similarity)</th>
+                                <!-- <th>Poin (Cosine Similarity)</th> -->
                                 <th>Poin (Human Rate)</th>
                                 <th>Status</th>
                                 <th class="all"></th>
@@ -289,7 +289,7 @@
                         {"bSearchable": false, "bSortable": false},
                         {"bSearchable": false, "bSortable": false},
                         {"bSearchable": false, "bSortable": false},
-                        {"bSearchable": false, "bSortable": false},
+                        // {"bSearchable": false, "bSortable": false},
                         {"bSearchable": false, "bSortable": false},
     					{"bSearchable": false, "bSortable": false, "sWidth":"150px"},
                         {"bSearchable": false, "bSortable": false, "sWidth":"20px"}],
