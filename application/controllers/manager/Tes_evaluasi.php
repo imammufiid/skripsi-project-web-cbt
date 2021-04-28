@@ -102,7 +102,8 @@ class Tes_evaluasi extends Member_Controller
 		$allSoal = $this->cbt_text_mining_model->getAllSoalByTesId($tesId);
 		// 2. get all answer student by soal id in tesId
 		$allStudent = $this->cbt_text_mining_model->getAllStudentByTest($tesId);
-		
+		// get score right and point wrong
+		$dataOfTes = $this->cbt_text_mining_model->getTesById($tesId);
 		$counter = 0;
 		foreach ($allSoal as $key => $soal) {
 			foreach ($allStudent as $key => $answer) {
@@ -110,11 +111,14 @@ class Tes_evaluasi extends Member_Controller
 				if ($soal->soal_id == $answer->soal_id) {
 					$stemmingKey = $soal->tm_stemming;
 					$stemmingAnswer = $answer->stemming;
-
 					// 4. term frecuency
 					// 5. calculate cosine similarity with lib Cosine_Similarity
 					// 6. return
-					$calc = $this->calculateCosineSimilarity($stemmingAnswer, $stemmingKey);
+					$calc = $this->calculateCosineSimilarity(
+						$stemmingAnswer, 
+						$stemmingKey, 
+						(float)$dataOfTes[0]->tes_score_right
+					);
 					
 					if ($calc['status'] == 1) {
 						$this->cbt_tes_soal_model->update('tessoal_id', $answer->tessoal_id, $calc['data']);
@@ -138,6 +142,7 @@ class Tes_evaluasi extends Member_Controller
 
 	/**
 	 * Proses algoritma Cosine Similarity
+	 * one by one
 	 * 
 	 */
 	function cosine_similarity($tessoalID = 0)
@@ -194,7 +199,7 @@ class Tes_evaluasi extends Member_Controller
 	 *
 	 * @return void
 	 */
-	private function calculateCosineSimilarity($answer, $answerKey)
+	private function calculateCosineSimilarity($answer = "", $answerKey  = "", float $scoreRight = 0.0)
 	{
 		// load helper
 		$this->load->helper('intersect_helper');
@@ -203,7 +208,8 @@ class Tes_evaluasi extends Member_Controller
 			json_decode($answer),
 			json_decode($answerKey)
 		);
-		// 4. calculate cosine similarity with lib Cosine_Similarity
+		// 4. get score right from params
+		// 5. calculate cosine similarity with lib Cosine_Similarity
 		$calc = 0;
 		if (empty($termFrecuency["answer"]) || empty($termFrecuency["key"])) {
 			$data['tessoal_nilai'] = 0;
@@ -211,7 +217,7 @@ class Tes_evaluasi extends Member_Controller
 		} else {
 			$this->load->library("MyCs");
 			$calc = $this->mycs->calculate($termFrecuency["answer"], $termFrecuency["key"]);
-			$humanRate = human_rate($calc);
+			$humanRate = human_rate($calc, $scoreRight);
 			$data['tessoal_nilai'] = $calc;
 			$data['tessoal_human_point'] = $humanRate;
 		}
@@ -301,7 +307,7 @@ class Tes_evaluasi extends Member_Controller
 
 			$record[] = $jawaban;
 
-			$record[] = '<a onclick="cosine_similarity(' . $temp->tessoal_id . ')" style="cursor: pointer;" class="btn btn-success btn-xs">Otomatis</a>';
+			// $record[] = '<a onclick="cosine_similarity(' . $temp->tessoal_id . ')" style="cursor: pointer;" class="btn btn-success btn-xs">Otomatis</a>';
 
 			// $record[] = $buttonCosineSimilarity . '<br><a onclick="evaluasi(\'' . $temp->tessoal_id . '\',\'' . $temp->tes_score_wrong . '\',\'' . $temp->tes_score_right . '\')" style="cursor: pointer;" class="btn btn-default btn-xs">Manual</a>';
 
