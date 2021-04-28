@@ -332,7 +332,7 @@
                     "bSortable": false,
                     "sWidth": "20px"
                 }
-      imf      ],
+            ],
             "sAjaxSource": "<?php echo site_url() . '/' . $url; ?>/get_datatable/",
             "autoWidth": false,
             "responsive": true,
