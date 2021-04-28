@@ -66,6 +66,9 @@ class Cbt_text_mining_model extends CI_Model
 
    public function getAllStudentByTest($testId = 0)
    {
+      /**
+       * ! please add where clause if nilai/score != 0
+       */
       return $this->db->get_where("text_mining_answer_view", ["tes_id" => $testId])->result();
    }
 
