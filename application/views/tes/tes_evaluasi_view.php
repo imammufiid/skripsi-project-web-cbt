@@ -65,7 +65,7 @@
                                 <th>Nama Siswa</th>
                                 <th>Soal</th>
                                 <th>Jawaban</th>
-                                <th>Koreksi</th>
+                                <!-- <th>Koreksi</th> -->
                             </tr>
                         </thead>
                         <tbody>
@@ -257,11 +257,11 @@
                     "bSearchable": false,
                     "bSortable": false
                 }, // jawaban
-                {
-                    "bSearchable": false,
-                    "bSortable": false,
-                    "sWidth": "50px"
-                }
+                // {
+                //     "bSearchable": false,
+                //     "bSortable": false,
+                //     "sWidth": "50px"
+                // }
             ], // action
             "sAjaxSource": "<?php echo site_url() . '/' . $url; ?>/get_datatable/",
             "autoWidth": false,
