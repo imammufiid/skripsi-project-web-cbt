@@ -68,4 +68,11 @@ class Cbt_text_mining_model extends CI_Model
    {
       return $this->db->get_where("text_mining_answer_view", ["tes_id" => $testId])->result();
    }
+
+   public function getTesById($tesId = 0)
+   {
+      return $this->db->select('tes_id, tes_nama, tes_score_right, tes_score_wrong, tes_max_score')
+      ->get_where('cbt_tes', ['tes_id' => $tesId])
+      ->result();
+   }
 }
