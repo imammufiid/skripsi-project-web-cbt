@@ -405,11 +405,11 @@ class Tes_tambah extends Member_Controller {
             }else{
                 $ket_acak = $ket_acak.' Acak Soal=TDK';
             }
-            if($temp->tset_acak_jawaban==1){
-                $ket_acak = $ket_acak.'; Acak JWB=YA';
-            }else{
-                $ket_acak = $ket_acak.'; Acak JWB=TDK';
-            }
+            // if($temp->tset_acak_jawaban==1){
+            //     $ket_acak = $ket_acak.'; Acak JWB=TDK';
+            // }else{
+            //     $ket_acak = $ket_acak.'; Acak JWB=TDK';
+            // }
 
 			$query_topik = $this->cbt_topik_model->get_by_kolom_limit('topik_id', $temp->tset_topik_id, 1)->row();
 
