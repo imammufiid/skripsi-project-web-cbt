@@ -223,7 +223,7 @@
         <div class="pull-right hidden-xs">
           <b>Version</b> <?php if(!empty($site_version)){ echo $site_version; } ?>
         </div>
-        <strong>&copy; 2020 Ujian Online</strong>
+        <strong>&copy; <?= date('Y') ?> Ujian Online</strong>
       </footer>
 
     </div><!-- ./wrapper -->

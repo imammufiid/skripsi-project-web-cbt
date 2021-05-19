@@ -82,7 +82,7 @@
 			?>
         </div>
         <div class="container">
-          <strong>&copy; 2020 Ujian Online</strong>
+          <strong>&copy; <?= date('Y') ?> Ujian Online</strong>
         </div><!-- /.container -->
       </footer>
     </div><!-- ./wrapper -->
