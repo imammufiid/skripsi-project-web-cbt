@@ -78,4 +78,31 @@ class Cbt_text_mining_model extends CI_Model
       ->get_where('cbt_tes', ['tes_id' => $tesId])
       ->result();
    }
+
+   /**
+	 * * SYNOYNM RECOGNITION
+	 */
+	function synonym_recognition($array = [])
+	{
+		foreach ($array as $key => $value) {
+			$synonym = $this->db->select("word")
+				->from("cbt_synonym")
+				->where("synonym", $value)
+				->get()
+				->row();
+
+			if ($synonym != null) {
+				$array[$key] = $synonym->word;
+			}
+		}
+
+		return $array;
+	}
+
+   function insert_synonym_recognition($synonymRecognition, $tmId) {
+      $data = [
+         "tm_synonym_recognition"   => $synonymRecognition
+      ];
+      return $this->db->where("tm_id", $tmId)->update($this->table, $data);
+   }
 }
