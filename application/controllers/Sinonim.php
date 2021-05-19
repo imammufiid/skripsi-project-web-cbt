@@ -8,25 +8,25 @@
 class Sinonim extends CI_Controller
 {
    var $jsonDict;
-
-   public function __construct()
+   public function index()
    {
-      parent::__construct();
-      $file = file_get_contents(FCPATH . 'dict.json');
-      $this->jsonDict = json_decode($file, true);
+      echo "Hello Synonym";
    }
 
-   public function getSynonym($word = "") {
-      if(array_key_exists($word, $this->jsonDict)) {
-         echo json_encode([
-            'status' => 200,
-            'data_sinonim' => $this->jsonDict[$word]['sinonim'] 
-         ]);
-      } else {
-         echo json_encode([
-            'message' => null
-         ]);
+   function store($id = 0)
+   {
+      $file = file_get_contents(FCPATH . 'dict/dict' . $id . '.json');
+      $jsonDict = json_decode($file, true);
+      foreach ($jsonDict as $key => $value) {
+         foreach ($value['sinonim'] as $keySin => $valSin) {
+            $data = [
+               'word'   => $key,
+               'tag'    => $value['tag'],
+               'synonym'   => $valSin,
+            ];
+            $this->db->insert('cbt_synonym', $data);
+         }
       }
+      echo "Done dict" . $id . ".json";
    }
-
 }
