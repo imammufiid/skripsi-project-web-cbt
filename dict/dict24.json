@@ -1,0 +1,6548 @@
+{
+    "panti": {
+        "tag": "n", 
+        "sinonim": [
+            "kediaman", 
+            "pondok", 
+            "rumah", 
+            "tempat"
+        ]
+    }, 
+    "bolongan": {
+        "tag": "n", 
+        "sinonim": [
+            "cak lubang", 
+            "perohong"
+        ]
+    }, 
+    "berulah": {
+        "tag": "v", 
+        "sinonim": [
+            "beraksi", 
+            "berbuat", 
+            "bertindak", 
+            "bertingkah"
+        ]
+    }, 
+    "bertahap": {
+        "tag": "v", 
+        "sinonim": [
+            "berjenjang", 
+            "bertingkat", 
+            "berangsur-angsur", 
+            "berantara", 
+            "berdikit-dikit", 
+            "beroncet-roncet", 
+            "perlahan-lahan"
+        ]
+    }, 
+    "inseminasi": {
+        "tag": "n", 
+        "sinonim": [
+            "fertilisasi", 
+            "pembenihan", 
+            "pembuahan", 
+            "penghamilan"
+        ]
+    }, 
+    "lingkup": {
+        "tag": "n", 
+        "sinonim": [
+            "cakupan", 
+            "lintup", 
+            "skop ", 
+            "spektrum "
+        ]
+    }, 
+    "berulat": {
+        "tag": "a", 
+        "sinonim": [
+            "ki busuk", 
+            "rusak"
+        ]
+    }, 
+    "genius": {
+        "tag": "a", 
+        "sinonim": [
+            "brilian", 
+            "cemerlang", 
+            "cendekia", 
+            "cerdas", 
+            "cerdik", 
+            "intelek", 
+            "inteligen", 
+            "pandai", 
+            "pintar", 
+            "ringan kepala", 
+            "tajam", 
+            "terang akal"
+        ]
+    }, 
+    "kerutak": {
+        "tag": "v", 
+        "sinonim": [
+            "mengerkah", 
+            "menggigit", 
+            "menokak"
+        ]
+    }, 
+    "madu": {
+        "tag": "n", 
+        "sinonim": [
+            "sembayan"
+        ]
+    }, 
+    "tongkrong": {
+        "tag": "v", 
+        "sinonim": [
+            "berjongkok", 
+            "mencangkung", 
+            "mencongkong", 
+            "dudukduduk"
+        ]
+    }, 
+    "suling": {
+        "tag": "n", 
+        "sinonim": [
+            "bangsi", 
+            "salung", 
+            "seruling", 
+            "peluit", 
+            "mengilang)", 
+            "mengukus", 
+            "sungsang"
+        ]
+    }, 
+    "bertahak": {
+        "tag": "v", 
+        "sinonim": [
+            "bersendawa", 
+            "mengatop"
+        ]
+    }, 
+    "timba": {
+        "tag": "n", 
+        "sinonim": [
+            "cedok", 
+            "ember", 
+            "gayung", 
+            "sibur"
+        ]
+    }, 
+    "limit": {
+        "tag": "n", 
+        "sinonim": [
+            "batas", 
+            "limitasi", 
+            "tapal batas"
+        ]
+    }, 
+    "pelawa": {
+        "tag": "n", 
+        "sinonim": [
+            "alangan", 
+            "belan", 
+            "rintangan", 
+            "mengajak", 
+            "mengundang"
+        ]
+    }, 
+    "ulas": {
+        "tag": "v", 
+        "sinonim": [
+            "bahas", 
+            "telaah", 
+            "teliti", 
+            "kupas ", 
+            "selidik", 
+            "bungkus", 
+            "kulit", 
+            "salut", 
+            "sampul", 
+            "sarung", 
+            "selubung", 
+            "lanjutan", 
+            "sambungan", 
+            "terusan", 
+            "pertemuan "
+        ]
+    }, 
+    "mewujudkan": {
+        "tag": "v", 
+        "sinonim": [
+            "melahirkan", 
+            "melaksanakan", 
+            "memanifestasikan", 
+            "membuat", 
+            "memperhatikan", 
+            "menakhlikkan", 
+            "menciptakan", 
+            "mendatangkan", 
+            "menelurkan", 
+            "menerangkan", 
+            "menerbitkan", 
+            "mengadakan", 
+            "mengaktualkan", 
+            "mengamalkan", 
+            "mengegolkan ", 
+            "mengejawantahkan", 
+            "mengeluarkan", 
+            "menggambarkan", 
+            "menghasilkan", 
+            "mengonkretkan", 
+            "menjalankan", 
+            "menjelmakan", 
+            "menuangkan", 
+            "menubuhkan", 
+            "meragakan", 
+            "merealisasikan", 
+            "merupakan"
+        ]
+    }, 
+    "kondisional": {
+        "tag": "a", 
+        "sinonim": [
+            "provisional", 
+            "tentatif"
+        ]
+    }, 
+    "menyamankan": {
+        "tag": "v", 
+        "sinonim": [
+            "menenangkan", 
+            "menenteramkan", 
+            "menyegarkan", 
+            "menyejukkan", 
+            "menyenangkan"
+        ]
+    }, 
+    "sejenis": {
+        "tag": "n", 
+        "sinonim": [
+            "sebangsa", 
+            "semacam", 
+            "seragam", 
+            "serupa"
+        ]
+    }, 
+    "kelemahan": {
+        "tag": "n", 
+        "sinonim": [
+            "cacat", 
+            "kekurangan", 
+            "kelianan", 
+            "kepincangan"
+        ], 
+        "antonim": [
+            "kelebihan"
+        ]
+    }, 
+    "kukus": {
+        "tag": "n", 
+        "sinonim": [
+            "setum", 
+            "uap"
+        ]
+    }, 
+    "kukur": {
+        "tag": "n", 
+        "sinonim": [
+            "cakar", 
+            "pangur", 
+            "parut", 
+            "penggaruk"
+        ]
+    }, 
+    "belongsong": {
+        "tag": "n", 
+        "sinonim": [
+            "kelongsong", 
+            "kerosong", 
+            "selongsong"
+        ]
+    }, 
+    "jahil": {
+        "tag": "a", 
+        "sinonim": [
+            "cemburu", 
+            "dengki", 
+            "fasik", 
+            "iri", 
+            "iseng", 
+            "jahat", 
+            "jail ", 
+            "nakal", 
+            "usil"
+        ]
+    }, 
+    "menyurutkan": {
+        "tag": "v", 
+        "sinonim": [
+            "memundurkan", 
+            "mengembalikan", 
+            "mengundurkan", 
+            "membatalkan"
+        ]
+    }, 
+    "praktisi": {
+        "tag": "n", 
+        "sinonim": [
+            "pegiat", 
+            "pekerja", 
+            "pelaku"
+        ]
+    }, 
+    "duane": {
+        "tag": "n", 
+        "sinonim": [
+            "bea cukai", 
+            "pabean", 
+            "perbandaran"
+        ]
+    }, 
+    "jahit": {
+        "tag": "v", 
+        "sinonim": [
+            "bordir", 
+            "jelujur", 
+            "kelim", 
+            "obras", 
+            "tisik", 
+            "setik", 
+            "sulam", 
+            "suji", 
+            "tekat"
+        ]
+    }, 
+    "sibar-sibar": {
+        "tag": "n", 
+        "sinonim": [
+            "capung", 
+            "sepatung", 
+            "sibur-sibur"
+        ]
+    }, 
+    "mengocak": {
+        "tag": "v", 
+        "sinonim": [
+            "berjenaka", 
+            "melawak", 
+            "melucu", 
+            "membanyol", 
+            "mendagel"
+        ]
+    }, 
+    "hobi": {
+        "tag": "n", 
+        "sinonim": [
+            "favorit", 
+            "kegemaran", 
+            "kesenangan", 
+            "kesukaan", 
+            "minat"
+        ]
+    }, 
+    "mulut besar": {
+        "tag": "n", 
+        "sinonim": [
+            "angkuh", 
+            "banyak cakap", 
+            "congkak", 
+            "sombong", 
+            "tinggi hati"
+        ]
+    }, 
+    "suruhan": {
+        "tag": "n", 
+        "sinonim": [
+            "aba-aba", 
+            "amanat", 
+            "amar(an)", 
+            "instruksi", 
+            "komando", 
+            "mandat", 
+            "perintah", 
+            "pesan", 
+            "titah", 
+            "tugas", 
+            "cak pesuruh"
+        ]
+    }, 
+    "merawi": {
+        "tag": "v", 
+        "sinonim": [
+            "beriwayat", 
+            "bercerita", 
+            "mendongeng", 
+            "meriwayat"
+        ]
+    }, 
+    "bertekuk": {
+        "tag": "v", 
+        "sinonim": [
+            "berkedut", 
+            "berkeluk", 
+            "berkerut", 
+            "berlipat"
+        ]
+    }, 
+    "kukuh": {
+        "tag": "a", 
+        "sinonim": [
+            "bedegap", 
+            "kekar", 
+            "kokoh", 
+            "kuat", 
+            "masif", 
+            "pagan", 
+            "pagun", 
+            "solid", 
+            "tegap", 
+            "erat", 
+            "gigih", 
+            "persisten", 
+            "puguh", 
+            "stabil", 
+            "tegas", 
+            "teguh", 
+            "tunak"
+        ]
+    }, 
+    "pelanting": {
+        "tag": "n", 
+        "sinonim": [
+            "pelontar", 
+            "terpental"
+        ]
+    }, 
+    "ronda": {
+        "tag": "v", 
+        "sinonim": [
+            "bersiar-siar", 
+            "makan angin", 
+            "sambang"
+        ]
+    }, 
+    "pagoda": {
+        "tag": "n", 
+        "sinonim": [
+            "menara", 
+            "mercu", 
+            "tokong"
+        ]
+    }, 
+    "berkah": {
+        "tag": "n", 
+        "sinonim": [
+            "bantuan", 
+            "berkat", 
+            "hidayah", 
+            "hidayat", 
+            "inayat", 
+            "karunia", 
+            "kebahagiaan", 
+            "kurnia", 
+            "pangestu", 
+            "pertolongan", 
+            "rahmat", 
+            "tuah"
+        ], 
+        "antonim": [
+            "musibah"
+        ]
+    }, 
+    "hablur": {
+        "tag": "n", 
+        "sinonim": [
+            "balur", 
+            "kinyang", 
+            "kristal", 
+            "silika"
+        ]
+    }, 
+    "berpacangan": {
+        "tag": "v", 
+        "sinonim": [
+            "bertunangan"
+        ]
+    }, 
+    "gelayut": {
+        "tag": "v", 
+        "sinonim": [
+            "bergantung", 
+            "bergayut", 
+            "bergelantung"
+        ]
+    }, 
+    "pedagang": {
+        "tag": "n", 
+        "sinonim": [
+            "bakul", 
+            "biaperi", 
+            "broker", 
+            "calo", 
+            "distributor", 
+            "grosir", 
+            "juragan", 
+            "khoja", 
+            "pebisnis", 
+            "pemasok", 
+            "pemborong", 
+            "pengasong", 
+            "pengecer", 
+            "pengedar", 
+            "pengekspor", 
+            "penggalas", 
+            "pengimpor", 
+            "pengurup", 
+            "pengusaha", 
+            "peniaga", 
+            "penjaja", 
+            "penjual", 
+            "penyalur", 
+            "peraih", 
+            "peruncit", 
+            "pialang", 
+            "rentenir", 
+            "saudagar", 
+            "tauke", 
+            "tukang kredit", 
+            "usahawan", 
+            "wiraniaga"
+        ], 
+        "antonim": [
+            "pembeli"
+        ]
+    }, 
+    "tangkai": {
+        "tag": "n", 
+        "sinonim": [
+            "anak cabang", 
+            "ranting", 
+            "tandan", 
+            "tundun", 
+            "untai", 
+            "batang", 
+            "gagang", 
+            "gandar", 
+            "garan", 
+            "hulu"
+        ]
+    }, 
+    "kesulitan": {
+        "tag": "n", 
+        "sinonim": [
+            "kepelikan", 
+            "kerumitan", 
+            "kesesekan", 
+            "komplikasi", 
+            "masalah", 
+            "penyakit ", 
+            "persoalan", 
+            "problem", 
+            "teka-teki", 
+            "v kesukaran", 
+            "kesusahan"
+        ], 
+        "antonim": [
+            "kemudahan"
+        ]
+    }, 
+    "pertaruhan": {
+        "tag": "n", 
+        "sinonim": [
+            "perjudian"
+        ]
+    }, 
+    "tangkal": {
+        "tag": "v", 
+        "sinonim": [
+            "mencegah", 
+            "menegah", 
+            "menjauhkan", 
+            "menolak", 
+            "mengawasi", 
+            "menjaga"
+        ]
+    }, 
+    "tangkas": {
+        "tag": "a", 
+        "sinonim": [
+            "aktif", 
+            "andal", 
+            "bergas", 
+            "bersungguhsungguh", 
+            "cakap", 
+            "cekatan", 
+            "cepat", 
+            "cergas", 
+            "gancang", 
+            "gesit", 
+            "giat", 
+            "langkas", 
+            "lekas", 
+            "lincah", 
+            "pandai", 
+            "pantas", 
+            "sebat", 
+            "sigap", 
+            "terampil", 
+            "trengginas"
+        ], 
+        "antonim": [
+            "lamban"
+        ]
+    }, 
+    "tangkar": {
+        "tag": "v", 
+        "sinonim": [
+            "membiakkan", 
+            "membudidayakan", 
+            "memijahkan", 
+            "memperbanyak", 
+            "menetaskan", 
+            "mengembangbiakkan", 
+            "menggandakan"
+        ]
+    }, 
+    "mengisbatkan": {
+        "tag": "v", 
+        "sinonim": [
+            "memastikan", 
+            "menegaskan", 
+            "meneguhkan", 
+            "menetapkan", 
+            "menentukan", 
+            "mengakui", 
+            "mengesahkan", 
+            "menguatkan", 
+            "mengukuhkan"
+        ]
+    }, 
+    "berbencah": {
+        "tag": "a", 
+        "sinonim": [
+            "becek", 
+            "belok", 
+            "berlumpur", 
+            "gejah", 
+            "jeblok ", 
+            "lanau", 
+            "lanyah", 
+            "lecak"
+        ]
+    }, 
+    "menurunkan": {
+        "tag": "v", 
+        "sinonim": [
+            "membongkar", 
+            "melabuhkan", 
+            "mendaratkan", 
+            "meletakkan", 
+            "menaruh"
+        ], 
+        "antonim": [
+            "menaikkan"
+        ]
+    }, 
+    "peranginan": {
+        "tag": "n", 
+        "sinonim": [
+            "anglung", 
+            "bungalo", 
+            "rumah"
+        ]
+    }, 
+    "berkas": {
+        "tag": "n", 
+        "sinonim": [
+            "arsip", 
+            "belembang", 
+            "bendel", 
+            "bondot", 
+            "bundel", 
+            "fail", 
+            "folder", 
+            "gabungan", 
+            "gebung", 
+            "ikatan", 
+            "jilid", 
+            "kelompok", 
+            "kumpulan", 
+            "susunan", 
+            "cercah", 
+            "jaras", 
+            "carik", 
+            "slip"
+        ]
+    }, 
+    "raudah": {
+        "tag": "n", 
+        "sinonim": [
+            "taman"
+        ]
+    }, 
+    "letusan": {
+        "tag": "n", 
+        "sinonim": [
+            "dentuman", 
+            "detonasi", 
+            "ledakan"
+        ]
+    }, 
+    "menenggekkan": {
+        "tag": "v", 
+        "sinonim": [
+            "menenggerkan", 
+            "menonggokkan", 
+            "menumpangkan"
+        ]
+    }, 
+    "singgah": {
+        "tag": "v", 
+        "sinonim": [
+            "mampir", 
+            "mengadar"
+        ]
+    }, 
+    "dederuk": {
+        "tag": "n", 
+        "sinonim": [
+            "balam", 
+            "puter", 
+            "tekukur"
+        ]
+    }, 
+    "berkat": {
+        "tag": "n", 
+        "sinonim": [
+            "berkah"
+        ]
+    }, 
+    "pengindahan": {
+        "tag": "n", 
+        "sinonim": [
+            "atensi", 
+            "perbenaan", 
+            "perhatian", 
+            "respons"
+        ]
+    }, 
+    "jalur": {
+        "tag": "n", 
+        "sinonim": [
+            "kolom", 
+            "pias", 
+            "alur", 
+            "balur akar", 
+            "ban", 
+            "baris", 
+            "belang", 
+            "carik", 
+            "coreng", 
+            "deret", 
+            "deretan", 
+            "galur", 
+            "garis(-garis)", 
+            "kirai", 
+            "lajur", 
+            "leret", 
+            "lerang", 
+            "lintasan", 
+            "loreng", 
+            "pelang", 
+            "rel", 
+            "rute", 
+            "sabuk", 
+            "salur", 
+            "senggatan", 
+            "trayek", 
+            "urat", 
+            "barisan", 
+            "jongkong", 
+            "kempang", 
+            "kolek", 
+            "perahu", 
+            "sagur"
+        ]
+    }, 
+    "kapur hidup": {
+        "tag": "n", 
+        "sinonim": [
+            "kalsiumoksida", 
+            "kapur kembang", 
+            "kapur mentah", 
+            "kapur tohor", 
+            "kuripan"
+        ]
+    }, 
+    "babut": {
+        "tag": "n", 
+        "sinonim": [
+            "ambal", 
+            "karpet", 
+            "permadani"
+        ]
+    }, 
+    "menimbulkan": {
+        "tag": "v", 
+        "sinonim": [
+            "melahirkan", 
+            "membangkitkan", 
+            "membangunkan", 
+            "membuat", 
+            "memicu", 
+            "mencetuskan", 
+            "mendatangkan", 
+            "menerbitkan", 
+            "mengakibatkan", 
+            "mengundang", 
+            "menyulut"
+        ]
+    }, 
+    "lisut": {
+        "tag": "a", 
+        "sinonim": [
+            "berkeriput", 
+            "berkerut-kerut", 
+            "kelambur", 
+            "kisut", 
+            "meringsing", 
+            "merunyut", 
+            "kempis", 
+            "seruh", 
+            "layu"
+        ]
+    }, 
+    "kepala keluarga": {
+        "tag": "n", 
+        "sinonim": [
+            "bapak", 
+            "patriark"
+        ]
+    }, 
+    "komposit": {
+        "tag": "n", 
+        "sinonim": [
+            "agregat", 
+            "campuran", 
+            "gabungan", 
+            "kombinasi", 
+            "paduan"
+        ]
+    }, 
+    "makin": {
+        "tag": "adv", 
+        "sinonim": [
+            "bahkan", 
+            "kian", 
+            "malahan"
+        ]
+    }, 
+    "purna": {
+        "tag": "a", 
+        "sinonim": [
+            "sempurna", 
+            "selesai"
+        ], 
+        "antonim": [
+            "pra"
+        ]
+    }, 
+    "menyatukan": {
+        "tag": "v", 
+        "sinonim": [
+            "memadukan", 
+            "membaurkan", 
+            "mempersatukan", 
+            "mempertalikan", 
+            "mempertemukan", 
+            "mencampurkan", 
+            "menggabungkan", 
+            "mengintegrasikan", 
+            "memfokus", 
+            "memumpun", 
+            "menghimpun", 
+            "mengumpulkan", 
+            "merampai", 
+            "merangkum"
+        ], 
+        "antonim": [
+            "memisahkan"
+        ]
+    }, 
+    "gerobak": {
+        "tag": "n", 
+        "sinonim": [
+            "pedati"
+        ]
+    }, 
+    "berlalu": {
+        "tag": "v", 
+        "sinonim": [
+            "berselang", 
+            "lampau", 
+            "lewat", 
+            "pergi", 
+            "berkalang tanah", 
+            "berlayar ", 
+            "berpulang", 
+            "berputih tulang", 
+            "gugur", 
+            "lewat ", 
+            "mangkat", 
+            "mati", 
+            "menarik nafas penghabisan", 
+            "menemui ajal", 
+            "meninggal", 
+            "sampai ajalnya", 
+            "sampai janjinya", 
+            "tewas", 
+            "tutup mata", 
+            "tutup usia", 
+            "wafat", 
+            "ki jangkang", 
+            "koit", 
+            "kojor", 
+            "mampus", 
+            "mati", 
+            "modar", 
+            "terjengkang"
+        ]
+    }, 
+    "pampang": {
+        "tag": "v", 
+        "sinonim": [
+            "memajang", 
+            "memasang"
+        ]
+    }, 
+    "kaprah": {
+        "tag": "a", 
+        "sinonim": [
+            "biasa", 
+            "lazim", 
+            "lumrah"
+        ]
+    }, 
+    "ucek": {
+        "tag": "v", 
+        "sinonim": [
+            "gilas", 
+            "gosok"
+        ]
+    }, 
+    "runsing": {
+        "tag": "a", 
+        "sinonim": [
+            "bingung", 
+            "cepat marah", 
+            "gelabut", 
+            "habis akal", 
+            "habis pikiran", 
+            "pening", 
+            "risau", 
+            "serabut perut", 
+            "terharu"
+        ]
+    }, 
+    "takdir": {
+        "tag": "n", 
+        "sinonim": [
+            "bilangan", 
+            "ganjaran", 
+            "garis hidup", 
+            "kadar", 
+            "ketentuan", 
+            "kodrat", 
+            "predestinasi", 
+            "qada dan qadar", 
+            "suratan"
+        ]
+    }, 
+    "kata majemuk": {
+        "tag": "n", 
+        "sinonim": [
+            "idiom", 
+            "ungkapan"
+        ]
+    }, 
+    "melagak": {
+        "tag": "v", 
+        "sinonim": [
+            "berlagak", 
+            "menakut-nakuti", 
+            "mengamang", 
+            "mengancam", 
+            "menggaham", 
+            "menggebah", 
+            "menggertak", 
+            "mengintimidasi"
+        ]
+    }, 
+    "keanekaan": {
+        "tag": "n", 
+        "sinonim": [
+            "kepelbagaian", 
+            "keragaman"
+        ], 
+        "antonim": [
+            "ketunggalan"
+        ]
+    }, 
+    "menembuskan": {
+        "tag": "v", 
+        "sinonim": [
+            "meneruskan"
+        ]
+    }, 
+    "mustahil": {
+        "tag": "a", 
+        "sinonim": [
+            "absurd", 
+            "bukan-bukan", 
+            "ganjilganjil", 
+            "lengkara", 
+            "muhal", 
+            "musykil", 
+            "tidaktidak"
+        ], 
+        "antonim": [
+            "munasabah"
+        ]
+    }, 
+    "kepanasan": {
+        "tag": "n", 
+        "sinonim": [
+            "kehangatan", 
+            "kemarahan"
+        ]
+    }, 
+    "pagan": {
+        "tag": "a", 
+        "sinonim": [
+            "gigih", 
+            "kekar", 
+            "kokoh", 
+            "kuat", 
+            "kukuh", 
+            "mantap", 
+            "tegap", 
+            "teguh"
+        ]
+    }, 
+    "mata perdagangan": {
+        "tag": "n", 
+        "sinonim": [
+            "komoditas"
+        ]
+    }, 
+    "penganggur": {
+        "tag": "a", 
+        "sinonim": [
+            "tunakarya"
+        ], 
+        "antonim": [
+            "pekerja"
+        ]
+    }, 
+    "geripis": {
+        "tag": "a", 
+        "sinonim": [
+            "cempek", 
+            "cempeng", 
+            "compeng", 
+            "compes", 
+            "gempil", 
+            "gerepes", 
+            "rempak", 
+            "rompeng", 
+            "rompes", 
+            "rumbing", 
+            "serpih", 
+            "somplak", 
+            "sontak", 
+            "sumbing"
+        ]
+    }, 
+    "tembak": {
+        "tag": "v", 
+        "sinonim": [
+            "tembakmenembak", 
+            "arah", 
+            "juntrungan", 
+            "maksud", 
+            "tujuan"
+        ]
+    }, 
+    "tutor": {
+        "tag": "n", 
+        "sinonim": [
+            "guru", 
+            "mentor", 
+            "pembimbing", 
+            "widyaiswara"
+        ]
+    }, 
+    "literal": {
+        "tag": "a", 
+        "sinonim": [
+            "harfiah", 
+            "verbatim", 
+            "lurus", 
+            "prosais"
+        ]
+    }, 
+    "sebetulnya": {
+        "tag": "a", 
+        "sinonim": [
+            "aktual", 
+            "nyata", 
+            "adv sebenarnya", 
+            "sedianya", 
+            "sesungguhnya", 
+            "tadinya"
+        ]
+    }, 
+    "kecil hati": {
+        "tag": "a", 
+        "sinonim": [
+            "jatuh semangat", 
+            "kecewa", 
+            "meringis", 
+            "tawar hati", 
+            "berputih mata ", 
+            "gusar", 
+            "kesal", 
+            "masygul", 
+            "patah hati", 
+            "rengat hati", 
+            "risi", 
+            "sakit hati", 
+            "tersakiti", 
+            "tersinggung", 
+            "bergidik", 
+            "ciut ", 
+            "cuak", 
+            "gamang", 
+            "gemang", 
+            "gentar ", 
+            "giris", 
+            "kecut ", 
+            "keder", 
+            "kimput", 
+            "menggeriap", 
+            "mengirik", 
+            "meremang", 
+            "merinding", 
+            "ngeri", 
+            "takut"
+        ]
+    }, 
+    "menganehkan": {
+        "tag": "v", 
+        "sinonim": [
+            "mengajaibkan", 
+            "mengganjilkan", 
+            "mengherankan"
+        ]
+    }, 
+    "mendada": {
+        "tag": "v", 
+        "sinonim": [
+            "menahan", 
+            "menangkis", 
+            "menghadang", 
+            "melawan", 
+            "menghadapi", 
+            "menjawab", 
+            "menongkah", 
+            "menyambut (serangan)", 
+            "menyongsong"
+        ]
+    }, 
+    "tergurat": {
+        "tag": "v", 
+        "sinonim": [
+            "terbeset", 
+            "tergarit", 
+            "tergores"
+        ]
+    }, 
+    "pahlawan": {
+        "tag": "n", 
+        "sinonim": [
+            "bahadur", 
+            "hero", 
+            "johan", 
+            "perwira", 
+            "satria", 
+            "wira"
+        ]
+    }, 
+    "universal": {
+        "tag": "a", 
+        "sinonim": [
+            "global", 
+            "internasional", 
+            "mendunia", 
+            "mondial", 
+            "semesta", 
+            "umum"
+        ], 
+        "antonim": [
+            "lokal"
+        ]
+    }, 
+    "pengap": {
+        "tag": "a", 
+        "sinonim": [
+            "sesak", 
+            "sumpek"
+        ], 
+        "antonim": [
+            "berangin"
+        ]
+    }, 
+    "setrum": {
+        "tag": "n", 
+        "sinonim": [
+            "cak elektrik", 
+            "listrik"
+        ]
+    }, 
+    "muhajat": {
+        "tag": "n", 
+        "sinonim": [
+            "pertelingkahan", 
+            "pertikaian", 
+            "perbantahan", 
+            "perselisihan", 
+            "perkelahian", 
+            "persengketaan", 
+            "pertentangan"
+        ]
+    }, 
+    "setruk": {
+        "tag": "n", 
+        "sinonim": [
+            "carik"
+        ]
+    }, 
+    "pencipta": {
+        "tag": "n", 
+        "sinonim": [
+            "inventor", 
+            "komponis", 
+            "kreator", 
+            "pembuat", 
+            "pengarang", 
+            "penggubah", 
+            "penyusun", 
+            "pereka cipta"
+        ]
+    }, 
+    "mencapit": {
+        "tag": "v", 
+        "sinonim": [
+            "memipit", 
+            "mengapit", 
+            "menjepit", 
+            "menyepit"
+        ]
+    }, 
+    "sinoptik": {
+        "tag": "a", 
+        "sinonim": [
+            "ringkas", 
+            "singkat"
+        ]
+    }, 
+    "pengerahan": {
+        "tag": "n", 
+        "sinonim": [
+            "mobilisasi", 
+            "penghimpunan"
+        ]
+    }, 
+    "pagelaran": {
+        "tag": "n", 
+        "sinonim": [
+            "pergelaran", 
+            "pertunjukan"
+        ]
+    }, 
+    "bergolek": {
+        "tag": "v", 
+        "sinonim": [
+            "berbaring", 
+            "menggeletak", 
+            "berguling", 
+            "menggelinding"
+        ]
+    }, 
+    "rumah": {
+        "tag": "n", 
+        "sinonim": [
+            "bait", 
+            "balai", 
+            "bangunan", 
+            "cungkup", 
+            "dewan", 
+            "gedung", 
+            "gerha", 
+            "gerogol", 
+            "griya", 
+            "graha", 
+            "khanah", 
+            "panti", 
+            "pejabat", 
+            "pondok", 
+            "rompok", 
+            "sudung", 
+            "vila", 
+            "wisma"
+        ]
+    }, 
+    "melegakan": {
+        "tag": "v", 
+        "sinonim": [
+            "membahagiakan", 
+            "memuaskan", 
+            "menggembirakan", 
+            "menggirangkan", 
+            "menyejukkan", 
+            "menyenangkan", 
+            "meriangkan"
+        ]
+    }, 
+    "berdinas": {
+        "tag": "v", 
+        "sinonim": [
+            "bekerja", 
+            "berkantor", 
+            "bertugas"
+        ], 
+        "antonim": [
+            "pensiun"
+        ]
+    }, 
+    "menyempit": {
+        "tag": "v", 
+        "sinonim": [
+            "mengecil", 
+            "mengerut", 
+            "mengisut", 
+            "menguncup", 
+            "menyusut", 
+            "ki menggerecoki", 
+            "mengganggu", 
+            "menyusahkan"
+        ]
+    }, 
+    "penekan": {
+        "tag": "n", 
+        "sinonim": [
+            "pemampat", 
+            "pemencet", 
+            "pemeras", 
+            "pendesak", 
+            "pengapit", 
+            "penggencet", 
+            "penindas", 
+            "penindih", 
+            "penjepit"
+        ]
+    }, 
+    "air terjun": {
+        "tag": "n", 
+        "sinonim": [
+            "air lata", 
+            "gerojokan", 
+            "jeram", 
+            "penderasan", 
+            "riam", 
+            "teladas"
+        ]
+    }, 
+    "mengkhawatirkan": {
+        "tag": "v", 
+        "sinonim": [
+            "membahayakan", 
+            "membingungkan", 
+            "memprihatinkan", 
+            "mencemaskan", 
+            "menggaduhkan", 
+            "menggelisahkan", 
+            "menggerunkan", 
+            "menumang", 
+            "menyelempangkan", 
+            "menyusahkan", 
+            "meresahkan", 
+            "merisaukan", 
+            "merusuhkan"
+        ]
+    }, 
+    "menyergap": {
+        "tag": "v", 
+        "sinonim": [
+            "menggerebek", 
+            "menggerompok", 
+            "menggeropyok", 
+            "menubruk ", 
+            "merejeng", 
+            "melipat ", 
+            "membekuk", 
+            "menangkap", 
+            "mencekal", 
+            "menciduk ", 
+            "mencomot ", 
+            "menyembai", 
+            "menyerempak", 
+            "menyerkap", 
+            "meringkus", 
+            "menahan", 
+            "menawan", 
+            "memegat", 
+            "mencegat", 
+            "mengadang"
+        ]
+    }, 
+    "denyutan": {
+        "tag": "n", 
+        "sinonim": [
+            "debaran", 
+            "gerakan", 
+            "getaran", 
+            "kedut"
+        ]
+    }, 
+    "dedel": {
+        "tag": "a", 
+        "sinonim": [
+            "betas", 
+            "buka", 
+            "koyak", 
+            "lepas", 
+            "retas (jahitan)", 
+            "robek", 
+            "sobek"
+        ]
+    }, 
+    "indra pencium": {
+        "tag": "n", 
+        "sinonim": [
+            "alat pencium", 
+            "alat penghidu", 
+            "hidung"
+        ]
+    }, 
+    "kesejahteraan": {
+        "tag": "n", 
+        "sinonim": [
+            "keselamatan", 
+            "kesentosaan", 
+            "ketenteraman"
+        ]
+    }, 
+    "menggarong": {
+        "tag": "v", 
+        "sinonim": [
+            "mencopet", 
+            "mencuri", 
+            "mengambil", 
+            "menjarah", 
+            "menodong", 
+            "menyamun", 
+            "menyerobot", 
+            "merampas", 
+            "merampok", 
+            "merebut", 
+            "merompak"
+        ]
+    }, 
+    "tengkarap": {
+        "tag": "a", 
+        "sinonim": [
+            "bedah", 
+            "binasa", 
+            "hancur lebur", 
+            "jahanam", 
+            "jebol", 
+            "luluh lantak", 
+            "musnah", 
+            "pecah", 
+            "remuk redam", 
+            "runtuh piuh"
+        ]
+    }, 
+    "berontak": {
+        "tag": "v", 
+        "sinonim": [
+            "meronta", 
+            "melawan"
+        ]
+    }, 
+    "tahapan": {
+        "tag": "n", 
+        "sinonim": [
+            "hierarki", 
+            "jenjang", 
+            "peringkat", 
+            "strata", 
+            "tangga ", 
+            "tingkatan"
+        ]
+    }, 
+    "meridian": {
+        "tag": "n", 
+        "sinonim": [
+            "derajah", 
+            "garis bujur"
+        ]
+    }, 
+    "berintrospeksi": {
+        "tag": "v", 
+        "sinonim": [
+            "bercermin", 
+            "berkaca", 
+            "bermawas diri", 
+            "mengoreksi diri"
+        ]
+    }, 
+    "memaklumkan": {
+        "tag": "v", 
+        "sinonim": [
+            "memberitahukan", 
+            "memproklamasikan", 
+            "memublikasikan", 
+            "menakrifkan", 
+            "mencanangkan", 
+            "menebarkan", 
+            "menerangkan", 
+            "mengabarkan", 
+            "mengembarkan", 
+            "mengumumkan", 
+            "menyiarkan", 
+            "mewartakan"
+        ]
+    }, 
+    "pemborosan": {
+        "tag": "n", 
+        "sinonim": [
+            "inefisiensi", 
+            "penghamburhamburan"
+        ], 
+        "antonim": [
+            "pengiritan"
+        ]
+    }, 
+    "tekun": {
+        "tag": "a", 
+        "sinonim": [
+            "asyik", 
+            "bersemangat", 
+            "bersungguhsungguh", 
+            "betah", 
+            "getol", 
+            "giat", 
+            "gigih", 
+            "intens", 
+            "keras hati", 
+            "khusyuk", 
+            "persisten", 
+            "rajin", 
+            "serius", 
+            "telaten"
+        ], 
+        "antonim": [
+            "main-main"
+        ]
+    }, 
+    "nyeri": {
+        "tag": "n", 
+        "sinonim": [
+            "sakit"
+        ]
+    }, 
+    "selepas": {
+        "tag": "p", 
+        "sinonim": [
+            "sesudah", 
+            "setamat", 
+            "setelah"
+        ]
+    }, 
+    "kumparan": {
+        "tag": "n", 
+        "sinonim": [
+            "catu", 
+            "gulungan", 
+            "koil", 
+            "sepul"
+        ]
+    }, 
+    "pagar adat": {
+        "tag": "n", 
+        "sinonim": [
+            "adat istiadat", 
+            "hukum adat", 
+            "tradisi"
+        ]
+    }, 
+    "dedes": {
+        "tag": "n", 
+        "sinonim": [
+            "luak", 
+            "musang", 
+            "jebat", 
+            "kesturi"
+        ]
+    }, 
+    "memercayai": {
+        "tag": "v", 
+        "sinonim": [
+            "memeluk", 
+            "menganut", 
+            "mengimani", 
+            "mengantepi", 
+            "meyakini"
+        ]
+    }, 
+    "aba-aba": {
+        "tag": "n", 
+        "sinonim": [
+            "arahan", 
+            "instruksi", 
+            "isyarat", 
+            "kode", 
+            "komando", 
+            "perintah", 
+            "petunjuk", 
+            "seruan", 
+            "suruhan", 
+            "tanda", 
+            "titah"
+        ]
+    }, 
+    "bengkalai": {
+        "tag": "v", 
+        "sinonim": [
+            "membiarkan", 
+            "mendamparkan", 
+            "mengabaikan", 
+            "mengacuhkan", 
+            "meninggalkan", 
+            "menyianyiakan"
+        ], 
+        "antonim": [
+            "memedulikan"
+        ]
+    }, 
+    "menafahus": {
+        "tag": "v", 
+        "sinonim": [
+            "meneliti", 
+            "menghalusi", 
+            "menginvestigasi", 
+            "mengusut", 
+            "menyelidiki", 
+            "menyelisik", 
+            "menyigi ", 
+            "menyudi", 
+            "meresekresek", 
+            "melacak", 
+            "memeriksa", 
+            "menggeledah"
+        ]
+    }, 
+    "motif": {
+        "tag": "n", 
+        "sinonim": [
+            "corak", 
+            "dekorasi", 
+            "figur", 
+            "hiasan", 
+            "konsep", 
+            "ornamen", 
+            "pola", 
+            "ragi", 
+            "tema", 
+            "warna", 
+            "dasar", 
+            "kesimpulan", 
+            "motivasi", 
+            "pendapat", 
+            "pokok", 
+            "tajuk"
+        ]
+    }, 
+    "membisikkan": {
+        "tag": "v", 
+        "sinonim": [
+            "mengisikkan", 
+            "merisikkan"
+        ]
+    }, 
+    "menyampul": {
+        "tag": "v", 
+        "sinonim": [
+            "memalut", 
+            "membungkus", 
+            "menguliti", 
+            "menyalut"
+        ]
+    }, 
+    "ketul": {
+        "tag": "n", 
+        "sinonim": [
+            "bongkah", 
+            "gumpal", 
+            "kepal", 
+            "pukah", 
+            "melipat", 
+            "menarik", 
+            "mengerutkan", 
+            "majal", 
+            "puntul", 
+            "tumpul"
+        ]
+    }, 
+    "pemuasan": {
+        "tag": "n", 
+        "sinonim": [
+            "pelampiasan", 
+            "pelepasan", 
+            "pemenuhan"
+        ]
+    }, 
+    "pembanyol": {
+        "tag": "n", 
+        "sinonim": [
+            "alan-alan", 
+            "badut", 
+            "komedian", 
+            "pelawak", 
+            "pengocok perut"
+        ]
+    }, 
+    "garda": {
+        "tag": "n", 
+        "sinonim": [
+            "centeng", 
+            "pengawal", 
+            "penjaga"
+        ]
+    }, 
+    "penelik": {
+        "tag": "n", 
+        "sinonim": [
+            "agen rahasia", 
+            "intel", 
+            "jasus", 
+            "matamata", 
+            "penyuluh ", 
+            "polisis rahasia", 
+            "reserse", 
+            "spion"
+        ]
+    }, 
+    "sekuriti": {
+        "tag": "n", 
+        "sinonim": [
+            "pengamanan", 
+            "penjagaan", 
+            "perlindungan", 
+            "proteksi"
+        ]
+    }, 
+    "kuku": {
+        "tag": "n", 
+        "sinonim": [
+            "cakar", 
+            "ceker", 
+            "ki cengkeram", 
+            "kekuasaan", 
+            "pengaruh", 
+            "tanduk "
+        ]
+    }, 
+    "balik gagang": {
+        "tag": "v", 
+        "sinonim": [
+            "berkhianat", 
+            "membelot", 
+            "menyebelah", 
+            "menyeberang"
+        ]
+    }, 
+    "sajak": {
+        "tag": "n", 
+        "sinonim": [
+            "persamaan bunyi", 
+            "persesuaian bunyi", 
+            "rima", 
+            "n puisi", 
+            "sanjak", 
+            "a cocok", 
+            "mengena", 
+            "pantas", 
+            "patut"
+        ]
+    }, 
+    "sambil lalu": {
+        "tag": "adv", 
+        "sinonim": [
+            "sepintas lalu"
+        ]
+    }, 
+    "gila babi": {
+        "tag": "a", 
+        "sinonim": [
+            "ayan", 
+            "epilepsi", 
+            "pitam babi", 
+            "sawan"
+        ]
+    }, 
+    "berkaca": {
+        "tag": "v", 
+        "sinonim": [
+            "becermin", 
+            "mengaca", 
+            "ki mencontoh"
+        ]
+    }, 
+    "mendongeng": {
+        "tag": "v", 
+        "sinonim": [
+            "bercerita", 
+            "berkisah", 
+            "mengarang", 
+            "merawi"
+        ]
+    }, 
+    "mengompori": {
+        "tag": "v", 
+        "sinonim": [
+            "ki  memanas-manasi", 
+            "menggarangkan", 
+            "menyirapkan", 
+            "meradangkan", 
+            "memprovokasi", 
+            "menghasut", 
+            "mengilik-ngilik", 
+            "menusuk-nusuk"
+        ]
+    }, 
+    "pernik": {
+        "tag": "n", 
+        "sinonim": [
+            "detail", 
+            "serpih"
+        ]
+    }, 
+    "gula kasar": {
+        "tag": "n", 
+        "sinonim": [
+            "gula kental", 
+            "gula pekat", 
+            "gula ganting"
+        ]
+    }, 
+    "pertanyaan": {
+        "tag": "n", 
+        "sinonim": [
+            "interogasi", 
+            "perbahasan", 
+            "perbincangan", 
+            "perdebatan", 
+            "tanya", 
+            "perkara", 
+            "masalah", 
+            "permasalahan", 
+            "persoalan", 
+            "problem", 
+            "tanda tanya", 
+            "teka-teki"
+        ], 
+        "antonim": [
+            "jawaban"
+        ]
+    }, 
+    "bodong": {
+        "tag": "a", 
+        "sinonim": [
+            "bujal", 
+            "membersil", 
+            "tersembul"
+        ]
+    }, 
+    "rawit": {
+        "tag": "a", 
+        "sinonim": [
+            "kecil", 
+            "gamelan", 
+            "seni suara"
+        ]
+    }, 
+    "membeo": {
+        "tag": "v", 
+        "sinonim": [
+            "membebek", 
+            "mencontoh", 
+            "meneladan", 
+            "mengekor", 
+            "menguntit", 
+            "meniru", 
+            "menjiplak", 
+            "menyerupai", 
+            "latah", 
+            "ikut-ikutan"
+        ]
+    }, 
+    "pemuja": {
+        "tag": "n", 
+        "sinonim": [
+            "fans ", 
+            "peminat", 
+            "pengagum", 
+            "penggemar", 
+            "penyembah"
+        ]
+    }, 
+    "tampang": {
+        "tag": "n", 
+        "sinonim": [
+            "air muka", 
+            "bentuk", 
+            "durja", 
+            "ekspresi", 
+            "muka", 
+            "paras", 
+            "potongan", 
+            "raut", 
+            "roman", 
+            "rona", 
+            "rupa", 
+            "tampan", 
+            "wajah", 
+            "irisan", 
+            "keratan", 
+            "potongan", 
+            "diameter", 
+            "garis tengah", 
+            "sengkang"
+        ]
+    }, 
+    "mencukupi": {
+        "tag": "v", 
+        "sinonim": [
+            "memenuhi", 
+            "mengkover", 
+            "menutup", 
+            "melengkapi", 
+            "menggenapi", 
+            "menokok", 
+            "menyempurnakan", 
+            "a layak", 
+            "memadai", 
+            "sampai"
+        ]
+    }, 
+    "bernilai": {
+        "tag": "v", 
+        "sinonim": [
+            "berharga", 
+            "berfaedah", 
+            "berguna", 
+            "bermanfaat", 
+            "bermaslahat", 
+            "a konstruktif", 
+            "produktif", 
+            "v berbobot", 
+            "berkualitas", 
+            "bermutu"
+        ]
+    }, 
+    "mengaibkan": {
+        "tag": "v", 
+        "sinonim": [
+            "memalukan", 
+            "mempermalukan", 
+            "mencacatkan", 
+            "mencelakan", 
+            "mencerca", 
+            "mengecam", 
+            "menghinakan", 
+            "menistakan", 
+            "menodai"
+        ]
+    }, 
+    "cemuas": {
+        "tag": "a", 
+        "sinonim": [
+            "berpalit-palit", 
+            "bersokom", 
+            "celemotan", 
+            "celomok", 
+            "cemong", 
+            "comot", 
+            "corengmoreng", 
+            "kotor"
+        ]
+    }, 
+    "menyucikan": {
+        "tag": "v", 
+        "sinonim": [
+            "memberkati", 
+            "menahbiskan"
+        ]
+    }, 
+    "putih tulang n": {
+        "tag": "v", 
+        "sinonim": [
+            "ki meninggal", 
+            "wafat"
+        ]
+    }, 
+    "bertekun": {
+        "tag": "v", 
+        "sinonim": [
+            "bergelut", 
+            "bergulat", 
+            "berkutat"
+        ]
+    }, 
+    "menghampakan": {
+        "tag": "v", 
+        "sinonim": [
+            "mengosongkan", 
+            "mematahkan", 
+            "memengkalkan", 
+            "mengecewakan", 
+            "mengesalkan", 
+            "menggagalkan", 
+            "menggondokkan", 
+            "menghampakan", 
+            "menjengkelkan", 
+            "menyebalkan", 
+            "menyia-nyiakan"
+        ]
+    }, 
+    "murang": {
+        "tag": "n", 
+        "sinonim": [
+            "api-api", 
+            "sumbu", 
+            "tali api", 
+            "tunam", 
+            "upet"
+        ]
+    }, 
+    "merefleksikan": {
+        "tag": "v", 
+        "sinonim": [
+            "memantulkan", 
+            "menggambarkan", 
+            "memikirkan", 
+            "mempertimbangkan", 
+            "menadaburkan", 
+            "merenungkan"
+        ]
+    }, 
+    "berprofesi": {
+        "tag": "v", 
+        "sinonim": [
+            "bekerja", 
+            "berperan", 
+            "menjabat", 
+            "menjadi"
+        ]
+    }, 
+    "mandraguna": {
+        "tag": "a", 
+        "sinonim": [
+            "ampuh", 
+            "berilmu", 
+            "berisi ", 
+            "digdaya", 
+            "kebal", 
+            "pintar", 
+            "sakti", 
+            "weduk"
+        ]
+    }, 
+    "penarung": {
+        "tag": "n", 
+        "sinonim": [
+            "penghalang", 
+            "penghambat", 
+            "perintang", 
+            "duri", 
+            "onak"
+        ]
+    }, 
+    "riap": {
+        "tag": "v", 
+        "sinonim": [
+            "bertambah besar", 
+            "bertambah"
+        ]
+    }, 
+    "jampi-jampi": {
+        "tag": "n", 
+        "sinonim": [
+            "aji-aji", 
+            "mantra", 
+            "pesona", 
+            "sirep"
+        ]
+    }, 
+    "ludes": {
+        "tag": "v", 
+        "sinonim": [
+            "amblas", 
+            "bersih ", 
+            "binasa", 
+            "habis", 
+            "kikis", 
+            "labas", 
+            "licin ", 
+            "lindang", 
+            "lingkap", 
+            "putus", 
+            "tandas", 
+            "tandus", 
+            "timpas "
+        ]
+    }, 
+    "pedas": {
+        "tag": "a", 
+        "sinonim": [
+            "bengis", 
+            "berbisa", 
+            "bersanding", 
+            "cempala"
+        ]
+    }, 
+    "pedar": {
+        "tag": "a", 
+        "sinonim": [
+            "anyir", 
+            "getir", 
+            "perat", 
+            "tengik", 
+            "ki benci", 
+            "dongkol", 
+            "gemas", 
+            "gregetan", 
+            "gondok", 
+            "jengkel", 
+            "keki ", 
+            "kesal", 
+            "mangkel", 
+            "masygul", 
+            "mengandung hati ", 
+            "mengkal", 
+            "pegal hati", 
+            "redut", 
+            "rongseng", 
+            "salah hati", 
+            "sebal"
+        ]
+    }, 
+    "bergejolak": {
+        "tag": "v", 
+        "sinonim": [
+            "bergolak", 
+            "meluap", 
+            "membeludak", 
+            "membual", 
+            "mendidih", 
+            "menggelegak", 
+            "tumpah ruah", 
+            "bercabul", 
+            "berkobar", 
+            "meletus", 
+            "pecah"
+        ]
+    }, 
+    "himne": {
+        "tag": "n", 
+        "sinonim": [
+            "gita puja", 
+            "lagu pujian"
+        ]
+    }, 
+    "diploma": {
+        "tag": "n", 
+        "sinonim": [
+            "akta", 
+            "brevet", 
+            "ijazah", 
+            "kelulusan", 
+            "piagam", 
+            "rapor", 
+            "sertifikat", 
+            "sijil", 
+            "tanda tamat"
+        ]
+    }, 
+    "ketaksaan": {
+        "tag": "n", 
+        "sinonim": [
+            "ambiguitas", 
+            "kesamaran", 
+            "makna ganda"
+        ]
+    }, 
+    "rias": {
+        "tag": "v", 
+        "sinonim": [
+            "hias", 
+            "solek"
+        ]
+    }, 
+    "pemandangan": {
+        "tag": "n", 
+        "sinonim": [
+            "pandangan", 
+            "pengamatan", 
+            "penglihatan", 
+            "visi", 
+            "pengetahuan", 
+            "wawasan", 
+            "lansekap", 
+            "panorama", 
+            "tamasya", 
+            "vista", 
+            "pembicaraan", 
+            "ulasan", 
+            "uraian"
+        ]
+    }, 
+    "pedal": {
+        "tag": "n", 
+        "sinonim": [
+            "dayung", 
+            "injak-injak", 
+            "rakap"
+        ]
+    }, 
+    "menyampuk": {
+        "tag": "v", 
+        "sinonim": [
+            "melanggar", 
+            "membentur", 
+            "menabrak", 
+            "mengantuk", 
+            "menubruk", 
+            "menyimpuk", 
+            "menangkis", 
+            "mengelakkan", 
+            "menyilat", 
+            "menampel", 
+            "menepis", 
+            "memenggal lidah", 
+            "mengerat lidah", 
+            "menceletuk", 
+            "menengahi", 
+            "mengaru", 
+            "menginterupsi", 
+            "menukas", 
+            "menyelang", 
+            "mematahkan", 
+            "memintas", 
+            "memotong", 
+            "memutus", 
+            "meningkah", 
+            "menyarung", 
+            "menyela", 
+            "menyerobot", 
+            "ikut-ikut", 
+            "mencampuri", 
+            "mengurusi", 
+            "serta-menyertai"
+        ]
+    }, 
+    "menentu": {
+        "tag": "a", 
+        "sinonim": [
+            "tentu", 
+            "v berketentuan"
+        ]
+    }, 
+    "kesatuan": {
+        "tag": "n", 
+        "sinonim": [
+            "keesaan", 
+            "ketunggalan", 
+            "integritas", 
+            "kebulatan", 
+            "kepaduan", 
+            "keutuhan", 
+            "koherensi", 
+            "satuan"
+        ]
+    }, 
+    "sadap": {
+        "tag": "v", 
+        "sinonim": [
+            "gores", 
+            "toreh"
+        ]
+    }, 
+    "menstruasi": {
+        "tag": "v", 
+        "sinonim": [
+            "bocor", 
+            "datang bulan", 
+            "haid", 
+            "halangan", 
+            "membawa bulan", 
+            "mens"
+        ]
+    }, 
+    "menyeramkan": {
+        "tag": "v", 
+        "sinonim": [
+            "menakutkan", 
+            "mencabarkan", 
+            "mencekam", 
+            "mendebarkan", 
+            "menegangkan", 
+            "mengecutkan", 
+            "mengerikan", 
+            "menggentarkan", 
+            "menggetarkan", 
+            "merindingkan"
+        ]
+    }, 
+    "bandel": {
+        "tag": "a", 
+        "sinonim": [
+            "babil", 
+            "badung", 
+            "bengal", 
+            "binal", 
+            "brengsek", 
+            "degil", 
+            "gecul", 
+            "gelo", 
+            "gemblung", 
+            "keras"
+        ]
+    }, 
+    "memelihara": {
+        "tag": "v", 
+        "sinonim": [
+            "melantan", 
+            "mengasuh", 
+            "mengopeni", 
+            "menjaga", 
+            "merawat", 
+            "membela", 
+            "menegakkan", 
+            "mempunyai", 
+            "menanggung", 
+            "mengampu", 
+            "membudidayakan", 
+            "mengupayakan", 
+            "mengusahakan", 
+            "memiara", 
+            "menernakkan", 
+            "menyelamatkan", 
+            "melindungi", 
+            "mengayomi"
+        ], 
+        "antonim": [
+            "membiarkan"
+        ]
+    }, 
+    "sapaan": {
+        "tag": "n", 
+        "sinonim": [
+            "teguran", 
+            "ucapan", 
+            "julukan", 
+            "nama", 
+            "panggilan", 
+            "sebutan"
+        ]
+    }, 
+    "berbelitan": {
+        "tag": "v", 
+        "sinonim": [
+            "berpalun-palun", 
+            "berpelukan", 
+            "berpilin", 
+            "berpiuh", 
+            "berpulas", 
+            "seluk-semeluk"
+        ]
+    }, 
+    "potlot": {
+        "tag": "n", 
+        "sinonim": [
+            "pensil"
+        ]
+    }, 
+    "baruh": {
+        "tag": "n", 
+        "sinonim": [
+            "dataran rendah", 
+            "kaki bukit", 
+            "kaki gunung", 
+            "lembah", 
+            "lembang", 
+            "lurah", 
+            "ngarai"
+        ]
+    }, 
+    "kampil": {
+        "tag": "n", 
+        "sinonim": [
+            "kelewang", 
+            "pedang"
+        ]
+    }, 
+    "menanggapi": {
+        "tag": "v", 
+        "sinonim": [
+            "meladeni", 
+            "melayani", 
+            "melihat", 
+            "memahami", 
+            "memandang", 
+            "membalas", 
+            "memikirkan", 
+            "memperhatikan", 
+            "menafsir", 
+            "menangkis", 
+            "mencerap", 
+            "menduga", 
+            "menelaah", 
+            "menerima", 
+            "menerka", 
+            "menganggap", 
+            "mengetahui", 
+            "mengomentari", 
+            "menimpali", 
+            "menjawab", 
+            "menyahut", 
+            "menyambut", 
+            "menyimpulkan", 
+            "meramalkan", 
+            "merespons", 
+            "merumuskan"
+        ], 
+        "antonim": [
+            "membiarkan"
+        ]
+    }, 
+    "kelengkungan": {
+        "tag": "v", 
+        "sinonim": [
+            "kurvatur"
+        ]
+    }, 
+    "barut": {
+        "tag": "n", 
+        "sinonim": [
+            "balut", 
+            "bebat", 
+            "perban", 
+            "bedung", 
+            "balur", 
+            "lumas", 
+            "oles"
+        ]
+    }, 
+    "ejawantah": {
+        "tag": "v", 
+        "sinonim": [
+            "melaksanakan", 
+            "memanifestasikan", 
+            "mengaktualkan", 
+            "mengamalkan", 
+            "mengimplementasikan", 
+            "menjalankan", 
+            "menjelmakan", 
+            "merealisasikan", 
+            "mewujudkan"
+        ]
+    }, 
+    "berprasangka": {
+        "tag": "v", 
+        "sinonim": [
+            "mencurigai", 
+            "mensyaki"
+        ]
+    }, 
+    "pulang balik": {
+        "tag": "v", 
+        "sinonim": [
+            "pulang pergi", 
+            "berkelintaran", 
+            "bolak-balik", 
+            "celam-celum", 
+            "celas-celus", 
+            "hilirmudik", 
+            "ke sana-ke mari", 
+            "keluar masuk", 
+            "kian ke mari", 
+            "kolang-kaling", 
+            "melangsir", 
+            "mencoang-coang", 
+            "mondar-mandir", 
+            "pulang-pergi", 
+            "ulang-alik"
+        ]
+    }, 
+    "daerah tingkat": {
+        "tag": "n", 
+        "sinonim": [
+            "II kabupaten", 
+            "kota"
+        ]
+    }, 
+    "tembereng": {
+        "tag": "n", 
+        "sinonim": [
+            "belahan", 
+            "beling", 
+            "kepingan", 
+            "pecahan", 
+            "serpihan", 
+            "gerabah", 
+            "keramik", 
+            "pecah"
+        ]
+    }, 
+    "namun": {
+        "tag": "p", 
+        "sinonim": [
+            "akan tetapi", 
+            "tetapi", 
+            "walakin"
+        ]
+    }, 
+    "mengungkit-ungkit": {
+        "tag": "v", 
+        "sinonim": [
+            "membangkit-bangkit", 
+            "membongkar-bongkar", 
+            "menempelak", 
+            "menemperau", 
+            "menggugat", 
+            "mengorek-ngorek", 
+            "menyentuh-nyentuh", 
+            "menyinggung-nyinggung"
+        ]
+    }, 
+    "menabur": {
+        "tag": "v", 
+        "sinonim": [
+            "menebar", 
+            "mengaur", 
+            "mengawur", 
+            "menghambur", 
+            "menyebar"
+        ]
+    }, 
+    "inventif": {
+        "tag": "a", 
+        "sinonim": [
+            "imajinatif", 
+            "inovatif", 
+            "kreatif", 
+            "produktif"
+        ]
+    }, 
+    "jantung hati": {
+        "tag": "n", 
+        "sinonim": [
+            "buah hati", 
+            "buah mata", 
+            "pujaan", 
+            "kekasih", 
+            "kesayangan", 
+            "mahkota", 
+            "nyawa "
+        ]
+    }, 
+    "persahabatan": {
+        "tag": "n", 
+        "sinonim": [
+            "perkawanan", 
+            "pertemanan", 
+            "silaturahmi"
+        ]
+    }, 
+    "nadam": {
+        "tag": "n", 
+        "sinonim": [
+            "penjelasan", 
+            "uraian"
+        ]
+    }, 
+    "barang apa": {
+        "tag": "adv", 
+        "sinonim": [
+            "apa saja", 
+            "segala sesuatu"
+        ]
+    }, 
+    "terkena": {
+        "tag": "v", 
+        "sinonim": [
+            "terhantam", 
+            "tersentuh", 
+            "tertimpa"
+        ]
+    }, 
+    "hias": {
+        "tag": "v", 
+        "sinonim": [
+            "memanjang", 
+            "mempercantik", 
+            "memperelok", 
+            "memperindah", 
+            "mempersolek", 
+            "mendandankan", 
+            "mengadunkan", 
+            "menggambari", 
+            "mengumaikan"
+        ]
+    }, 
+    "bandasrayan": {
+        "tag": "n", 
+        "sinonim": [
+            "(harta) gana gini", 
+            "seguna sekaya", 
+            "suarang"
+        ]
+    }, 
+    "mementahkan": {
+        "tag": "v", 
+        "sinonim": [
+            "memansukhkan", 
+            "membatalkan", 
+            "mencabut", 
+            "mencoret", 
+            "menegasikan", 
+            "menganulir", 
+            "menggugurkan", 
+            "menghapuskan", 
+            "meniadakan"
+        ]
+    }, 
+    "perikatan": {
+        "tag": "n", 
+        "sinonim": [
+            "habitat", 
+            "koalisi", 
+            "pergabungan", 
+            "perhubungan", 
+            "perkaitan", 
+            "perkumpulan", 
+            "persatuan", 
+            "persekutuan", 
+            "perserikatan", 
+            "pertautan", 
+            "syarikat", 
+            "akad", 
+            "janji", 
+            "komitmen", 
+            "kontrak", 
+            "perjanjian", 
+            "permufakatan", 
+            "persetujuan", 
+            "susunan", 
+            "rangkaian", 
+            "hubungan"
+        ]
+    }, 
+    "horizon": {
+        "tag": "n", 
+        "sinonim": [
+            "cakrawala", 
+            "falak", 
+            "kaki langit", 
+            "lengkung langit", 
+            "tepi langit", 
+            "ufuk"
+        ]
+    }, 
+    "mengonsumsi": {
+        "tag": "v", 
+        "sinonim": [
+            "memakai", 
+            "menggunakan", 
+            "melahap", 
+            "memajuh", 
+            "memakan", 
+            "menyantap"
+        ]
+    }, 
+    "todong": {
+        "tag": "v", 
+        "sinonim": [
+            "memalak", 
+            "memeras", 
+            "mengompas ", 
+            "ki mendapuk", 
+            "mendaulat"
+        ]
+    }, 
+    "beterjunan": {
+        "tag": "v", 
+        "sinonim": [
+            "berjatuhan", 
+            "berlompatan", 
+            "berhamburan"
+        ]
+    }, 
+    "perdu": {
+        "tag": "n", 
+        "sinonim": [
+            "kelompok", 
+            "kumpulan", 
+            "perindukan", 
+            "rumpun", 
+            "rungkun"
+        ]
+    }, 
+    "wisatawan": {
+        "tag": "n", 
+        "sinonim": [
+            "pelancong", 
+            "pelawat", 
+            "pengunjung", 
+            "petandang", 
+            "turis"
+        ]
+    }, 
+    "simultan": {
+        "tag": "a", 
+        "sinonim": [
+            "berbarengan", 
+            "berbetulan", 
+            "bersama-sama", 
+            "serempak", 
+            "serentak"
+        ]
+    }, 
+    "menyelubungi": {
+        "tag": "v", 
+        "sinonim": [
+            "melingkupi", 
+            "meliputi", 
+            "memayungi", 
+            "mengalingi", 
+            "mengelumuni", 
+            "menggabuk", 
+            "menggelimuni", 
+            "menudungi", 
+            "menutupi", 
+            "menyelangkupi", 
+            "menyelimuti", 
+            "menyerkup", 
+            "menyungkup", 
+            "merahap", 
+            "merangkup", 
+            "merungkup", 
+            "ki menabiri", 
+            "menutupi", 
+            "menyembunyikan", 
+            "menopengi"
+        ]
+    }, 
+    "melepasi": {
+        "tag": "v", 
+        "sinonim": [
+            "mempreteli", 
+            "mencopoti", 
+            "merontokkan", 
+            "membayar", 
+            "menebus", 
+            "menunaikan", 
+            "memenuhi", 
+            "mencukupi", 
+            "menutup"
+        ]
+    }, 
+    "curiga": {
+        "tag": "a", 
+        "sinonim": [
+            "berprasangka", 
+            "menaruh syak", 
+            "ragu", 
+            "rambang", 
+            "sangsi", 
+            "suuzan", 
+            "awas", 
+            "berhati-hati", 
+            "syak wasangka", 
+            "waspada"
+        ], 
+        "antonim": [
+            "percaya"
+        ]
+    }, 
+    "jari": {
+        "tag": "n", 
+        "sinonim": [
+            "jemari", 
+            "deriji ", 
+            "ujung tangan"
+        ]
+    }, 
+    "ekstensif": {
+        "tag": "a", 
+        "sinonim": [
+            "ensiklopedis", 
+            "komprehensif", 
+            "lengkap", 
+            "luas", 
+            "menyeluruh"
+        ], 
+        "antonim": [
+            "parsial"
+        ]
+    }, 
+    "perdusunan": {
+        "tag": "n", 
+        "sinonim": [
+            "perdesaan", 
+            "perkampungan"
+        ]
+    }, 
+    "pendatang": {
+        "tag": "n", 
+        "sinonim": [
+            "ekspatriat", 
+            "imigran", 
+            "orang"
+        ], 
+        "antonim": [
+            "pribumi"
+        ]
+    }, 
+    "bulus": {
+        "tag": "n", 
+        "sinonim": [
+            "dari-dari", 
+            "kura-kura", 
+            "labi-labi", 
+            "pi", 
+            "tuntung"
+        ]
+    }, 
+    "cuma-cuma": {
+        "tag": "a", 
+        "sinonim": [
+            "bebas", 
+            "gratis", 
+            "prodeo", 
+            "lancut", 
+            "percuma", 
+            "sia-sia"
+        ], 
+        "antonim": [
+            "bayar"
+        ]
+    }, 
+    "getah": {
+        "tag": "n", 
+        "sinonim": [
+            "nuftah"
+        ]
+    }, 
+    "belacan": {
+        "tag": "n", 
+        "sinonim": [
+            "terasi", 
+            "kucing hutan", 
+            "meong congkok"
+        ]
+    }, 
+    "menghitung": {
+        "tag": "v", 
+        "sinonim": [
+            "membagi", 
+            "membilang", 
+            "memikirkan", 
+            "memperkirakan", 
+            "mempertimbangkan", 
+            "menaksir", 
+            "mencongak", 
+            "mengali", 
+            "mengestimasi", 
+            "mengurangi", 
+            "menjumlah", 
+            "mereken"
+        ]
+    }, 
+    "menggerutu": {
+        "tag": "v", 
+        "sinonim": [
+            "bersungut-sungut", 
+            "berturatura", 
+            "marah-marah", 
+            "mencomel", 
+            "menggerendeng", 
+            "menggerundel", 
+            "mengomel", 
+            "meratus", 
+            "merengut", 
+            "merutuk"
+        ]
+    }, 
+    "getar": {
+        "tag": "n", 
+        "sinonim": [
+            "gentaran", 
+            "getaran", 
+            "guncangan", 
+            "v"
+        ]
+    }, 
+    "getas": {
+        "tag": "a", 
+        "sinonim": [
+            "empuk", 
+            "getis", 
+            "lempung", 
+            "lunak", 
+            "peroi", 
+            "rapuh", 
+            "repas", 
+            "tepok"
+        ]
+    }, 
+    "caling": {
+        "tag": "n", 
+        "sinonim": [
+            "saing", 
+            "suing", 
+            "taring"
+        ]
+    }, 
+    "pengertian": {
+        "tag": "n", 
+        "sinonim": [
+            "pemahaman", 
+            "penafsiran", 
+            "penguraian", 
+            "penjelasan", 
+            "permakluman", 
+            "persetujuan", 
+            "pertimbangan", 
+            "tanggapan"
+        ]
+    }, 
+    "serba": {
+        "tag": "a", 
+        "sinonim": [
+            "aneka macam", 
+            "aneka ragam", 
+            "pancaragam", 
+            "rupa-rupa", 
+            "warnawarni"
+        ], 
+        "antonim": [
+            "sama"
+        ]
+    }, 
+    "akurasi": {
+        "tag": "n", 
+        "sinonim": [
+            "kecermatan", 
+            "kehati-hatian", 
+            "kejituan", 
+            "kesaksamaan", 
+            "ketelitian", 
+            "ketepatan"
+        ]
+    }, 
+    "goreng": {
+        "tag": "v", 
+        "sinonim": [
+            "menumis", 
+            "menyelar", 
+            "menggongseng", 
+            "menyangrai", 
+            "merendang"
+        ]
+    }, 
+    "tersendiri": {
+        "tag": "v", 
+        "sinonim": [
+            "kesorangan ", 
+            "terasing", 
+            "terkucil", 
+            "terpencil", 
+            "terpisah", 
+            "tersaku", 
+            "tersisih"
+        ]
+    }, 
+    "asam garam": {
+        "tag": "a", 
+        "sinonim": [
+            "ki liku-liku kehidupan", 
+            "pengalaman", 
+            "suka duka", 
+            "suka duka kehidupan"
+        ]
+    }, 
+    "sauk": {
+        "tag": "n", 
+        "sinonim": [
+            "erang", 
+            "keluh", 
+            "ratap"
+        ]
+    }, 
+    "tertagak-tagak": {
+        "tag": "v", 
+        "sinonim": [
+            "terputus-putus", 
+            "tertahantahan", 
+            "tertangguh-tangguh"
+        ], 
+        "antonim": [
+            "tergesa-gesa"
+        ]
+    }, 
+    "pemanjat": {
+        "tag": "n", 
+        "sinonim": [
+            "pendaki"
+        ]
+    }, 
+    "menghujat": {
+        "tag": "v", 
+        "sinonim": [
+            "memaki", 
+            "memburukkan", 
+            "memfitnah", 
+            "mencaci", 
+            "mendiskreditkan", 
+            "mengumpat", 
+            "merampus", 
+            "menghitamkan", 
+            "menjahatkan", 
+            "menjelek-jelekkan", 
+            "mencemari", 
+            "mencoreng", 
+            "menodai"
+        ], 
+        "antonim": [
+            "memuji"
+        ]
+    }, 
+    "mengkis": {
+        "tag": "v", 
+        "sinonim": [
+            "berkoar", 
+            "berteriak", 
+            "memanggil"
+        ]
+    }, 
+    "kiriman": {
+        "tag": "n", 
+        "sinonim": [
+            "antaran", 
+            "bingkisan", 
+            "paket", 
+            "pesanan"
+        ]
+    }, 
+    "pecah belah": {
+        "tag": "v", 
+        "sinonim": [
+            "cerai berai", 
+            "terpisah-pisah", 
+            "terserak", 
+            "n gerabah", 
+            "keramik", 
+            "porselen", 
+            "tembikar", 
+            "n beling", 
+            "temberang"
+        ]
+    }, 
+    "ingat-ingat": {
+        "tag": "v", 
+        "sinonim": [
+            "camkan", 
+            "cermat-cermat", 
+            "hatihati", 
+            "hemat-hemat", 
+            "jimat", 
+            "perdata", 
+            "perhatikan", 
+            "saksama", 
+            "tangar", 
+            "teliti", 
+            "waspada"
+        ]
+    }, 
+    "sempoyongan": {
+        "tag": "a", 
+        "sinonim": [
+            "terhuyung-huyung", 
+            "terkemut-kemut", 
+            "tersendeng-sendeng"
+        ]
+    }, 
+    "berdakwah": {
+        "tag": "v", 
+        "sinonim": [
+            "berceramah", 
+            "berkhotbah", 
+            "berseru", 
+            "bertablig"
+        ]
+    }, 
+    "nama": {
+        "tag": "n", 
+        "sinonim": [
+            "asma", 
+            "cap", 
+            "gelar", 
+            "identitas", 
+            "jenama", 
+            "julukan", 
+            "kata", 
+            "label", 
+            "merek", 
+            "panggilan", 
+            "predikat", 
+            "sapaan", 
+            "sebutan", 
+            "status", 
+            "tanda", 
+            "tengara", 
+            "terma", 
+            "titel", 
+            "kebaikan", 
+            "kebesaran", 
+            "kehormatan", 
+            "kemasyhuran", 
+            "kemegahan", 
+            "kemuliaan", 
+            "merek ", 
+            "nama baik", 
+            "pamor", 
+            "penghargaan", 
+            "prestise", 
+            "pujian", 
+            "reputasi"
+        ]
+    }, 
+    "masir": {
+        "tag": "v", 
+        "sinonim": [
+            "berbutir-butir"
+        ]
+    }, 
+    "leluhur": {
+        "tag": "n", 
+        "sinonim": [
+            "bibit buwit", 
+            "cikal bakal", 
+            "kakek moyang", 
+            "nenek moyang", 
+            "karuhun", 
+            "onyang", 
+            "pendahulu", 
+            "pitarah", 
+            "poyang", 
+            "sumber"
+        ]
+    }, 
+    "term": {
+        "tag": "n", 
+        "sinonim": [
+            "istilah", 
+            "kata", 
+            "nama", 
+            "sebutan", 
+            "terminologi", 
+            "termin", 
+            "kondisi", 
+            "limitasi", 
+            "pembatasan", 
+            "prasyarat"
+        ]
+    }, 
+    "ongkos": {
+        "tag": "n", 
+        "sinonim": [
+            "bea", 
+            "belanja", 
+            "biaya", 
+            "bayaran", 
+            "upah"
+        ]
+    }, 
+    "lingkap": {
+        "tag": "a", 
+        "sinonim": [
+            "amblas", 
+            "bersih ", 
+            "habis", 
+            "kikis", 
+            "labas", 
+            "licin ", 
+            "lindang", 
+            "ludes", 
+            "putus", 
+            "tandas", 
+            "tandus", 
+            "timpas"
+        ]
+    }, 
+    "ekspeditor": {
+        "tag": "n", 
+        "sinonim": [
+            "peneliti", 
+            "pengembara", 
+            "penjelajah"
+        ]
+    }, 
+    "masin": {
+        "tag": "a", 
+        "sinonim": [
+            "asin", 
+            "payau"
+        ]
+    }, 
+    "sunyi": {
+        "tag": "a", 
+        "sinonim": [
+            "hening", 
+            "nyenyat", 
+            "ranah", 
+            "senyap", 
+            "sepi", 
+            "sirep", 
+            "tenang", 
+            "diam", 
+            "lengang", 
+            "mati"
+        ], 
+        "antonim": [
+            "ramai"
+        ]
+    }, 
+    "mendebarkan": {
+        "tag": "v", 
+        "sinonim": [
+            "ki menakutkan", 
+            "mencabarkan", 
+            "mencekam", 
+            "menegangkan", 
+            "mengerikan", 
+            "menggentarkan", 
+            "menyeramkan", 
+            "merindingkan"
+        ]
+    }, 
+    "sembari": {
+        "tag": "p", 
+        "sinonim": [
+            "cak sambil", 
+            "sekali lalu", 
+            "seraya"
+        ]
+    }, 
+    "berkelok": {
+        "tag": "v", 
+        "sinonim": [
+            "belengkok", 
+            "berbelok", 
+            "berseluk", 
+            "memengkol", 
+            "menikung", 
+            "bengkok", 
+            "bengkong", 
+            "bergeduyut", 
+            "berkeluk", 
+            "berlekuk", 
+            "bungkuk", 
+            "melengkung", 
+            "melentik"
+        ]
+    }, 
+    "pajak bumi": {
+        "tag": "n", 
+        "sinonim": [
+            "dan bangunan pajak perponding"
+        ]
+    }, 
+    "kuburan": {
+        "tag": "n", 
+        "sinonim": [
+            "kober", 
+            "kubur", 
+            "makam", 
+            "peristirahatan terakhir", 
+            "pesara", 
+            "pusara"
+        ]
+    }, 
+    "referat": {
+        "tag": "n", 
+        "sinonim": [
+            "artikel", 
+            "esai", 
+            "karangan", 
+            "kertas kerja", 
+            "makalah", 
+            "prasaran", 
+            "risalah", 
+            "tulisan"
+        ]
+    }, 
+    "penyederhanaan": {
+        "tag": "n", 
+        "sinonim": [
+            "simplifikasi", 
+            "debirokratisasi"
+        ]
+    }, 
+    "paripurna": {
+        "tag": "a", 
+        "sinonim": [
+            "perfek", 
+            "prima", 
+            "sempurna", 
+            "lengkap", 
+            "penuh", 
+            "pleno"
+        ]
+    }, 
+    "tunggakan": {
+        "tag": "n", 
+        "sinonim": [
+            "utang", 
+            "ketinggalan"
+        ]
+    }, 
+    "menari": {
+        "tag": "v", 
+        "sinonim": [
+            "berajojing", 
+            "berdansa", 
+            "berjaipong", 
+            "berjoget", 
+            "beronggeng", 
+            "bersamba", 
+            "bertandak", 
+            "goyang pinggul", 
+            "menayub"
+        ]
+    }, 
+    "menggoyahkan": {
+        "tag": "v", 
+        "sinonim": [
+            "menggerakkan", 
+            "menggoyangkan", 
+            "mengoyak-oyak"
+        ]
+    }, 
+    "membebek": {
+        "tag": "v", 
+        "sinonim": [
+            "ikut-ikutan", 
+            "latah", 
+            "membeo", 
+            "mencontoh", 
+            "meneladan", 
+            "mengekor", 
+            "menguntit", 
+            "meniru", 
+            "menjiplak", 
+            "menyerupai"
+        ]
+    }, 
+    "penyeragaman": {
+        "tag": "n", 
+        "sinonim": [
+            "penyamaan"
+        ], 
+        "antonim": [
+            "penganekaragaman"
+        ]
+    }, 
+    "calang": {
+        "tag": "v", 
+        "sinonim": [
+            "mengintai", 
+            "mengintip", 
+            "meninjau", 
+            "melihat-lihat", 
+            "bulus", 
+            "gundul", 
+            "meranggas", 
+            "reges"
+        ]
+    }, 
+    "memesong": {
+        "tag": "v", 
+        "sinonim": [
+            "memusar", 
+            "memusing", 
+            "memutar", 
+            "menggisar", 
+            "mengisar"
+        ]
+    }, 
+    "menara": {
+        "tag": "n", 
+        "sinonim": [
+            "benara", 
+            "tower"
+        ]
+    }, 
+    "pagon": {
+        "tag": "a", 
+        "sinonim": [
+            "abadi", 
+            "tahan lama"
+        ]
+    }, 
+    "andan": {
+        "tag": "a", 
+        "sinonim": [
+            "albino", 
+            "balar", 
+            "bulai", 
+            "bule"
+        ]
+    }, 
+    "bukan-bukan": {
+        "tag": "a", 
+        "sinonim": [
+            "mustahil", 
+            "tidak-tidak"
+        ]
+    }, 
+    "melisankan": {
+        "tag": "v", 
+        "sinonim": [
+            "melafalkan", 
+            "mengucapkan", 
+            "mengujarkan", 
+            "menuturkan", 
+            "merapal"
+        ]
+    }, 
+    "cempung": {
+        "tag": "v", 
+        "sinonim": [
+            "mencebur", 
+            "mencemplung", 
+            "menggelabur"
+        ]
+    }, 
+    "menyalang": {
+        "tag": "v", 
+        "sinonim": [
+            "melotot", 
+            "membelalak", 
+            "membelalang", 
+            "membeliak", 
+            "membuntang", 
+            "mencelang", 
+            "mendelik", 
+            "menjegil", 
+            "nanap"
+        ]
+    }, 
+    "budek": {
+        "tag": "a", 
+        "sinonim": [
+            "cak  bolot ", 
+            "congek ", 
+            "pekak", 
+            "tekek", 
+            "tuli", 
+            "tunarungu", 
+            "bengal", 
+            "bengap", 
+            "bising", 
+            "pengang"
+        ]
+    }, 
+    "penokoh": {
+        "tag": "n", 
+        "sinonim": [
+            "pendusta", 
+            "pengecoh", 
+            "penipu"
+        ]
+    }, 
+    "wartawan": {
+        "tag": "n", 
+        "sinonim": [
+            "beritawan", 
+            "jurnalis", 
+            "juru berita", 
+            "juru kabar", 
+            "juru warta", 
+            "koresponden", 
+            "kuli tinta ", 
+            "nyamuk pers ", 
+            "pelapor", 
+            "peliput", 
+            "pemberita", 
+            "penulis berita", 
+            "penyampai", 
+            "penyiar", 
+            "pewarta", 
+            "reporter", 
+            "wartawati"
+        ]
+    }, 
+    "aktual": {
+        "tag": "a", 
+        "sinonim": [
+            "faktual", 
+            "kasatmata", 
+            "konkret", 
+            "maujud", 
+            "nyata", 
+            "positif", 
+            "sebenarnya", 
+            "sebetulnya", 
+            "sesungguhnya", 
+            "anyar", 
+            "baru", 
+            "gres", 
+            "hangat", 
+            "mutakhir", 
+            "baru", 
+            "berlaku", 
+            "segar"
+        ], 
+        "antonim": [
+            "abstrak", 
+            "basi", 
+            "lama"
+        ]
+    }, 
+    "bohong-bohongan": {
+        "tag": "a", 
+        "sinonim": [
+            "akal-akalan ", 
+            "ecek-ecek", 
+            "gadungan", 
+            "palsu", 
+            "pura-pura", 
+            "simulasi", 
+            "tiruan"
+        ], 
+        "antonim": [
+            "asli"
+        ]
+    }, 
+    "emas kerajang": {
+        "tag": "n", 
+        "sinonim": [
+            "emas kertas", 
+            "perada"
+        ]
+    }, 
+    "membeber": {
+        "tag": "v", 
+        "sinonim": [
+            "bercerita", 
+            "melebarkan", 
+            "memampangkan", 
+            "memaparkan", 
+            "membabarkan", 
+            "membayankan", 
+            "membentangkan", 
+            "membuka", 
+            "mementangkan", 
+            "menceritakan", 
+            "mencuraikan", 
+            "mendedahkan", 
+            "mengagak-agihkan", 
+            "mengelaborasikan", 
+            "mengembangkan", 
+            "menggambarkan", 
+            "menggelar", 
+            "menghamparkan", 
+            "mengungkapkan", 
+            "menguraikan", 
+            "menjabarkan", 
+            "menjelajahkan", 
+            "menjelaskan", 
+            "menjereng", 
+            "mensyarahkan", 
+            "menyingkapkan", 
+            "merentangkan", 
+            "membocorkan", 
+            "mendedahkan", 
+            "menelanjangi", 
+            "mengekspos", 
+            "menguak", 
+            "menyibakkan", 
+            "menyingkapkan"
+        ]
+    }, 
+    "melet": {
+        "tag": "v", 
+        "sinonim": [
+            "mengelelot", 
+            "menjelih", 
+            "menjelir"
+        ]
+    }, 
+    "bambu muda": {
+        "tag": "n", 
+        "sinonim": [
+            "rebung"
+        ]
+    }, 
+    "rekam": {
+        "tag": "v", 
+        "sinonim": [
+            "mengekalkan", 
+            "menekat", 
+            "menyuji", 
+            "menyulam", 
+            "menenun", 
+            "mencetak", 
+            "melekap", 
+            "melekat", 
+            "menempel", 
+            "mengecap"
+        ]
+    }, 
+    "menghunjamkan": {
+        "tag": "v", 
+        "sinonim": [
+            "memancangkan", 
+            "menancapkan", 
+            "menikamkan", 
+            "menukikkan", 
+            "menusukkan"
+        ], 
+        "antonim": [
+            "menghunuskan"
+        ]
+    }, 
+    "usahkan": {
+        "tag": "p", 
+        "sinonim": [
+            "apalagi", 
+            "boro-boro ", 
+            "jangankan", 
+            "daripada"
+        ]
+    }, 
+    "meler": {
+        "tag": "v", 
+        "sinonim": [
+            "berlelehan", 
+            "berleleran"
+        ]
+    }, 
+    "derajah": {
+        "tag": "n", 
+        "sinonim": [
+            "garis bujur", 
+            "meridian"
+        ]
+    }, 
+    "usung": {
+        "tag": "v", 
+        "sinonim": [
+            "memanggul", 
+            "membawa", 
+            "memikul", 
+            "mengangkut", 
+            "menggotong"
+        ]
+    }, 
+    "mufakat": {
+        "tag": "a", 
+        "sinonim": [
+            "akur", 
+            "asese", 
+            "bicara", 
+            "bulat kata", 
+            "bulat mufakat", 
+            "bulat suara", 
+            "nasihat", 
+            "pakat", 
+            "pembicaraan", 
+            "perundingan", 
+            "rembuk", 
+            "seia sekata", 
+            "semufakat", 
+            "sepaham", 
+            "sepakat", 
+            "sependapat", 
+            "sependirian", 
+            "sesama bersetuju", 
+            "setuju"
+        ]
+    }, 
+    "supaya": {
+        "tag": "p", 
+        "sinonim": [
+            "agar", 
+            "biar"
+        ]
+    }, 
+    "pergandaan": {
+        "tag": "n", 
+        "sinonim": [
+            "penangkaran", 
+            "perbanyakan", 
+            "perdaraban", 
+            "perkalian", 
+            "perlipatgandaan"
+        ]
+    }, 
+    "bajik": {
+        "tag": "n", 
+        "sinonim": [
+            "amal", 
+            "derma", 
+            "jasa", 
+            "kebaikan", 
+            "keelokan", 
+            "kemurahan hati", 
+            "sedekah"
+        ]
+    }, 
+    "menabung": {
+        "tag": "v", 
+        "sinonim": [
+            "menahan", 
+            "menanam", 
+            "menaruhkan", 
+            "mendepositokan", 
+            "menghimpun", 
+            "mengumpulkan", 
+            "menyimpan", 
+            "menyisihkan"
+        ]
+    }, 
+    "derajat": {
+        "tag": "n", 
+        "sinonim": [
+            "bagian", 
+            "gradasi", 
+            "harga", 
+            "harkat", 
+            "kadar", 
+            "kelas", 
+            "kualifikasi", 
+            "kualitas", 
+            "level", 
+            "martabat", 
+            "mutu", 
+            "nilai", 
+            "pangkat", 
+            "peringkat", 
+            "posisi", 
+            "stadium", 
+            "standar", 
+            "status", 
+            "tahap", 
+            "tara", 
+            "taraf", 
+            "tingkatan"
+        ]
+    }, 
+    "purwarupa": {
+        "tag": "n", 
+        "sinonim": [
+            "arketipe", 
+            "prototipe"
+        ]
+    }, 
+    "subversi": {
+        "tag": "n", 
+        "sinonim": [
+            "perongrongan", 
+            "sabotase"
+        ]
+    }, 
+    "bergabung": {
+        "tag": "v", 
+        "sinonim": [
+            "berasosiasi", 
+            "berbaur", 
+            "bercampur", 
+            "bercantum", 
+            "berfusi", 
+            "bergugusgugus", 
+            "berhimpun", 
+            "berikat", 
+            "berintegrasi", 
+            "berkelompok", 
+            "berkoalisi", 
+            "berkomplot", 
+            "berkongkalikong", 
+            "berkolusi", 
+            "berkumpul", 
+            "berpadu", 
+            "bersatu", 
+            "bersekutu", 
+            "bersepakat", 
+            "berserikat"
+        ]
+    }, 
+    "ketolong(an)": {
+        "tag": "v", 
+        "sinonim": [
+            "cak tertolong"
+        ]
+    }, 
+    "mengorbitkan": {
+        "tag": "v", 
+        "sinonim": [
+            "ki melambungkan", 
+            "melejitkan", 
+            "memasyhurkan", 
+            "memopulerkan", 
+            "menaikkan", 
+            "mengangkat"
+        ]
+    }, 
+    "ganjil": {
+        "tag": "a", 
+        "sinonim": [
+            "gangsal", 
+            "gasal", 
+            "witir", 
+            "abnormal", 
+            "ajaib", 
+            "aneh", 
+            "asing", 
+            "cemplang", 
+            "eksentrik", 
+            "eksotis", 
+            "gaib", 
+            "garib", 
+            "istimewa", 
+            "luar biasa", 
+            "pelik", 
+            "jarang", 
+            "langka", 
+            "kaku", 
+            "kekok", 
+            "nadir", 
+            "unik", 
+            "edan", 
+            "gelo", 
+            "gemblung", 
+            "gendeng", 
+            "gila-gilaan", 
+            "miring", 
+            "rada-rada", 
+            "sableng", 
+            "sinting"
+        ], 
+        "antonim": [
+            "genap"
+        ]
+    }, 
+    "keprihatinan": {
+        "tag": "n", 
+        "sinonim": [
+            "kedukaan", 
+            "kegundahan", 
+            "kemasygulan", 
+            "kesedihan"
+        ]
+    }, 
+    "melek": {
+        "tag": "v", 
+        "sinonim": [
+            "arik", 
+            "bangun", 
+            "bertanggang", 
+            "celik", 
+            "engah", 
+            "insaf", 
+            "jaga", 
+            "mendusin", 
+            "mengerti", 
+            "sadar", 
+            "tahu", 
+            "terbuka"
+        ], 
+        "antonim": [
+            "buta", 
+            "huruf", 
+            "niraksara"
+        ]
+    }, 
+    "geblak": {
+        "tag": "v", 
+        "sinonim": [
+            "terjengkang", 
+            "terkapar", 
+            "tertelentang"
+        ]
+    }, 
+    "berserah": {
+        "tag": "v", 
+        "sinonim": [
+            "bertawakal", 
+            "pasrah", 
+            "sadrah", 
+            "sumarah"
+        ]
+    }, 
+    "keteledoran": {
+        "tag": "n", 
+        "sinonim": [
+            "kelalaian", 
+            "kealpaan", 
+            "kelengahan", 
+            "kesembronoan"
+        ]
+    }, 
+    "kumbu": {
+        "tag": "n", 
+        "sinonim": [
+            "bakul", 
+            "kembu", 
+            "kepis"
+        ]
+    }, 
+    "sodor": {
+        "tag": "v", 
+        "sinonim": [
+            "anjur", 
+            "rodok", 
+            "sorong"
+        ]
+    }, 
+    "kero": {
+        "tag": "a", 
+        "sinonim": [
+            "cendang", 
+            "jereng", 
+            "juling", 
+            "sendeng"
+        ]
+    }, 
+    "mat kodak": {
+        "tag": "n", 
+        "sinonim": [
+            "cak fotografer", 
+            "juru foto", 
+            "juru"
+        ]
+    }, 
+    "penjabalan": {
+        "tag": "n", 
+        "sinonim": [
+            "pembegalan", 
+            "penggarongan", 
+            "penyamunan", 
+            "perampasan"
+        ]
+    }, 
+    "kecupetan": {
+        "tag": "n", 
+        "sinonim": [
+            "kekerdilan", 
+            "kepicikan", 
+            "kesempitan"
+        ]
+    }, 
+    "musnah": {
+        "tag": "v", 
+        "sinonim": [
+            "binasa", 
+            "habis", 
+            "hancur", 
+            "hilang", 
+            "jahanam", 
+            "lebur", 
+            "lenyap", 
+            "mutung", 
+            "punah", 
+            "ranap", 
+            "rasak langsung", 
+            "rembas", 
+            "rongsok", 
+            "rosok", 
+            "sirna", 
+            "tandas", 
+            "terbang", 
+            "tumbas", 
+            "tumpas", 
+            "tumpur", 
+            "amblas ", 
+            "bablas", 
+            "gaib", 
+            "hanyut", 
+            "hilang", 
+            "hirap", 
+            "lelap", 
+            "lenyap", 
+            "menguap", 
+            "penyap", 
+            "pupus", 
+            "silam", 
+            "sirna", 
+            "terbang"
+        ]
+    }, 
+    "menggambarkan": {
+        "tag": "v", 
+        "sinonim": [
+            "melukiskan", 
+            "memvisualkan", 
+            "mencitrakan", 
+            "mengilustrasikan"
+        ]
+    }, 
+    "biaya": {
+        "tag": "n", 
+        "sinonim": [
+            "anggaran", 
+            "bayaran", 
+            "bea", 
+            "beban", 
+            "belanja", 
+            "dana", 
+            "imbalan", 
+            "kos", 
+            "ongkos", 
+            "pengeluaran", 
+            "upah"
+        ]
+    }, 
+    "gempur": {
+        "tag": "v", 
+        "sinonim": [
+            "meleburkan", 
+            "meluluhlantakan", 
+            "membasmi", 
+            "memberantas", 
+            "membersihkan", 
+            "membinasakan", 
+            "memerangi", 
+            "menghancurkan", 
+            "menghantam", 
+            "mengikis", 
+            "menumpas", 
+            "merapun", 
+            "meredam", 
+            "meremukkan", 
+            "melabrak", 
+            "melutu", 
+            "menggenjot", 
+            "menggoyang", 
+            "menyerang", 
+            "menyerbu"
+        ]
+    }, 
+    "menyelangkupi": {
+        "tag": "v", 
+        "sinonim": [
+            "melingkupi", 
+            "meliputi", 
+            "membalut", 
+            "mengelumuni", 
+            "mengelimuni", 
+            "menudungi", 
+            "menutupi", 
+            "menyaluti", 
+            "menyaput", 
+            "menyelimuti", 
+            "menyelubungi", 
+            "menyerkup", 
+            "menyungkup"
+        ]
+    }, 
+    "mengganti": {
+        "tag": "v", 
+        "sinonim": [
+            "membarui", 
+            "merombak"
+        ]
+    }, 
+    "berbohong": {
+        "tag": "v", 
+        "sinonim": [
+            "begana-begini ", 
+            "berdalih", 
+            "berhelat", 
+            "berkilah", 
+            "berlik", 
+            "berpura-pura", 
+            "membohong", 
+            "membual", 
+            "mendusta", 
+            "mengada-ada"
+        ]
+    }, 
+    "peluntur": {
+        "tag": "n", 
+        "sinonim": [
+            "laksatif", 
+            "obat pencuci perut", 
+            "pencahar", 
+            "purgatif"
+        ]
+    }, 
+    "taik": {
+        "tag": "v", 
+        "sinonim": [
+            "mempelajari", 
+            "mendalami", 
+            "mendaras", 
+            "menelaah", 
+            "mengkaji"
+        ]
+    }, 
+    "menyilam": {
+        "tag": "v", 
+        "sinonim": [
+            "melesap", 
+            "melindang", 
+            "melindap", 
+            "memudar", 
+            "meredup"
+        ]
+    }, 
+    "kelelot": {
+        "tag": "v", 
+        "sinonim": [
+            "melet", 
+            "menjelih", 
+            "menjelir"
+        ]
+    }, 
+    "mania": {
+        "tag": "n", 
+        "sinonim": [
+            "kegandrungan", 
+            "kompleks", 
+            "obsesi"
+        ]
+    }, 
+    "berguling": {
+        "tag": "v", 
+        "sinonim": [
+            "bergerak", 
+            "bergolek", 
+            "bergulir", 
+            "bergulung", 
+            "berjalan", 
+            "berpusing", 
+            "berputar"
+        ]
+    }, 
+    "gerombol": {
+        "tag": "v", 
+        "sinonim": [
+            "mengelompok", 
+            "merombong"
+        ]
+    }, 
+    "dempet": {
+        "tag": "a", 
+        "sinonim": [
+            "dekat", 
+            "gencet", 
+            "impit", 
+            "kembar (jari)", 
+            "lekap", 
+            "menempel", 
+            "mepet", 
+            "rapat", 
+            "rendeng"
+        ], 
+        "antonim": [
+            "renggang"
+        ]
+    }, 
+    "hajatan": {
+        "tag": "n", 
+        "sinonim": [
+            "acara", 
+            "kenduri", 
+            "perhelatan", 
+            "pesta", 
+            "resepsi", 
+            "selamatan", 
+            "walimah"
+        ]
+    }, 
+    "mendesakkan": {
+        "tag": "v", 
+        "sinonim": [
+            "memaksakan", 
+            "menolakkan", 
+            "menyorongkan"
+        ]
+    }, 
+    "tanau": {
+        "tag": "n", 
+        "sinonim": [
+            "pialing", 
+            "serindit"
+        ]
+    }, 
+    "waris": {
+        "tag": "n", 
+        "sinonim": [
+            "anggota keluarga", 
+            "darah daging", 
+            "sanak saudara", 
+            "pemelihara", 
+            "penjaga", 
+            "pengampu", 
+            "pengasuh", 
+            "penyelenggara", 
+            "wali"
+        ]
+    }, 
+    "bergundik": {
+        "tag": "v", 
+        "sinonim": [
+            "bergendak", 
+            "bermukah", 
+            "berselir"
+        ]
+    }, 
+    "geluncur": {
+        "tag": "v", 
+        "sinonim": [
+            "melincir", 
+            "melulur", 
+            "memeleset", 
+            "menggelincir", 
+            "menggelingsir", 
+            "menggelongsor", 
+            "menyerosoh"
+        ]
+    }, 
+    "menernakkan": {
+        "tag": "v", 
+        "sinonim": [
+            "membiakkan", 
+            "membudidayakan", 
+            "memelihara", 
+            "memiara", 
+            "cak membungakan", 
+            "memutar", 
+            "menjalankan (uang)"
+        ]
+    }, 
+    "tanah": {
+        "tag": "n", 
+        "sinonim": [
+            "bentala", 
+            "butala", 
+            "bumi", 
+            "darat(an)", 
+            "pertiwi", 
+            "benua", 
+            "pulau", 
+            "kapling", 
+            "lahan", 
+            "persil", 
+            "negeri", 
+            "teritori", 
+            "wilayah", 
+            "daerah", 
+            "desa"
+        ]
+    }, 
+    "pendurhaka": {
+        "tag": "n", 
+        "sinonim": [
+            "bandit", 
+            "pembangkang", 
+            "pembelot", 
+            "pemberontak", 
+            "penentang", 
+            "pengacau", 
+            "pengganggu", 
+            "pengkhianat", 
+            "penyeleweng", 
+            "penyempal", 
+            "perejah", 
+            "perusuh"
+        ]
+    }, 
+    "tindas": {
+        "tag": "v", 
+        "sinonim": [
+            "memencet", 
+            "menekan", 
+            "menggencet", 
+            "menghimpit", 
+            "menindih"
+        ]
+    }, 
+    "pasta": {
+        "tag": "n", 
+        "sinonim": [
+            "tapal"
+        ]
+    }, 
+    "menyilat": {
+        "tag": "v", 
+        "sinonim": [
+            "menangkis", 
+            "mengelakkan", 
+            "menyampuk", 
+            "menyanggep"
+        ]
+    }, 
+    "menjahatkan": {
+        "tag": "v", 
+        "sinonim": [
+            "melimau", 
+            "memburukkan", 
+            "memfitnah", 
+            "mendiskreditkan", 
+            "menghujat", 
+            "menjatuhkan", 
+            "menjelekkan"
+        ]
+    }, 
+    "pengoperasian": {
+        "tag": "n", 
+        "sinonim": [
+            "operasionalisasi", 
+            "pendayagunaan", 
+            "pengaktifan", 
+            "pelaksanaan"
+        ]
+    }, 
+    "melipatgandakan": {
+        "tag": "v", 
+        "sinonim": [
+            "melipatkan", 
+            "memperbanyak", 
+            "menggandakan"
+        ]
+    }, 
+    "membingkis": {
+        "tag": "v", 
+        "sinonim": [
+            "mengirimkan", 
+            "menyampaikan"
+        ]
+    }, 
+    "pengelompokan": {
+        "tag": "n", 
+        "sinonim": [
+            "kategorisasi", 
+            "penggolongan", 
+            "penjenisan"
+        ]
+    }, 
+    "terkenal": {
+        "tag": "a", 
+        "sinonim": [
+            "beken ", 
+            "kenamaan", 
+            "kondang", 
+            "masyhur", 
+            "populer", 
+            "prominen", 
+            "ternama", 
+            "tersohor"
+        ]
+    }, 
+    "gagang senapan": {
+        "tag": "n", 
+        "sinonim": [
+            "pangkal senapan", 
+            "popor", 
+            "siku"
+        ]
+    }, 
+    "palka": {
+        "tag": "n", 
+        "sinonim": [
+            "peraka", 
+            "petak", 
+            "ruang"
+        ]
+    }, 
+    "fleksibel": {
+        "tag": "a", 
+        "sinonim": [
+            "elastis", 
+            "kenyal", 
+            "laur", 
+            "lemas", 
+            "lenting", 
+            "lentuk", 
+            "lentur", 
+            "plastis", 
+            "adaptif", 
+            "luwes", 
+            "supel"
+        ], 
+        "antonim": [
+            "kaku"
+        ]
+    }, 
+    "mencampung": {
+        "tag": "v", 
+        "sinonim": [
+            "melatas", 
+            "memagas", 
+            "memangkas", 
+            "memaras", 
+            "membabat", 
+            "memunggal", 
+            "mencukur", 
+            "menggunting", 
+            "meranting"
+        ]
+    }, 
+    "darat": {
+        "tag": "n", 
+        "sinonim": [
+            "bumi", 
+            "tanah"
+        ]
+    }, 
+    "daras": {
+        "tag": "v", 
+        "sinonim": [
+            "membaca", 
+            "mempelajari", 
+            "menaklik", 
+            "menekuni", 
+            "menelaah", 
+            "meneliti", 
+            "mengaji", 
+            "mengkaji", 
+            "menyelami", 
+            "menyelidiki"
+        ]
+    }, 
+    "pemecahan": {
+        "tag": "n", 
+        "sinonim": [
+            "jalan keluar", 
+            "jalan lepas", 
+            "penanggulangan", 
+            "penyelesaian", 
+            "resolusi", 
+            "pembagian", 
+            "pembelahan", 
+            "pemisahan", 
+            "penguraian", 
+            "separasi"
+        ]
+    }, 
+    "substantif": {
+        "tag": "n", 
+        "sinonim": [
+            "kata benda", 
+            "nomina"
+        ]
+    }, 
+    "pemberian": {
+        "tag": "n", 
+        "sinonim": [
+            "amal", 
+            "anugerah", 
+            "balasan", 
+            "bantuan", 
+            "berkah", 
+            "bingkisan", 
+            "bonus", 
+            "cendera mata", 
+            "dana", 
+            "derma", 
+            "donasi", 
+            "dorongan", 
+            "fitrah", 
+            "ganjaran", 
+            "hadiah", 
+            "hibah", 
+            "imbalan", 
+            "infak", 
+            "kado", 
+            "karunia", 
+            "kiriman", 
+            "kontribusi", 
+            "mahar", 
+            "mas kawin", 
+            "pasokan", 
+            "pembagian", 
+            "pengiriman", 
+            "persembahan", 
+            "persen", 
+            "pertolongan", 
+            "sagu hati", 
+            "sedekah", 
+            "sokongan", 
+            "subsidi", 
+            "sumbangan", 
+            "tip", 
+            "upah", 
+            "wakaf", 
+            "pelimpahan", 
+            "pengalihan", 
+            "penyerahan"
+        ]
+    }, 
+    "ahli filsafat": {
+        "tag": "a", 
+        "sinonim": [
+            "filsuf"
+        ]
+    }, 
+    "mengkredit": {
+        "tag": "v", 
+        "sinonim": [
+            "mencicil", 
+            "mengangsur"
+        ]
+    }, 
+    "darah": {
+        "tag": "n", 
+        "sinonim": [
+            "ki keluarga", 
+            "keturunan", 
+            "bakat", 
+            "pembawaan", 
+            "talenta", 
+            "cairan"
+        ]
+    }, 
+    "penjepretan": {
+        "tag": "n", 
+        "sinonim": [
+            "opname", 
+            "pemotretan", 
+            "pengabadian", 
+            "pengambilan gambar"
+        ]
+    }, 
+    "katalis": {
+        "tag": "n", 
+        "sinonim": [
+            "dorongan", 
+            "impetus", 
+            "insentif", 
+            "motivasi", 
+            "perangsang", 
+            "stimulan"
+        ]
+    }, 
+    "daripada": {
+        "tag": "p", 
+        "sinonim": [
+            "dari", 
+            "ketimbang"
+        ]
+    }, 
+    "terdedah": {
+        "tag": "v", 
+        "sinonim": [
+            "berburai", 
+            "terbuka", 
+            "terekspos", 
+            "terkuak", 
+            "tersibak", 
+            "tersingkap", 
+            "terungkap"
+        ]
+    }, 
+    "ortodoks": {
+        "tag": "a", 
+        "sinonim": [
+            "doktrinal", 
+            "kolot", 
+            "konformis", 
+            "konservatif", 
+            "konvensional", 
+            "kuno"
+        ]
+    }, 
+    "iktifak": {
+        "tag": "n", 
+        "sinonim": [
+            "kecocokan", 
+            "kesetaraan", 
+            "permufakatan", 
+            "persamaan", 
+            "persesuaian", 
+            "persetujuan"
+        ]
+    }, 
+    "rasio": {
+        "tag": "n", 
+        "sinonim": [
+            "perbandingan  akal", 
+            "nalar"
+        ]
+    }, 
+    "memernis": {
+        "tag": "v", 
+        "sinonim": [
+            "mengilapkan", 
+            "merengas"
+        ]
+    }, 
+    "menikai": {
+        "tag": "v", 
+        "sinonim": [
+            "membantah", 
+            "menampik", 
+            "menentang", 
+            "menolak", 
+            "menidakkan", 
+            "menopang", 
+            "menyanggah", 
+            "menyangkal"
+        ]
+    }, 
+    "zoologi": {
+        "tag": "n", 
+        "sinonim": [
+            "ilmu hewan"
+        ]
+    }, 
+    "kahar": {
+        "tag": "n", 
+        "sinonim": [
+            "cikar", 
+            "dokar", 
+            "pedati", 
+            "mahakuasa", 
+            "absolut", 
+            "adikara", 
+            "diktatorial", 
+            "otoriter", 
+            "sewenang-wenang", 
+            "tiranis", 
+            "totaliter"
+        ]
+    }, 
+    "patar": {
+        "tag": "n", 
+        "sinonim": [
+            "kikir", 
+            "pangur"
+        ]
+    }, 
+    "gugatan": {
+        "tag": "n", 
+        "sinonim": [
+            "petisi", 
+            "serangan", 
+            "tuntutan", 
+            "bantahan", 
+            "celaan", 
+            "kritikan", 
+            "sanggahan"
+        ]
+    }, 
+    "tunas": {
+        "tag": "n", 
+        "sinonim": [
+            "kecambah", 
+            "pucuk", 
+            "semi"
+        ]
+    }, 
+    "mongmong": {
+        "tag": "n", 
+        "sinonim": [
+            "benda", 
+            "bendir", 
+            "canang", 
+            "celempong", 
+            "geloneng", 
+            "tawak-tawak", 
+            "telempong"
+        ]
+    }, 
+    "patah": {
+        "tag": "a", 
+        "sinonim": [
+            "bias", 
+            "kupak", 
+            "pukah", 
+            "sempal", 
+            "terpenggal", 
+            "terpotong", 
+            "ki bubar", 
+            "kandas", 
+            "terhenti"
+        ]
+    }, 
+    "ringkik": {
+        "tag": "v", 
+        "sinonim": [
+            "mengerik", 
+            "memekik", 
+            "menjerit", 
+            "mendering", 
+            "merengeh"
+        ]
+    }, 
+    "mendoakan": {
+        "tag": "v", 
+        "sinonim": [
+            "memberkati", 
+            "memintakan", 
+            "memohonkan", 
+            "menazarkan", 
+            "mengaulkan", 
+            "mengharapkan", 
+            "meniatkan", 
+            "menyelawatkan", 
+            "merestui"
+        ]
+    }, 
+    "daksina": {
+        "tag": "n", 
+        "sinonim": [
+            "kanan", 
+            "selatan"
+        ]
+    }, 
+    "menggelitik": {
+        "tag": "v", 
+        "sinonim": [
+            "menggelatak", 
+            "menggelikan", 
+            "menggili", 
+            "mengilik", 
+            "mengitik-ngitik", 
+            "ki"
+        ]
+    }, 
+    "pecong": {
+        "tag": "v", 
+        "sinonim": [
+            "mengerenyot", 
+            "memerotkan", 
+            "menyeringai"
+        ]
+    }, 
+    "penikaman": {
+        "tag": "n", 
+        "sinonim": [
+            "penancapan", 
+            "penghunjaman", 
+            "penusukan"
+        ]
+    }, 
+    "geladak": {
+        "tag": "n", 
+        "sinonim": [
+            "dasar", 
+            "dek", 
+            "lantai", 
+            "lunas", 
+            "barak", 
+            "bedeng", 
+            "bilik", 
+            "kamar", 
+            "ruang", 
+            "binal", 
+            "jalang", 
+            "janda", 
+            "lacur", 
+            "liar", 
+            "nakal", 
+            "panjang mata"
+        ]
+    }, 
+    "mukadimah": {
+        "tag": "n", 
+        "sinonim": [
+            "alas kata", 
+            "introduksi", 
+            "kata"
+        ]
+    }, 
+    "terang-terangan": {
+        "tag": "a", 
+        "sinonim": [
+            "berterus terang", 
+            "blakblakan", 
+            "frontal", 
+            "langsung", 
+            "terbuka"
+        ]
+    }, 
+    "mesam-mesem": {
+        "tag": "v", 
+        "sinonim": [
+            "cengar-cengir", 
+            "cengengesan", 
+            "peringisan"
+        ]
+    }, 
+    "mengiris-iris": {
+        "tag": "v", 
+        "sinonim": [
+            "memotong-motong", 
+            "mencacah", 
+            "mencarah", 
+            "mencelis", 
+            "mencencang", 
+            "mencincang", 
+            "meracik", 
+            "merajang", 
+            "merincih"
+        ]
+    }, 
+    "berideologi": {
+        "tag": "v", 
+        "sinonim": [
+            "beraliran", 
+            "bermazhab", 
+            "berpaham"
+        ]
+    }, 
+    "tamam": {
+        "tag": "a", 
+        "sinonim": [
+            "afdal", 
+            "bulat", 
+            "cukup", 
+            "genap", 
+            "kafi", 
+            "kamil", 
+            "komplet", 
+            "lengkap", 
+            "penuh", 
+            "pepak", 
+            "sempurna", 
+            "habis", 
+            "putus", 
+            "rampung", 
+            "selesai", 
+            "usai", 
+            "tamat"
+        ]
+    }, 
+    "taman": {
+        "tag": "n", 
+        "sinonim": [
+            "bustan", 
+            "halaman ladang", 
+            "kebun", 
+            "lahan", 
+            "lapangan", 
+            "padang", 
+            "talun", 
+            "tegalan", 
+            "berkanjang", 
+            "gentur", 
+            "getol", 
+            "giat", 
+            "rajin", 
+            "tekun"
+        ]
+    }, 
+    "wayang": {
+        "tag": "n", 
+        "sinonim": [
+            "boneka", 
+            "golek"
+        ]
+    }, 
+    "menyelap": {
+        "tag": "v", 
+        "sinonim": [
+            "berakar", 
+            "masuk", 
+            "mendalam", 
+            "menyelundup", 
+            "menyerap", 
+            "menyusup", 
+            "merasuk", 
+            "merembes", 
+            "meresap", 
+            "melanda", 
+            "melanggar", 
+            "melutu ", 
+            "menerjang", 
+            "menerpa", 
+            "mengenai", 
+            "menghantam", 
+            "menimpa", 
+            "menyampuk", 
+            "menyapu ", 
+            "menyerang", 
+            "merampak", 
+            "merundung"
+        ]
+    }, 
+    "fondasi": {
+        "tag": "n", 
+        "sinonim": [
+            "alas", 
+            "asas", 
+            "basis", 
+            "dasar", 
+            "fundamen", 
+            "landasan", 
+            "pilar", 
+            "rukun", 
+            "sendi", 
+            "permulaan", 
+            "pokok", 
+            "pangkal"
+        ]
+    }, 
+    "cerlang": {
+        "tag": "n", 
+        "sinonim": [
+            "gemerlap", 
+            "kilau"
+        ]
+    }, 
+    "preskriptif": {
+        "tag": "a", 
+        "sinonim": [
+            "dogmatis", 
+            "kaku ", 
+            "normatif"
+        ], 
+        "antonim": [
+            "deskriptif"
+        ]
+    }, 
+    "berduaan": {
+        "tag": "v", 
+        "sinonim": [
+            "berpasangan", 
+            "cak berkasihkasihan", 
+            "berpacaran"
+        ]
+    }, 
+    "teraan": {
+        "tag": "n", 
+        "sinonim": [
+            "cap-capan", 
+            "cetakan", 
+            "segel", 
+            "stempel"
+        ]
+    }, 
+    "idiosinkratis": {
+        "tag": "a", 
+        "sinonim": [
+            "distingtif", 
+            "eksklusif", 
+            "individual", 
+            "istimewa", 
+            "khas", 
+            "khusus", 
+            "partikular", 
+            "spesifik", 
+            "tersendiri", 
+            "unik"
+        ]
+    }, 
+    "berguru": {
+        "tag": "v", 
+        "sinonim": [
+            "belajar", 
+            "bersekolah", 
+            "mencari"
+        ]
+    }, 
+    "berantakan": {
+        "tag": "a", 
+        "sinonim": [
+            "acak-acakan", 
+            "amburadul", 
+            "awut-awutan", 
+            "belepotan", 
+            "berarakan", 
+            "berceceran", 
+            "berhamburan", 
+            "berpesai-pesai", 
+            "berselerakan", 
+            "bersepah", 
+            "berserakan", 
+            "bertebaran", 
+            "bongkar-bangkir", 
+            "bubar", 
+            "buyar", 
+            "centang-perenang", 
+            "cerai-berai", 
+            "colakcaling", 
+            "compang-camping", 
+            "kacau", 
+            "kacaubalau", 
+            "kalang-kabut", 
+            "kapal pecah ", 
+            "kelam-kabut", 
+            "kelut-melut", 
+            "keruntangpukang", 
+            "kibang-kibut", 
+            "kisruh", 
+            "kocar-kacir", 
+            "kusut masai", 
+            "kusut", 
+            "lalu-lalang", 
+            "malangmelintang", 
+            "menyemak", 
+            "morat-marit", 
+            "porak-parik", 
+            "porak-poranda", 
+            "ricuh", 
+            "rondah-randih", 
+            "ropak-rapik", 
+            "rusak", 
+            "semrawut", 
+            "serabutan", 
+            "simpang-siur", 
+            "terpisahpisah", 
+            "tersara-bara", 
+            "ambruk", 
+            "benjut", 
+            "bubar", 
+            "buyar", 
+            "gulung tikar", 
+            "jatuh", 
+            "kolaps", 
+            "pailit", 
+            "pudar", 
+            "remuk"
+        ], 
+        "antonim": [
+            "rapi"
+        ]
+    }, 
+    "ekspedisi": {
+        "tag": "n", 
+        "sinonim": [
+            "bestel", 
+            "pelayaran", 
+            "pengembaraan", 
+            "pengiriman", 
+            "penjelajahan", 
+            "perjalanan", 
+            "trip"
+        ]
+    }, 
+    "keahlian": {
+        "tag": "n", 
+        "sinonim": [
+            "keilmuan", 
+            "kejuruan", 
+            "kemahiran", 
+            "kepakaran", 
+            "kepandaian", 
+            "kepintaran", 
+            "kesarjanaan", 
+            "ketukangan", 
+            "kewargaan", 
+            "spesialisasi", 
+            "bidang", 
+            "disiplin", 
+            "vak"
+        ]
+    }, 
+    "tamat": {
+        "tag": "a", 
+        "sinonim": [
+            "berakhir", 
+            "berhenti", 
+            "bubar", 
+            "finis", 
+            "habis", 
+            "khatam", 
+            "kiamat", 
+            "langsai", 
+            "lengkap", 
+            "lunas", 
+            "rampung", 
+            "selesai", 
+            "sempurna", 
+            "siap", 
+            "tamam", 
+            "usai"
+        ], 
+        "antonim": [
+            "mulai"
+        ]
+    }, 
+    "bahari": {
+        "tag": "a", 
+        "sinonim": [
+            "antik", 
+            "arkais", 
+            "baheula ", 
+            "dahulu kala", 
+            "kolot", 
+            "konservatif", 
+            "kuno", 
+            "lama", 
+            "primitif", 
+            "purbakala", 
+            "silam", 
+            "tua", 
+            "usang", 
+            "kelautan", 
+            "maritim"
+        ], 
+        "antonim": [
+            "modern"
+        ]
+    }, 
+    "pencetak": {
+        "tag": "n", 
+        "sinonim": [
+            "penerbit", 
+            "pengecap"
+        ]
+    }, 
+    "robotika": {
+        "tag": "n", 
+        "sinonim": [
+            "ilmu robot"
+        ]
+    }, 
+    "terjatuh": {
+        "tag": "v", 
+        "sinonim": [
+            "terambau", 
+            "terbenam", 
+            "tercebur", 
+            "terduduk", 
+            "terguling", 
+            "terjungkal", 
+            "terperesok"
+        ]
+    }, 
+    "bertaruh": {
+        "tag": "v", 
+        "sinonim": [
+            "berjudi", 
+            "berspekulasi", 
+            "bertarung", 
+            "memasang (judi)", 
+            "mencagar", 
+            "meneban", 
+            "mengambil risiko"
+        ]
+    }, 
+    "jangankan": {
+        "tag": "adv", 
+        "sinonim": [
+            "apalagi", 
+            "lebih-lebih", 
+            "manalagi", 
+            "usahkan"
+        ]
+    }, 
+    "pantangan": {
+        "tag": "n", 
+        "sinonim": [
+            "larangan", 
+            "pemali", 
+            "tabu"
+        ]
+    }, 
+    "volume": {
+        "tag": "n", 
+        "sinonim": [
+            "daya muat", 
+            "daya tampung", 
+            "isi", 
+            "kapasitas", 
+            "debit", 
+            "bagian", 
+            "jilid", 
+            "nomor"
+        ]
+    }, 
+    "pengetam": {
+        "tag": "n", 
+        "sinonim": [
+            "angkup", 
+            "capit", 
+            "cunam", 
+            "kempa", 
+            "pengapit", 
+            "penjepit", 
+            "sepit"
+        ]
+    }, 
+    "warsa": {
+        "tag": "n", 
+        "sinonim": [
+            "tahun"
+        ]
+    }, 
+    "lalang": {
+        "tag": "a", 
+        "sinonim": [
+            "timbal balik"
+        ]
+    }, 
+    "rekat": {
+        "tag": "v", 
+        "sinonim": [
+            "melekat", 
+            "menampal", 
+            "melekap", 
+            "melengket"
+        ]
+    }, 
+    "tunggang-langgang": {
+        "tag": "v", 
+        "sinonim": [
+            "berjempalitan", 
+            "berlarian", 
+            "kocar-kacir", 
+            "lintang-pukang", 
+            "pontang-panting", 
+            "terbirit-birit"
+        ]
+    }, 
+    "penderma": {
+        "tag": "n", 
+        "sinonim": [
+            "donatur", 
+            "kontributor", 
+            "pembantu", 
+            "pemberi", 
+            "penaja", 
+            "pendonor", 
+            "penyedekah", 
+            "penyokong", 
+            "penyumbang", 
+            "sponsor", 
+            "a murah hati", 
+            "dermawan", 
+            "sosialistis"
+        ]
+    }, 
+    "kinjat": {
+        "tag": "v", 
+        "sinonim": [
+            "kaget", 
+            "nanap", 
+            "tergegau", 
+            "tergemap", 
+            "terkejut", 
+            "terkesiap", 
+            "terperangah", 
+            "terperanjat", 
+            "tersentak", 
+            "tersingahak"
+        ]
+    }, 
+    "mendandani": {
+        "tag": "v", 
+        "sinonim": [
+            "melengkapi", 
+            "memakaikan", 
+            "memantas", 
+            "membedaki", 
+            "membersihi", 
+            "membesut", 
+            "membusanai", 
+            "memermak ", 
+            "memoles", 
+            "mempercantik", 
+            "memperindah", 
+            "mengadunkan", 
+            "menghiasi", 
+            "merias", 
+            "membenahi", 
+            "membereskan", 
+            "membetulkan", 
+            "memperbaiki", 
+            "menyervis", 
+            "menyirat", 
+            "meremajakan", 
+            "merenovasi", 
+            "mereparasi", 
+            "merestorasi", 
+            "merombak"
+        ]
+    }, 
+    "hilal": {
+        "tag": "n", 
+        "sinonim": [
+            "bulan sabit"
+        ]
+    }, 
+    "harmonisasi": {
+        "tag": "n", 
+        "sinonim": [
+            "kesepadanan", 
+            "pengharmonisan", 
+            "penyelarasan", 
+            "penyerasian", 
+            "sinkronisasi"
+        ]
+    }, 
+    "perawakan": {
+        "tag": "n", 
+        "sinonim": [
+            "bangun", 
+            "bentuk badan", 
+            "bentuk tubuh", 
+            "bodi ", 
+            "postur", 
+            "potongan"
+        ]
+    }, 
+    "mengempang": {
+        "tag": "v", 
+        "sinonim": [
+            "menghambat", 
+            "membatas", 
+            "membendung", 
+            "menahan", 
+            "menakung", 
+            "menalah", 
+            "menambak", 
+            "menampung", 
+            "mencegah", 
+            "menebar", 
+            "menebat", 
+            "menegah", 
+            "melintang", 
+            "menggalang", 
+            "menghalang", 
+            "mengongkong", 
+            "mengurung", 
+            "menyekat", 
+            "merintang"
+        ]
+    }, 
+    "nomor satu n": {
+        "tag": "v", 
+        "sinonim": [
+            "memberatkan", 
+            "mementingkan", 
+            "memerlukan", 
+            "memprioritaskan", 
+            "mengedepankan", 
+            "mengistimewakan"
+        ]
+    }, 
+    "terbersit": {
+        "tag": "v", 
+        "sinonim": [
+            "muncul", 
+            "tampak", 
+            "terbias", 
+            "tergambar", 
+            "terpancar", 
+            "terpantul", 
+            "terpintas", 
+            "tersembul", 
+            "tersiar", 
+            "timbul"
+        ]
+    }, 
+    "penyekat": {
+        "tag": "n", 
+        "sinonim": [
+            "sekat", 
+            "alang", 
+            "perintang"
+        ]
+    }, 
+    "kusuma": {
+        "tag": "n", 
+        "sinonim": [
+            "bunga", 
+            "kembang", 
+            "kesuma", 
+            "puspa", 
+            "puspita", 
+            "sari", 
+            "sekar"
+        ]
+    }, 
+    "meluncurkan": {
+        "tag": "v", 
+        "sinonim": [
+            "melorotkan", 
+            "menggelongsorkan", 
+            "mengeluarkan", 
+            "merilis"
+        ]
+    }, 
+    "pengacau": {
+        "tag": "n", 
+        "sinonim": [
+            "berandal", 
+            "jelatang ", 
+            "kacang"
+        ]
+    }, 
+    "memunguti": {
+        "tag": "v", 
+        "sinonim": [
+            "memulung", 
+            "mengumpulkan", 
+            "merapu"
+        ], 
+        "antonim": [
+            "menaburi"
+        ]
+    }, 
+    "belok": {
+        "tag": "v", 
+        "sinonim": [
+            "bengkok", 
+            "beralih arah", 
+            "berbelit", 
+            "berbelok", 
+            "berbengkak-bengkok", 
+            "bercelengkak-celengkok", 
+            "berganti arah", 
+            "berkelok", 
+            "berlekuk", 
+            "berliku", 
+            "berputar", 
+            "berselekoh", 
+            "berselit-selit", 
+            "berseluk", 
+            "melenceng", 
+            "melengkung", 
+            "memengkol", 
+            "menikung", 
+            "menjelimpat", 
+            "menyelimpang", 
+            "menyimpang"
+        ], 
+        "antonim": [
+            "lurus"
+        ]
+    }, 
+    "tunang": {
+        "tag": "v", 
+        "sinonim": [
+            "melamar", 
+            "meminang", 
+            "meminta", 
+            "mempersunting", 
+            "menanyakan"
+        ]
+    }, 
+    "tali-bertali": {
+        "tag": "v", 
+        "sinonim": [
+            "berantai", 
+            "bersambungan", 
+            "beruntun", 
+            "a berjalinan", 
+            "berjalin-jalin", 
+            "berselit-selit", 
+            "kusut", 
+            "rumit", 
+            "ruwet"
+        ]
+    }, 
+    "belot": {
+        "tag": "v", 
+        "sinonim": [
+            "balik gagang", 
+            "berbalik"
+        ]
+    }, 
+    "kebesar-hatian": {
+        "tag": "n", 
+        "sinonim": [
+            "kebanggaan", 
+            "kemangkakan"
+        ]
+    }, 
+    "penceraian": {
+        "tag": "n", 
+        "sinonim": [
+            "pemisahan"
+        ], 
+        "antonim": [
+            "penyatuan"
+        ]
+    }, 
+    "kartu": {
+        "tag": "n", 
+        "sinonim": [
+            "karcis", 
+            "surat", 
+            "tiket"
+        ]
+    }, 
+    "tema": {
+        "tag": "n", 
+        "sinonim": [
+            "inti", 
+            "isu", 
+            "judul", 
+            "poin", 
+            "pokok pikiran", 
+            "subjek", 
+            "tajuk", 
+            "topik"
+        ]
+    }, 
+    "krida": {
+        "tag": "n", 
+        "sinonim": [
+            "laku", 
+            "perbuatan", 
+            "tindakan"
+        ]
+    }, 
+    "eksotis": {
+        "tag": "a", 
+        "sinonim": [
+            "abnormal", 
+            "aneh", 
+            "ajaib", 
+            "asing", 
+            "eksentrik", 
+            "ganjil", 
+            "istimewa", 
+            "jarang", 
+            "langka", 
+            "luar"
+        ]
+    }, 
+    "tersingkap": {
+        "tag": "v", 
+        "sinonim": [
+            "berburai ", 
+            "terbuka", 
+            "terdedah", 
+            "terkuak", 
+            "tersibak", 
+            "tersirap", 
+            "terungkap"
+        ]
+    }, 
+    "cemplang": {
+        "tag": "a", 
+        "sinonim": [
+            "adem", 
+            "anyep", 
+            "cahang", 
+            "campah", 
+            "dingin ", 
+            "hambar", 
+            "tawar", 
+            "ki absurd", 
+            "aneh", 
+            "asing", 
+            "eksentrik", 
+            "ganjil", 
+            "janggal", 
+            "someng"
+        ]
+    }, 
+    "biang": {
+        "tag": "n", 
+        "sinonim": [
+            "asal mula", 
+            "babon", 
+            "bibit", 
+            "bos", 
+            "inang", 
+            "induk", 
+            "indung", 
+            "inti", 
+            "kepala", 
+            "pangkal", 
+            "pati", 
+            "pemimpin", 
+            "pokok", 
+            "biang keladi", 
+            "buaya"
+        ]
+    }, 
+    "jeblok": {
+        "tag": "v", 
+        "sinonim": [
+            "jatuh", 
+            "ki anjlok", 
+            "bangkrut", 
+            "turun", 
+            "rugi"
+        ]
+    }, 
+    "memutarbalikkan": {
+        "tag": "v", 
+        "sinonim": [
+            "menjungkirbalikkan", 
+            "memulas", 
+            "mempermainkan", 
+            "memendarmendarkan", 
+            "mengombang-ambingkan"
+        ]
+    }, 
+    "sedikit-sedikit": {
+        "tag": "a", 
+        "sinonim": [
+            "sedikit demi sedikit"
+        ]
+    }, 
+    "menandai": {
+        "tag": "v", 
+        "sinonim": [
+            "membubuhi (cap)", 
+            "men"
+        ]
+    }, 
+    "anja": {
+        "tag": "a", 
+        "sinonim": [
+            "aleman ", 
+            "kolokan", 
+            "manja"
+        ]
+    }, 
+    "tertanggung": {
+        "tag": "v", 
+        "sinonim": [
+            "terangkat", 
+            "terangkut", 
+            "terpanggul", 
+            "terpikul", 
+            "terusung", 
+            "tertahankan", 
+            "terderita"
+        ]
+    }, 
+    "bertarung": {
+        "tag": "v", 
+        "sinonim": [
+            "atas-mengatasi", 
+            "beradu kekuatan", 
+            "bergontok", 
+            "berjuak", 
+            "berjuang", 
+            "berkelahi", 
+            "berkompetisi", 
+            "berlaga", 
+            "berlawan", 
+            "berlomba", 
+            "berperang", 
+            "berpupuh", 
+            "bersabung", 
+            "bersaing", 
+            "bertanding", 
+            "bertaruh", 
+            "bertempur", 
+            "beradu lidah", 
+            "beradu mulut", 
+            "bertengkar mulut", 
+            "berbahas", 
+            "berbalah", 
+            "berbantahan", 
+            "bercekcok", 
+            "berdebat", 
+            "berdialog", 
+            "bergaduh", 
+            "bersalahan", 
+            "bertukar pikiran", 
+            "perang mulut", 
+            "beradu", 
+            "berantuk", 
+            "berbenturan", 
+            "berciuman ", 
+            "berdampak", 
+            "berlanggaran", 
+            "bersomplokan", 
+            "bertabrakan", 
+            "bertubrukan", 
+            "bertumbukan"
+        ]
+    }, 
+    "kepung": {
+        "tag": "v", 
+        "sinonim": [
+            "melingkari", 
+            "memblokade", 
+            "mengelilingi", 
+            "mengerumuni", 
+            "mengisolasi", 
+            "mengitari", 
+            "mengungkung", 
+            "mengurung", 
+            "menjepit ", 
+            "menutup"
+        ]
+    }, 
+    "konco": {
+        "tag": "n", 
+        "sinonim": [
+            "cak kawan", 
+            "kolega", 
+            "kompanyon", 
+            "kroni", 
+            "mitra", 
+            "partner", 
+            "sahabat", 
+            "rekan", 
+            "relasi", 
+            "teman"
+        ]
+    }, 
+    "tercerai": {
+        "tag": "v", 
+        "sinonim": [
+            "terbuncang", 
+            "terpecah", 
+            "terpisah", 
+            "terputus"
+        ]
+    }, 
+    "pangkal kerongkongan": {
+        "tag": "n", 
+        "sinonim": [
+            "tekak"
+        ]
+    }, 
+    "memangkal": {
+        "tag": "v", 
+        "sinonim": [
+            "berhenti", 
+            "mengetem "
+        ]
+    }, 
+    "spesial": {
+        "tag": "a", 
+        "sinonim": [
+            "individual", 
+            "partikular", 
+            "spesifik"
+        ], 
+        "antonim": [
+            "biasa", 
+            "umum"
+        ]
+    }, 
+    "pengangkut": {
+        "tag": "n", 
+        "sinonim": [
+            "pembawa", 
+            "pengangkat", 
+            "pengantar", 
+            "penghantar", 
+            "pengirim"
+        ]
+    }, 
+    "sependirian": {
+        "tag": "n", 
+        "sinonim": [
+            "akur", 
+            "asese ", 
+            "harmonis", 
+            "mufakat", 
+            "seirama", 
+            "sejalan", 
+            "selaras", 
+            "sepaham", 
+            "sepakat", 
+            "setuju", 
+            "sesuai"
+        ]
+    }, 
+    "cegah": {
+        "tag": "v", 
+        "sinonim": [
+            "melalau", 
+            "melarang", 
+            "melawan", 
+            "memanggang", 
+            "memantang", 
+            "membancang", 
+            "membantar", 
+            "membantut", 
+            "memberangus", 
+            "memintasi", 
+            "menahan", 
+            "menambak", 
+            "menanggap", 
+            "menangkal", 
+            "mengawal", 
+            "mengekang", 
+            "mengelakkan", 
+            "menghalang", 
+            "menghambat", 
+            "mengharamkan", 
+            "menjaga", 
+            "menjauhkan", 
+            "menolak", 
+            "menyekat", 
+            "merintangi", 
+            "a melindungi", 
+            "preventif", 
+            "protektif"
+        ]
+    }, 
+    "bersalam": {
+        "tag": "v", 
+        "sinonim": [
+            "berjabat tangan"
+        ]
+    }, 
+    "berargumen": {
+        "tag": "v", 
+        "sinonim": [
+            "beralasan", 
+            "berdalih", 
+            "berdasar", 
+            "berhujah"
+        ]
+    }, 
+    "kumulatif": {
+        "tag": "a", 
+        "sinonim": [
+            "tertimbun", 
+            "bertumpuk", 
+            "menggunung", 
+            "menumpuk"
+        ]
+    }, 
+    "visa": {
+        "tag": "n", 
+        "sinonim": [
+            "izin", 
+            "visum"
+        ]
+    }, 
+    "gelegata": {
+        "tag": "n", 
+        "sinonim": [
+            "bentol-bentol", 
+            "bintil-bintil", 
+            "kedut", 
+            "keriput", 
+            "kernyut", 
+            "kerut-kerut"
+        ]
+    }, 
+    "diplomat": {
+        "tag": "n", 
+        "sinonim": [
+            "atase", 
+            "caraka", 
+            "duta", 
+            "konsul", 
+            "kuasa"
+        ]
+    }, 
+    "palmin": {
+        "tag": "n", 
+        "sinonim": [
+            "lemak kelapa"
+        ]
+    }, 
+    "bersalut": {
+        "tag": "v", 
+        "sinonim": [
+            "berbungkus", 
+            "berlapis", 
+            "bersampul", 
+            "bersarung"
+        ]
+    }, 
+    "pancalogam": {
+        "tag": "n", 
+        "sinonim": [
+            "magnalium", 
+            "suasa"
+        ]
+    }, 
+    "tergabung": {
+        "tag": "v", 
+        "sinonim": [
+            "tercampur", 
+            "terhimpun", 
+            "terpadu", 
+            "terkumpul", 
+            "terpumpun"
+        ], 
+        "antonim": [
+            "terpisah"
+        ]
+    }, 
+    "silang-menyilang": {
+        "tag": "v", 
+        "sinonim": [
+            "palang-memalang", 
+            "bersilangan", 
+            "a berseliweran", 
+            "simpangsiur"
+        ]
+    }, 
+    "penenung": {
+        "tag": "n", 
+        "sinonim": [
+            "penduga", 
+            "penilik", 
+            "peramal"
+        ]
+    }, 
+    "kerokot": {
+        "tag": "n", 
+        "sinonim": [
+            "bilang-bilang", 
+            "gelang"
+        ]
+    }, 
+    "tanda hubung": {
+        "tag": "n", 
+        "sinonim": [
+            "sempang", 
+            "sengkang"
+        ]
+    }, 
+    "kumpar": {
+        "tag": "v", 
+        "sinonim": [
+            "memuntal", 
+            "menggelendong", 
+            "menggulung"
+        ]
+    }, 
+    "bersampul": {
+        "tag": "v", 
+        "sinonim": [
+            "berbungkus", 
+            "bersalut", 
+            "bersarung", 
+            "berbalut", 
+            "memalut", 
+            "membarut", 
+            "membebat", 
+            "mengelubung", 
+            "mengulas", 
+            "menyarung"
+        ]
+    }, 
+    "menegah": {
+        "tag": "v", 
+        "sinonim": [
+            "melarang", 
+            "mengekang", 
+            "menjangankan", 
+            "mengharamkan", 
+            "membendung", 
+            "memintasi", 
+            "menahan", 
+            "mencegah", 
+            "menghambat", 
+            "menangkal", 
+            "menjaga", 
+            "menjauhkan", 
+            "menolak"
+        ], 
+        "antonim": [
+            "mengizinkan", 
+            "membebaskan"
+        ]
+    }, 
+    "laos jambek": {
+        "tag": "n", 
+        "sinonim": [
+            "ganyong", 
+            "laos mekah"
+        ]
+    }, 
+    "tonggong": {
+        "tag": "a", 
+        "sinonim": [
+            "bagur", 
+            "bongsor", 
+            "jagur", 
+            "longgor"
+        ]
+    }, 
+    "kumpal": {
+        "tag": "v", 
+        "sinonim": [
+            "terapungapung", 
+            "terkatung-katung", 
+            "ki terabai", 
+            "terlunta-lunta"
+        ]
+    }, 
+    "patogen": {
+        "tag": "n", 
+        "sinonim": [
+            "bakteri", 
+            "basil", 
+            "bibit penyakit", 
+            "kuman", 
+            "mikroba"
+        ]
+    }, 
+    "provinsi": {
+        "tag": "n", 
+        "sinonim": [
+            "daerah", 
+            "teritori", 
+            "wilayah"
+        ]
+    }, 
+    "kumpai": {
+        "tag": "n", 
+        "sinonim": [
+            "gunjai", 
+            "jumbai", 
+            "jurai", 
+            "ramburambu", 
+            "rumbai-rumbai", 
+            "umbai"
+        ]
+    }, 
+    "mendaifkan": {
+        "tag": "v", 
+        "sinonim": [
+            "melatakan", 
+            "melecehkan", 
+            "mengabaikan", 
+            "mengecilkan", 
+            "menggampangkan", 
+            "menghinakan", 
+            "menistakan", 
+            "menyepelekan", 
+            "meremehkan", 
+            "merendahkan"
+        ], 
+        "antonim": [
+            "memuliakan"
+        ]
+    }, 
+    "padmi": {
+        "tag": "n", 
+        "sinonim": [
+            "maharani", 
+            "permaisuri", 
+            "rani"
+        ]
+    }, 
+    "penafsir": {
+        "tag": "n", 
+        "sinonim": [
+            "ahli tafsir", 
+            "penganalisis", 
+            "penginterpretasi", 
+            "pengulas"
+        ]
+    }, 
+    "riak": {
+        "tag": "n", 
+        "sinonim": [
+            "gelagat", 
+            "gelombang", 
+            "gerakan", 
+            "gerakgerik", 
+            "getaran", 
+            "kocakan", 
+            "ombak kecil"
+        ]
+    }, 
+    "riam": {
+        "tag": "n", 
+        "sinonim": [
+            "air lata", 
+            "air terjun", 
+            "cegar", 
+            "jeram"
+        ]
+    }, 
+    "menghitamkan": {
+        "tag": "v", 
+        "sinonim": [
+            "menggelapkan", 
+            "melimau", 
+            "melumangkan", 
+            "memburuk-burukkan", 
+            "memfitnah", 
+            "mencemari", 
+            "mencoreng", 
+            "mendiskreditkan", 
+            "menjahatkan", 
+            "menjatuhkan", 
+            "menjelek-jelekkan"
+        ]
+    }, 
+    "penyayang": {
+        "tag": "n", 
+        "sinonim": [
+            "pengasih", 
+            "pecinta", 
+            "penggemar"
+        ], 
+        "antonim": [
+            "pembenci"
+        ]
+    }, 
+    "teperdaya": {
+        "tag": "v", 
+        "sinonim": [
+            "terjerumus", 
+            "terkecoh", 
+            "terkena", 
+            "terkurung", 
+            "terperangkap", 
+            "terpikat", 
+            "terpukau", 
+            "tertangkap", 
+            "tertawan", 
+            "tertipu"
+        ]
+    }, 
+    "cubung": {
+        "tag": "n", 
+        "sinonim": [
+            "larva lalat", 
+            "tempayak"
+        ]
+    }, 
+    "bengawan": {
+        "tag": "n", 
+        "sinonim": [
+            "batang air", 
+            "kali (besar)", 
+            "sungai", 
+            "wai"
+        ]
+    }, 
+    "diagnosis": {
+        "tag": "n", 
+        "sinonim": [
+            "analisis", 
+            "pemeriksaan", 
+            "penelitian", 
+            "penentuan"
+        ]
+    }, 
+    "mengacaukan": {
+        "tag": "v", 
+        "sinonim": [
+            "mencampuradukkan", 
+            "mengaduk-aduk", 
+            "memerantakkan", 
+            "membongkar-bangkir", 
+            "membuyarkan", 
+            "memorakporandakan", 
+            "menceraiberaikan", 
+            "mengacakacak", 
+            "merusak", 
+            "menggalaukan", 
+            "menggelisahkan", 
+            "menggerecoki", 
+            "meresahkan", 
+            "merisaukan"
+        ]
+    }, 
+    "pampasan": {
+        "tag": "n", 
+        "sinonim": [
+            "ganti rugi", 
+            "kompensasi", 
+            "restitusi", 
+            "tempuh"
+        ]
+    }, 
+    "cengar-cengir": {
+        "tag": "v", 
+        "sinonim": [
+            "cengengesan", 
+            "mesammesem", 
+            "peringisan"
+        ]
+    }, 
+    "memijak": {
+        "tag": "v", 
+        "sinonim": [
+            "menapak", 
+            "mencecah", 
+            "mengencang", 
+            "mengenjak", 
+            "mengentak", 
+            "menginjak", 
+            "menjejak", 
+            "menumpu", 
+            "menunjal"
+        ]
+    }, 
+    "sunting hati": {
+        "tag": "n", 
+        "sinonim": [
+            "anak emas", 
+            "anak kesayangan"
+        ]
+    }, 
+    "menggulingkan": {
+        "tag": "v", 
+        "sinonim": [
+            "menggelindingkan", 
+            "menggulirkan", 
+            "menjungkirbalikkan", 
+            "menunggingkan", 
+            "merebahkan", 
+            "ki mendaulat", 
+            "mendongkel", 
+            "mengambil alih", 
+            "menjatuhkan", 
+            "menjungkalkan", 
+            "mengudeta", 
+            "menumbangkan", 
+            "ki mengalahkan", 
+            "menjatuhkan", 
+            "merobohkan"
+        ]
+    }, 
+    "penyemaian": {
+        "tag": "n", 
+        "sinonim": [
+            "pembenihan", 
+            "pembibitan", 
+            "pembuahan"
+        ]
+    }, 
+    "belitan": {
+        "tag": "n", 
+        "sinonim": [
+            "gulungan", 
+            "ikatan", 
+            "lilitan"
+        ]
+    }, 
+    "meringis": {
+        "tag": "v", 
+        "sinonim": [
+            "bermuka masam", 
+            "mengerenyotkan", 
+            "mengernyih", 
+            "menyeringai"
+        ]
+    }, 
+    "kena": {
+        "tag": "v", 
+        "sinonim": [
+            "mengantuk", 
+            "mengenai", 
+            "menyentuh", 
+            "menyinggung", 
+            "sangkil", 
+            "mendapat", 
+            "menderita", 
+            "mengidap", 
+            "tertimpa", 
+            "a cocok", 
+            "harmonis", 
+            "jitu", 
+            "kategoris", 
+            "langsung", 
+            "tepat", 
+            "engkau", 
+            "kamu"
+        ]
+    }, 
+    "giur": {
+        "tag": "v", 
+        "sinonim": [
+            "memikat", 
+            "memukau", 
+            "menarik", 
+            "merangsang", 
+            "a erotis", 
+            "menggairahkan", 
+            "seksi", 
+            "sensual", 
+            "seronok"
+        ]
+    }, 
+    "menenangkan": {
+        "tag": "v", 
+        "sinonim": [
+            "mendamaikan", 
+            "mendinginkan", 
+            "menenteramkan", 
+            "menyabarkan", 
+            "meredakan", 
+            "mengamankan", 
+            "menyamankan", 
+            "menyejukkan"
+        ]
+    }, 
+    "berpancaran": {
+        "tag": "v", 
+        "sinonim": [
+            "berpencaran", 
+            "bersemburan"
+        ]
+    }, 
+    "kalbu": {
+        "tag": "n", 
+        "sinonim": [
+            "batin", 
+            "lubuk hati", 
+            "nurani", 
+            "sanubari"
+        ]
+    }, 
+    "esensi": {
+        "tag": "n", 
+        "sinonim": [
+            "akar", 
+            "dasar", 
+            "ekstrak", 
+            "induk", 
+            "inti", 
+            "konsentrat", 
+            "pati", 
+            "sari", 
+            "hakikat"
+        ]
+    }, 
+    "menempohkan": {
+        "tag": "v", 
+        "sinonim": [
+            "memberhentikan", 
+            "mengistirahatkan"
+        ]
+    }, 
+    "kesturi": {
+        "tag": "n", 
+        "sinonim": [
+            "dedes", 
+            "jebat"
+        ]
+    }, 
+    "penyitaan": {
+        "tag": "n", 
+        "sinonim": [
+            "pembeslahan", 
+            "perampasan", 
+            "perebutan"
+        ]
+    }, 
+    "mencopet": {
+        "tag": "v", 
+        "sinonim": [
+            "mencilok", 
+            "mencoleng", 
+            "mencuri", 
+            "mengambil", 
+            "mengembat", 
+            "menggaet", 
+            "menyebat ", 
+            "merogoh"
+        ]
+    }, 
+    "kepinding": {
+        "tag": "n", 
+        "sinonim": [
+            "bangsat", 
+            "kutu busuk", 
+            "tumbila"
+        ]
+    }, 
+    "penipu": {
+        "tag": "n", 
+        "sinonim": [
+            "pembohong", 
+            "pendusta", 
+            "pengecoh", 
+            "penyilap"
+        ]
+    }, 
+    "militer": {
+        "tag": "n", 
+        "sinonim": [
+            "tentara", 
+            "angkatan bersenjata", 
+            "baju"
+        ], 
+        "antonim": [
+            "sipil"
+        ]
+    }, 
+    "rebeh": {
+        "tag": "v", 
+        "sinonim": [
+            "berlekuk", 
+            "melengkung", 
+            "melentur", 
+            "terkulai", 
+            "buruk", 
+            "cabik-cabik", 
+            "cobak-cabik", 
+            "compang-camping", 
+            "koyak-koyak", 
+            "rompangramping", 
+            "rusak", 
+            "tua", 
+            "usang"
+        ]
+    }, 
+    "pengelola": {
+        "tag": "n", 
+        "sinonim": [
+            "administrator", 
+            "kepala", 
+            "manajer", 
+            "organisator", 
+            "pelaksana", 
+            "pelatih", 
+            "pemangku", 
+            "pemerintah", 
+            "pemimpin", 
+            "pendidik", 
+            "pengarah", 
+            "pengasuh", 
+            "pengawas", 
+            "pengurus", 
+            "penyelenggara", 
+            "wali"
+        ]
+    }, 
+    "asrama": {
+        "tag": "n", 
+        "sinonim": [
+            "balai", 
+            "bangsal", 
+            "barak", 
+            "bedeng", 
+            "kos", 
+            "mes", 
+            "pesantren", 
+            "pondok", 
+            "tangsi", 
+            "wisma"
+        ]
+    }, 
+    "memperkaya": {
+        "tag": "v", 
+        "sinonim": [
+            "memperbanyak", 
+            "memperbesar", 
+            "memperuntungkan", 
+            "menambah"
+        ]
+    }, 
+    "pernyataan": {
+        "tag": "n", 
+        "sinonim": [
+            "afirmasi", 
+            "deklarasi", 
+            "komunike", 
+            "maklumat", 
+            "pemberitahuan", 
+            "pengumuman", 
+            "penjelasan", 
+            "permakluman", 
+            "proklamasi"
+        ]
+    }, 
+    "jewer": {
+        "tag": "v", 
+        "sinonim": [
+            "pilin", 
+            "pulas", 
+            "tarik"
+        ]
+    }, 
+    "eksponen": {
+        "tag": "n", 
+        "sinonim": [
+            "protagonis", 
+            "tokoh"
+        ]
+    }, 
+    "bahagia": {
+        "tag": "a", 
+        "sinonim": [
+            "aman", 
+            "baik", 
+            "beruntung", 
+            "cerah", 
+            "ceria", 
+            "enak", 
+            "gembira", 
+            "girang", 
+            "lega", 
+            "makmur", 
+            "mujur", 
+            "nikmat", 
+            "puas", 
+            "riang", 
+            "sejahtera", 
+            "selamat", 
+            "senang", 
+            "sentosa", 
+            "suka cita", 
+            "tenteram"
+        ], 
+        "antonim": [
+            "sedih"
+        ]
+    }, 
+    "cerling": {
+        "tag": "v", 
+        "sinonim": [
+            "melirik", 
+            "mengambal", 
+            "mengerling", 
+            "menjeling", 
+            "menjuling", 
+            "melihat"
+        ]
+    }, 
+    "provokator": {
+        "tag": "n", 
+        "sinonim": [
+            "agitator", 
+            "pengacum", 
+            "pengasung", 
+            "penghasut"
+        ]
+    }, 
+    "endemi": {
+        "tag": "n", 
+        "sinonim": [
+            "epidemi", 
+            "hawar", 
+            "pandemi", 
+            "pagebluk", 
+            "taun", 
+            "wabah"
+        ]
+    }, 
+    "pemadat": {
+        "tag": "n", 
+        "sinonim": [
+            "pecandu"
+        ]
+    }
+}
