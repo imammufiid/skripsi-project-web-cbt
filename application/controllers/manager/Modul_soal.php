@@ -134,7 +134,6 @@ class Modul_soal extends Member_Controller
 			$soal = $this->input->post('tambah-soal', FALSE);
 			$tipe = $this->input->post('tambah-tipe', TRUE);
 			$kesulitan = $this->input->post('tambah-kesulitan', TRUE);
-			// $audio = $_FILES['tambah-audio']['name'];
 
 			$posisi = $this->config->item('upload_path') . '/topik_' . $id_topik . '';
 
@@ -156,9 +155,6 @@ class Modul_soal extends Member_Controller
 					// menyimpan file dari base64
 					file_put_contents($file_name, base64_decode($soal_image_array[3]));
 
-					//echo $data[1].'<br />'; // tipe file
-					//echo $data[3].'<br />'; // data base64
-
 					$soal = str_replace($soal_image, base_url() . $file_name, $soal);
 				}
 			}
@@ -167,14 +163,8 @@ class Modul_soal extends Member_Controller
 
 			// Mengecek apakah tipe soal adalah jawaban singkat
 			$kunci_jawaban = '';
-			$status_jawaban_singkat = 1;
-			$status_jawaban_esai = 1;
-			if ($tipe == 3) { // singkat
-				$kunci_jawaban = $this->input->post('tambah-kunci-jawaban-singkat', TRUE);
-				if (empty($kunci_jawaban)) {
-					$status_jawaban_singkat = 0;
-				}
-			} else if ($tipe == 2) { // esai
+			$status_jawaban_esai = 1; 
+			if ($tipe == 2) { // esai
 				$kunci_jawaban = $this->input->post('tambah-kunci-jawaban-esai', TRUE);
 				if (empty($kunci_jawaban)) {
 					$status_jawaban_esai = 0;
@@ -182,12 +172,11 @@ class Modul_soal extends Member_Controller
 			}
 
 			/**
-			 * Prepocessing answer key
+			 * * Prepocessing answer key
 			 */
 			$tmProcess = $this->prepocessing->create($kunci_jawaban);
 			$dataTm = [
-				"tm_answer" 			=> $kunci_jawaban,
-				// "tm_tessoal_id"     => $tes_soal_id,
+				"tm_answer" 		=> $kunci_jawaban,
 				"tm_is_key"         => 1,
 				"tm_case_folding"   => $tmProcess['case_folding'],
 				"tm_tokenization"   => $tmProcess['tokenization'],
@@ -199,10 +188,7 @@ class Modul_soal extends Member_Controller
 			if ($id_topik == 'kosong') {
 				$status['status'] = 0;
 				$status['pesan'] = 'Topik belum tersedia';
-			} else if ($status_jawaban_singkat == 0) {
-				$status['status'] = 0;
-				$status['pesan'] = 'Kunci Jawaban untuk Soal Jawaban Singkat tidak boleh kosong !';
-			} else if ($status_jawaban_esai == 0) {
+			}  else if ($status_jawaban_esai == 0) {
 				$status['status'] = 0;
 				$status['pesan'] = 'Kunci Jawaban untuk Soal Jawaban Esai tidak boleh kosong !';
 			} else {
@@ -215,32 +201,6 @@ class Modul_soal extends Member_Controller
 				$data['soal_audio_play'] = $this->input->post('tambah-putar', TRUE);
 
 				$upload = 0;
-				// if (!empty($audio)) {
-				// 	$upload = 1;
-
-				// 	if (!is_dir($posisi)) {
-				// 		mkdir($posisi);
-				// 	}
-
-				// 	$field_name = 'tambah-audio';
-
-				// 	$config['upload_path'] = $posisi;
-				// 	$config['allowed_types'] = 'mp3';
-				// 	$config['max_size']	= '0';
-				// 	$config['overwrite'] = true;
-				// 	$config['file_name'] = strtolower($_FILES[$field_name]['name']);
-
-				// 	$this->load->library('upload', $config);
-				// 	if (!$this->upload->do_upload($field_name)) {
-				// 		$status['status_upload'] = 0;
-				// 		$status['pesan_upload'] = $this->upload->display_errors() . 'Tipe file yang di upload adalah ' . $_FILES[$field_name]['type'];
-				// 	} else {
-				// 		$upload_data = $this->upload->data();
-				// 		$data['soal_audio'] = $upload_data['file_name'];
-				// 		$status['status_upload'] = 1;
-				// 		$status['pesan_upload'] = 'File ' . $upload_data['file_name'] . ' BERHASIL di IMPORT';
-				// 	}
-				// }
 
 				if (!empty($id_soal)) {
 					/**

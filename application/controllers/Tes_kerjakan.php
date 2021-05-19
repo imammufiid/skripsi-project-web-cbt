@@ -169,11 +169,6 @@ class Tes_kerjakan extends Tes_Controller
              */
             $tmProcess = $this->prepocessing->create($jawaban);
 
-            // Mengecek apakah tes masih berjalan dan waktu masih mencukupi
-            //if($this->cbt_tes_user_model->count_by_status_waktu($tes_user_id)->row()->hasil>0){
-            //
-            // revisi 2018-11-15
-            // agar waktu mengambil dari waktu php, bukan mysql
             $waktuuser = date('Y-m-d H:i:s');
             if ($this->cbt_tes_user_model->count_by_status_waktuuser($tes_user_id, $waktuuser)->row()->hasil > 0) {
 
@@ -191,33 +186,7 @@ class Tes_kerjakan extends Tes_Controller
                     $this->db->trans_start();
 
                     // Mengecek jenis soal
-                    if ($query_soal->soal_tipe == 1) {
-                        // Mendapatkan data tes
-                        $query_tes = $this->cbt_tes_model->get_by_kolom_limit('tes_id', $tes_id, 1)->row();
-
-                        // Mendapatkan data jawaban
-                        $query_jawaban = $this->cbt_tes_soal_jawaban_model->get_by_tessoal_answer($tes_soal_id, $jawaban)->row();
-
-                        // Mengupdate pilihan jawaban benar
-                        $data_jawaban['soaljawaban_selected'] = 1;
-                        $this->cbt_tes_soal_jawaban_model->update_by_tessoal_answer($tes_soal_id, $jawaban, $data_jawaban);
-                        // Mengupdate pilihan jawaban salah
-                        $data_jawaban['soaljawaban_selected'] = 0;
-                        $this->cbt_tes_soal_jawaban_model->update_by_tessoal_answer_salah($tes_soal_id, $jawaban, $data_jawaban);
-
-                        // Mengupdate score, change time jika pilihan benar
-                        if ($query_jawaban->jawaban_benar == 1) {
-                            $data_tes_soal['tessoal_nilai'] = $query_tes->tes_score_right;
-                        } else {
-                            $data_tes_soal['tessoal_nilai'] = $query_tes->tes_score_wrong;
-                        }
-
-                        $this->cbt_tes_soal_model->update('tessoal_id', $tes_soal_id, $data_tes_soal);
-
-                        $status['status'] = 1;
-                        $status['nomor_soal'] = $tes_soal_nomor;
-                        $status['pesan'] = 'Jawaban yang dipilih berhasil disimpan';
-                    } else if ($query_soal->soal_tipe == 2) {
+                    if ($query_soal->soal_tipe == 2) {
                         // Mengupdate change time, dan jawaban essay
                         $data_tes_soal['tessoal_jawaban_text'] = $jawaban;
                         $data_tes_soal['tessoal_nilai'] = 0;
@@ -236,22 +205,6 @@ class Tes_kerjakan extends Tes_Controller
 
                         $this->cbt_tes_soal_model->update('tessoal_id', $tes_soal_id, $data_tes_soal);
                         $this->cbt_text_mining_model->save($dataTm);
-
-                        $status['status'] = 1;
-                        $status['nomor_soal'] = $tes_soal_nomor;
-                        $status['pesan'] = 'Jawaban yang dimasukkan berhasil disimpan';
-                    } else if ($query_soal->soal_tipe == 3) {
-                        // Mendapatkan data tes
-                        $query_tes = $this->cbt_tes_model->get_by_kolom_limit('tes_id', $tes_id, 1)->row();
-
-                        // Mengupdate change time, dan jawaban essay
-                        $data_tes_soal['tessoal_jawaban_text'] = $jawaban;
-                        if (strtoupper($query_soal->soal_kunci) == strtoupper($jawaban)) {
-                            $data_tes_soal['tessoal_nilai'] = $query_tes->tes_score_right;
-                        } else {
-                            $data_tes_soal['tessoal_nilai'] = $query_tes->tes_score_wrong;
-                        }
-                        $this->cbt_tes_soal_model->update('tessoal_id', $tes_soal_id, $data_tes_soal);
 
                         $status['status'] = 1;
                         $status['nomor_soal'] = $tes_soal_nomor;

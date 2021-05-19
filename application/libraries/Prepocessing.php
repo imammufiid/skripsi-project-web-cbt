@@ -59,10 +59,7 @@ class Prepocessing
 
    function filtering($resultTokenization)
    {
-      // require_once('Filtering.php');
-      // $filtering = new Filtering();
       $this->CI = &get_instance();
-
       $hasilFilter = [];
       foreach (json_decode($resultTokenization) as $key => $value) {
          $proses = $this->CI->filtering->getToken($value, 9);
@@ -75,7 +72,6 @@ class Prepocessing
 
    function stemming($resultFiltering)
    {
-      // include_once 'Stemming.php';
       $stemmerFactory = new \Sastrawi\Stemmer\StemmerFactory();
       $stemmer = $stemmerFactory->createStemmer();
 
