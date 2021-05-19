@@ -14,7 +14,7 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box box-danger">
+            <div class="box box-success">
                 <div class="box-header with-border">
                     <div class="box-title">Filter Jawaban</div>
                 </div><!-- /.box-header -->
@@ -49,11 +49,11 @@
     </div>
     <div class="row">
         <div class="col-xs-12">
-            <div class="box box-warning">
+            <div class="box box-success">
                 <div class="box-header with-border">
                     <div class="box-title">Daftar Jawaban</div>
                     <input type="hidden" id="tes-id">
-                    <button class="btn btn-info pull-right btn-sm" onclick="koreksi_semua(<?php echo $tes_id; ?>)">Koreksi Otomatis</button>
+                    <button class="btn btn-info pull-right btn-sm btn-flat" onclick="koreksi_semua(<?php echo $tes_id; ?>)">Koreksi Otomatis</button>
                 </div><!-- /.box-header -->
 
                 <div class="box-body">

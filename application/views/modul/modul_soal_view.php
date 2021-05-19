@@ -14,7 +14,7 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box box-danger">
+            <div class="box box-success">
                 <div class="box-header with-border">
                     <div class="box-title">Pilih Topik</div>
                 </div><!-- /.box-header -->
@@ -41,7 +41,7 @@
     </div>
 	<div class="row">
         <div class="col-xs-12">
-                <div class="box box-warning">
+                <div class="box box-success">
                     <?php echo form_open_multipart($url.'/tambah','id="form-tambah" class="form-horizontal"'); ?>
                         <div class="box-header with-border">
                             <div class="box-title">Mengelola Soal <span id="judul-tambah-soal"></span></div>
@@ -151,7 +151,7 @@
                                     <th>No.</th>
                                     <th>Soal</th>
                                     <th>Kunci Jawaban</th>
-                                    <th></th>
+                                    <th>Aksi</th>
                                 </tr>
                             </thead>
                             <tbody>

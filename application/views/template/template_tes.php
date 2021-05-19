@@ -89,7 +89,7 @@
   </script>
   </head>
   <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-  <body class="skin-yellow layout-top-nav">
+  <body class="skin-blue layout-top-nav">
     <div class="wrapper">
 
       <header class="main-header">               

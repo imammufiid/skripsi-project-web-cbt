@@ -20,7 +20,7 @@
             <input type="hidden" name="tes-soal-nomor" id="tes-soal-nomor"  value="<?php if(!empty($tes_soal_nomor)){ echo $tes_soal_nomor; } ?>">
             <input type="hidden" name="tes-soal-jml" id="tes-soal-jml" value="<?php if(!empty($tes_soal_jml)){ echo $tes_soal_jml; } ?>">
             <input type="hidden" name="tes-soal-ragu" id="tes-soal-ragu" value="<?php if(!empty($tes_ragu)){ echo $tes_ragu; } ?>">
-    		<div class="box box-warning box-solid">
+    		<div class="box box-primary box-solid">
                 <div class="box-header with-border">
                     <h3 class="box-title">Soal <span id="judul-soal"><?php if(!empty($tes_soal_nomor)){ echo 'ke '.$tes_soal_nomor; } ?></span></h3>
                     <div class="box-tools pull-right">
@@ -46,7 +46,7 @@
         </form>
     	</div>
         <div class="row">
-            <div class="box box-success box-solid">
+            <div class="box box-primary box-solid">
                 <div class="box-header with-border">
                     <h3 class="box-title">Daftar Soal</h3>
                 </div><!-- /.box-header -->
@@ -101,7 +101,7 @@
                     </div>
                 </div>
 				<div class="box-footer">
-					<button type="submit" id="tambah-simpan" class="btn btn-primary">Hentikan Tes</button>
+					<button type="submit" id="tambah-simpan" class="btn btn-danger">Hentikan Tes</button>
 					<a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
 				</div>
             </div>

@@ -14,14 +14,14 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box box-danger">
+            <div class="box box-success">
                 <?php echo form_open($url . '/tambah_tes', 'id="form-tambah-tes"  class="form-horizontal"'); ?>
                 <div class="box-header with-border">
                     <div class="box-title">Mengelola Tes</div>
                 </div><!-- /.box-header -->
 
                 <div class="box-body">
-                    <div class="col-xs-6">
+                    <div class="col-xs-10">
                         <div id="form-pesan-tes"></div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Nama</label>
@@ -66,14 +66,14 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xs-6">
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Poin Dasar</label>
                             <div class="col-sm-9">
                                 <input type="text" name="tambah-poin" id="tambah-poin" class="form-control input-sm" value="1.00" />
                             </div>
                         </div>
+                    </div>
+                    <div class="col-xs-6" style="display: none;">
                         <div class="form-group" style="visibility: hidden;">
                             <label class="col-sm-3 control-label">Jawaban Salah</label>
                             <div class="col-sm-9">
@@ -112,7 +112,7 @@
                     </div>
                 </div>
                 <div class="box-footer">
-                    <button type="submit" id="btn-tambah-simpan" class="btn btn-primary pull-right">Simpan</button>
+                    <button type="submit" id="btn-tambah-simpan" class="btn btn-success pull-right">Simpan</button>
                 </div>
                 </form>
             </div>
@@ -121,7 +121,7 @@
 
     <div class="row hide" id="kolom-soal">
         <div class="col-xs-12">
-            <div class="box">
+            <div class="box box-success">
                 <div class="box-header with-border">
                     <div class="box-title">Tambah Soal <div id="judul-tambah-soal"></div>
                     </div>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="box-footer">
                     <button type="button" id="btn-tambah-daftar" class="btn btn-default">Daftar Tes</button>
-                    <button type="button" id="btn-tambah-selesai" class="btn btn-primary pull-right">Selesai</button>
+                    <button type="button" id="btn-tambah-selesai" class="btn btn-success pull-right">Selesai</button>
                 </div>
             </div>
         </div>

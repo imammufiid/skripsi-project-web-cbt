@@ -125,7 +125,7 @@
 		} 
   </script>
   </head>
-  <body class="sidebar-mini skin-yellow-light sidebar-collapse">
+  <body class="sidebar-mini skin-blue sidebar-collapse">
     <div class="wrapper">
 
       <header class="main-header">

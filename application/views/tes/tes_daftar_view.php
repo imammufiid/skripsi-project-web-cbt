@@ -14,7 +14,7 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box box-danger">
+            <div class="box box-success">
                 <div class="box-header with-border">
                     <div class="box-title">Daftar Tes</div>
                     <div class="box-tools pull-right">

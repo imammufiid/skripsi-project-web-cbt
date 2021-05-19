@@ -14,7 +14,7 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box box-danger">
+            <div class="box box-success">
                 <div class="box-header with-border">
                     <div class="box-title">Pilih Topik</div>
                 </div><!-- /.box-header -->
@@ -23,8 +23,8 @@
                     <div class="col-xs-3"></div>
                     <div class="col-xs-6">
                         <div class="form-group">
-                            <label>Pilih Topik</label>
-                            <div id="data-kelas">
+                            <label class="col-sm-3 control-label">Pilih Topik</label>
+                            <div id="data-kelas" class="col-sm-9">
                                 <select name="topik" id="topik" class="form-control input-sm">
                                     <?php if(!empty($select_topik)){ echo $select_topik; } ?>
                                 </select>
@@ -41,7 +41,7 @@
     </div>
 	<div class="row">
         <div class="col-xs-12">
-                <div class="box box-warning">
+                <div class="box box-success">
                     <div class="box-header with-border">
     					<div class="box-title">Daftar Soal <span id="judul-daftar-soal"></span></div>
                         <div class="box-tools pull-right">

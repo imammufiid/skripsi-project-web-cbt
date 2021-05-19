@@ -14,7 +14,7 @@
 <section class="content">
     <div class="row">
         <div class="col-xs-12">
-            <div class="box box-danger">
+            <div class="box box-success">
                 <div class="box-header with-border">
                     <div class="box-title">Filter Hasil</div>
                 </div><!-- /.box-header -->
@@ -95,13 +95,13 @@
     <div class="row">
         <?php echo form_open($url . '/edit_tes', 'id="form-edit"'); ?>
         <div class="col-xs-12">
-            <div class="box box-warning">
+            <div class="box box-success">
                 <div class="box-header with-border">
                     <div class="box-title">Daftar Hasil Tes</div>
                     <div class="box-tools pull-right">
-                        <div class="dropdown pull-right">
+                        <!-- <div class="dropdown pull-right">
                             <a style="cursor: pointer;" onclick="export_excel()">Export ke Excel</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div><!-- /.box-header -->
 

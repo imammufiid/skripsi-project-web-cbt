@@ -38,12 +38,12 @@
         </div>
 
         <div class="col-md-12">
-            <div class="box box-warning">
+            <div class="box box-success">
                 <div class="box-header with-border">
                     <div class="box-title">Daftar Topik</div>
                     <div class="box-tools pull-right">
                         <div class="dropdown pull-right">
-                            <a style="cursor: pointer;" onclick="tambah()">Tambah Topik</a>
+                            <a style="cursor: pointer;" onclick="tambah()" class="btn btn-flat btn-success btn-sm">Tambah Topik</a>
                         </div>
                     </div>
                 </div><!-- /.box-header -->
