@@ -37,6 +37,7 @@ class Tes_evaluasi extends Member_Controller
 
 		$query_tes = $this->cbt_tes_user_model->get_by_group();
 		$select = '';
+		$tesId = 0;
 		if ($query_tes->num_rows() > 0) {
 			$query_tes = $query_tes->result();
 			foreach ($query_tes as $temp) {
@@ -111,15 +112,23 @@ class Tes_evaluasi extends Member_Controller
 				if ($soal->soal_id == $answer->soal_id) {
 					$stemmingKey = $soal->tm_stemming;
 					$stemmingAnswer = $answer->stemming;
-					// 4. term frecuency
-					// 5. calculate cosine similarity with lib Cosine_Similarity
-					// 6. return
-					$calc = $this->calculateCosineSimilarity(
-						$stemmingAnswer, 
-						$stemmingKey, 
-						(float)$dataOfTes[0]->tes_score_right
+					// 4. synonym recognition
+					$synonymRecognition = $this->synonym_recognition($stemmingAnswer, $stemmingKey);
+					// 5 insert synonym recognition to db 
+					
+					$this->cbt_text_mining_model->insert_synonym_recognition(
+						json_encode($synonymRecognition['answer']), $answer->tm_id
+					);
+					$this->cbt_text_mining_model->insert_synonym_recognition(
+						json_encode($synonymRecognition['answer_key']), $soal->tm_id
 					);
 					
+					// 6. calculate cosine similarity with lib Cosine_Similarity
+					$calc = $this->calculateCosineSimilarity(
+						$synonymRecognition['answer'],
+						$synonymRecognition['answer_key'],
+						(float)$dataOfTes[0]->tes_score_right
+					);
 					if ($calc['status'] == 1) {
 						$this->cbt_tes_soal_model->update('tessoal_id', $answer->tessoal_id, $calc['data']);
 						$counter++;
@@ -127,13 +136,14 @@ class Tes_evaluasi extends Member_Controller
 				}
 			}
 		}
+		
 
 		$result = [
 			"status"	=> 1,
 			"pesan"	=> "Selesai Koreksi",
 			"total_soal"	=> "Total soal : " . sizeof($allSoal),
 			"total_siswa"	=> "Total siswa : " . sizeof($allStudent),
-			"jawaban_koreksi_success"	=> "Jawaban Berhasil Koreksi : ".$counter,
+			"jawaban_koreksi_success"	=> "Jawaban Berhasil Koreksi : " . $counter,
 			"jawaban_koreksi_failed"	=> "Jawaban Gagal Koreksi : " . ((int)sizeof($allStudent) - (int)$counter)
 		];
 
@@ -199,14 +209,19 @@ class Tes_evaluasi extends Member_Controller
 	 *
 	 * @return void
 	 */
-	private function calculateCosineSimilarity($answer = "", $answerKey  = "", float $scoreRight = 0.0)
-	{
+	private function calculateCosineSimilarity(
+		$answer = "",
+		$answerKey  = "",
+		float $scoreRight = 0.0
+	) {
 		// load helper
 		$this->load->helper('intersect_helper');
+
+		// --------------------------
 		// 3. calculate term frekuensi
 		$termFrecuency = term_frecuency(
-			json_decode($answer),
-			json_decode($answerKey)
+			$answer,
+			$answerKey
 		);
 		// 4. get score right from params
 		// 5. calculate cosine similarity with lib Cosine_Similarity
@@ -231,6 +246,52 @@ class Tes_evaluasi extends Member_Controller
 			"data"	=> $data
 		];
 		return $result;
+	}
+
+	private function synonym_recognition($answer, $answerKey) {
+		// load helper
+		$this->load->helper('intersect_helper');
+
+		// * Synonym Recognition
+		// TODO : get same value of array answer and key
+		$sameValue = array_intersect(
+			json_decode($answer),
+			json_decode($answerKey)
+		);
+		// ! if $sameValue is empty return 0
+
+		// TODO : get different value off array answer and key
+		$diffAnswer = array_diff(
+			json_decode($answer),
+			json_decode($answerKey)
+		);
+
+		$diffAnswerKey = array_diff(
+			json_decode($answerKey),
+			json_decode($answer)
+		);
+
+		// TODO : from different value check synonym from db
+		// ! check if empty diff array
+		// ! if empty next
+		$answerSynonym = [];
+		if ($diffAnswer != null || !empty($diffAnswer)) {
+			$answerSynonym = $this->cbt_text_mining_model->synonym_recognition($diffAnswer);
+		}
+
+		$answerKeySynonym = [];
+		if ($diffAnswerKey != null || !empty($diffAnswerKey)) {
+			$answerKeySynonym = $this->cbt_text_mining_model->synonym_recognition($diffAnswerKey);
+		}
+
+		// TODO : and merge to array same value
+		$newAnswer = array_merge($sameValue, $answerSynonym);
+		$newAnswerKey = array_merge($sameValue, $answerKeySynonym);
+
+		return [
+			"answer" 		=> $newAnswer,
+			"answer_key"	=> $newAnswerKey
+		];
 	}
 
 	/**
