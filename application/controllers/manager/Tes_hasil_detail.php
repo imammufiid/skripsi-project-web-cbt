@@ -212,6 +212,15 @@ class Tes_hasil_detail extends Member_Controller
 		            	<td width="5%"></td>
 		                <td width="90%" colspan="4"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->stemming . '</pre></div></td>
 		            </tr>
+					</tr>
+						<tr>
+		            	<td width="5%"></td>
+		                <td width="90%" colspan="4">Synonym Recognition</td>
+		            </tr>
+						<tr>
+		            	<td width="5%"></td>
+		                <td width="90%" colspan="4"><div style="width:100%;"><pre style="white-space: pre-wrap;word-wrap: break-word;">' . $temp->synonym_recognition . '</pre></div></td>
+		            </tr>
 	            ';
 			} else if ($temp->soal_tipe == 3) {
 				// Jika soal adalah soal Jawaban Singkat
