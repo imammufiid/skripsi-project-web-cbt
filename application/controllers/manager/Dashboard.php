@@ -6,25 +6,25 @@ class Dashboard extends Member_Controller {
 	}
     
     public function index(){
-        $this->load->helper('form');
+        // $this->load->helper('form');
         $data['nama'] = $this->access->get_nama();
 
-        $data['post_max_size'] = ini_get('post_max_size');
-        $data['upload_max_filesize'] = ini_get('upload_max_filesize');
-        $data['waktu_server'] = date('Y-m-d H:i:s');
+        // $data['post_max_size'] = ini_get('post_max_size');
+        // $data['upload_max_filesize'] = ini_get('upload_max_filesize');
+        // $data['waktu_server'] = date('Y-m-d H:i:s');
 
-        $dir1 = './public/uploads/';
-        $dir2 = './uploads/';
+        // $dir1 = './public/uploads/';
+        // $dir2 = './uploads/';
 
-        $data['dir_public_uploads'] = 'Not Writeable';
-        if(is_writable($dir1)){
-        	$data['dir_public_uploads'] = 'Writeable';
-        }
+        // $data['dir_public_uploads'] = 'Not Writeable';
+        // if(is_writable($dir1)){
+        // 	$data['dir_public_uploads'] = 'Writeable';
+        // }
 
-        $data['dir_uploads'] = 'Not Writeable';
-        if(is_writable($dir2)){
-        	$data['dir_uploads'] = 'Writeable';
-        }
+        // $data['dir_uploads'] = 'Not Writeable';
+        // if(is_writable($dir2)){
+        // 	$data['dir_uploads'] = 'Writeable';
+        // }
 
         $this->template->display_admin('manager/dashboard_view', 'Dashboard', $data);
     }
