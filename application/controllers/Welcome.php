@@ -28,22 +28,22 @@ class Welcome extends CI_Controller
 				$this->template->display_user('blokbrowser_view', 'Browser yang didukung');
 			} else {
 				$akses_cbt = 1;
-				if ($this->agent->is_mobile()) {
-					$query = $this->cbt_konfigurasi_model->get_by_kolom_limit('konfigurasi_kode', 'cbt_mobile_lock_xambro', 1);
-					if ($query->row()->konfigurasi_isi == "ya") {
-						$agent = $this->agent->agent_string();
-						if (strpos($agent, 'ZYACBT') == false) {
-							$akses_cbt = 0;
-						}
-					}
-				}
+				// if ($this->agent->is_mobile()) {
+				// 	$query = $this->cbt_konfigurasi_model->get_by_kolom_limit('konfigurasi_kode', 'cbt_mobile_lock_xambro', 1);
+				// 	if ($query->row()->konfigurasi_isi == "ya") {
+				// 		$agent = $this->agent->agent_string();
+				// 		if (strpos($agent, 'ZYACBT') == false) {
+				// 			$akses_cbt = 0;
+				// 		}
+				// 	}
+				// }
 				if ($akses_cbt == 1) {
 					if (!$this->access_tes->is_login()) {
-						$data['link_login_operator'] = "tidak";
-						$query_konfigurasi = $this->cbt_konfigurasi_model->get_by_kolom_limit('konfigurasi_kode', 'link_login_operator', 1);
-						if ($query_konfigurasi->num_rows() > 0) {
-							$data['link_login_operator'] = $query_konfigurasi->row()->konfigurasi_isi;
-						}
+						// $data['link_login_operator'] = "tidak";
+						// $query_konfigurasi = $this->cbt_konfigurasi_model->get_by_kolom_limit('konfigurasi_kode', 'link_login_operator', 1);
+						// if ($query_konfigurasi->num_rows() > 0) {
+						// 	$data['link_login_operator'] = $query_konfigurasi->row()->konfigurasi_isi;
+						// }
 						$this->template->display_user($this->kelompok . '/welcome_view', 'Selamat Datang', $data);
 					} else {
 						redirect('tes_dashboard');
@@ -77,6 +77,7 @@ class Welcome extends CI_Controller
 			$status['status'] = 0;
 			$status['error'] = validation_errors();
 		}
+		// var_dump($status);die;
 		echo json_encode($status);
 	}
 
