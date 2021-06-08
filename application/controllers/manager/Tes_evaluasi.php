@@ -103,7 +103,7 @@ class Tes_evaluasi extends Member_Controller
 		$allSoal = $this->cbt_text_mining_model->getAllSoalByTesId($tesId);
 		// 2. get all answer student by soal id in tesId
 		$allStudent = $this->cbt_text_mining_model->getAllStudentByTest($tesId);
-		// get score right and point wrong
+		// get score right
 		$dataOfTes = $this->cbt_text_mining_model->getTesById($tesId);
 		$counter = 0;
 		foreach ($allSoal as $key => $soal) {
