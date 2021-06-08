@@ -137,6 +137,7 @@ class Modul_soal extends Member_Controller
 
 			$posisi = $this->config->item('upload_path') . '/topik_' . $id_topik . '';
 
+			// untuk melakukan proses upload gambar dari soal
 			$doc = new DOMDocument();
 			$doc->loadHTML($soal);
 			$tags = $doc->getElementsByTagName('img');
@@ -183,7 +184,7 @@ class Modul_soal extends Member_Controller
 				"tm_filtering"      => $tmProcess['filtering'],
 				"tm_stemming"       => $tmProcess['stemming'],
 				"created_at"        => date('Y-m-d H:i:s')
-		  ];
+		  	];
 
 			if ($id_topik == 'kosong') {
 				$status['status'] = 0;
@@ -196,7 +197,6 @@ class Modul_soal extends Member_Controller
 				$data['soal_detail'] = $soal;
 				$data['soal_tipe'] = $tipe;
 				$data['soal_kunci'] = $kunci_jawaban;
-				$data['soal_difficulty'] = $kesulitan;
 				$data['soal_aktif'] = 1;
 				$data['soal_audio_play'] = $this->input->post('tambah-putar', TRUE);
 
@@ -227,7 +227,9 @@ class Modul_soal extends Member_Controller
 						$status['pesan'] = 'Soal berhasil disimpan';
 					} else {
 						$status['status'] = 1;
-						$status['pesan'] = 'Soal berhasil disimpan, tetapi Audio tidak tersimpan dengan kesalahan<br />Pesan : ' . $status['pesan_upload'];
+						$status['pesan'] = 'Soal berhasil disimpan, 
+						tetapi file tidak tersimpan dengan kesalahan<br />Pesan : ' 
+						. $status['pesan_upload'];
 					}
 				}
 			}
