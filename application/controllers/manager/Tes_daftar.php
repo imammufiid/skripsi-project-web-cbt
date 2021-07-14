@@ -166,8 +166,10 @@ class Tes_daftar extends Member_Controller {
 
             
             $record[] = '
-            	<a onclick="edit(\''.$temp->tes_id.'\')" style="cursor: pointer;" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-edit"></span></a>
-            	<a onclick="hapus(\''.$temp->tes_id.'\')" style="cursor: pointer;" class="btn btn-default btn-xs"><span class="glyphicon glyphicon-remove"></a>
+            	<a onclick="edit(\''.$temp->tes_id.'\')" style="cursor: pointer;" class="btn btn-default btn-xs">
+				<span class="glyphicon glyphicon-edit"></span></a>
+            	<a onclick="hapus(\''.$temp->tes_id.'\')" style="cursor: pointer;" class="btn btn-default btn-xs">
+				<span class="glyphicon glyphicon-remove"></a>
             ';
 
             $record[] = '<input type="checkbox" name="edit-tes-id['.$temp->tes_id.']" >';

@@ -119,8 +119,6 @@ class Tes_tambah extends Member_Controller {
         $this->form_validation->set_rules('tambah-waktu', 'Waktu Pengerjaan Tes','required|integer|strip_tags');
         $this->form_validation->set_rules('tambah-group[]', 'Grup','required|strip_tags');
         $this->form_validation->set_rules('tambah-poin', 'Poin Dasar','required|numeric|strip_tags');
-        $this->form_validation->set_rules('tambah-poin-salah', 'Poin Jawaban Salah','required|numeric|strip_tags');
-        $this->form_validation->set_rules('tambah-poin-kosong', 'Poin Jawaban Kosong','required|numeric|strip_tags');
         
         if($this->form_validation->run() == TRUE){
         	$tes_id = $this->input->post('tambah-id', true);
@@ -129,8 +127,6 @@ class Tes_tambah extends Member_Controller {
             $data['tes_detail'] = $this->input->post('tambah-deskripsi', true);
             $data['tes_duration_time'] = $this->input->post('tambah-waktu', true);
             $data['tes_score_right'] = $this->input->post('tambah-poin', true);
-            $data['tes_score_wrong'] = $this->input->post('tambah-poin-salah', true);
-            $data['tes_score_unanswered'] = $this->input->post('tambah-poin-kosong', true);
 
             $tunjukkan_hasil = $this->input->post('tambah-tunjukkan-hasil', true);
             if(!empty($tunjukkan_hasil)){
@@ -144,13 +140,6 @@ class Tes_tambah extends Member_Controller {
                 $data['tes_detail_to_users'] = $detail_hasil;
             }else{
                 $data['tes_detail_to_users'] = '0';
-            }
-            
-            $token = $this->input->post('tambah-token', true);
-            if(!empty($token)){
-            	$data['tes_token'] = $token;
-            }else{
-            	$data['tes_token'] = '0';
             }
 
             $rentang_waktu = $this->input->post('tambah-rentang-waktu', true);

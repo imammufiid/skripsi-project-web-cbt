@@ -85,11 +85,8 @@ class Cbt_text_mining_model extends CI_Model
 	function synonym_recognition($array = [])
 	{
 		foreach ($array as $key => $value) {
-			$synonym = $this->db->select("word")
-				->from("cbt_synonym")
-				->where("synonym", $value)
-				->get()
-				->row();
+			$synonym = $this->db->select("word")->from("cbt_synonym")
+            ->where("synonym", $value)->get()->row();
 
 			if ($synonym != null) {
 				$array[$key] = $synonym->word;

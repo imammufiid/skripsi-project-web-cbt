@@ -317,9 +317,11 @@
         $('#tambah-poin').val('1.00');
         $('#tambah-poin-kosong').val('0.00');
         $('#tambah-poin-salah').val('0.00');
-        $('#tambah-rentang-waktu').val('<?php if (!empty($rentang_waktu)) {
-                                            echo $rentang_waktu;
-                                        } ?>');
+        $('#tambah-rentang-waktu').val(
+            '<?php if (!empty($rentang_waktu)) {
+                echo $rentang_waktu;
+            } ?>'
+        );
         $('#tambah-group option:selected').removeAttr('selected');
         $('#tambah-acak-jawaban').prop("checked", true);
 
