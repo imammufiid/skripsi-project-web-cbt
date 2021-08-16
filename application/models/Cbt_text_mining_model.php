@@ -86,8 +86,8 @@ class Cbt_text_mining_model extends CI_Model
 	{
 		foreach ($array as $key => $value) {
 			$synonym = $this->db->select("word")->from("cbt_synonym")
-            ->where("synonym", $value)->get()->row();
-
+            ->where("synonym", $value)
+            ->where("tag", "n")->get()->row();
 			if ($synonym != null) {
 				$array[$key] = $synonym->word;
 			}
