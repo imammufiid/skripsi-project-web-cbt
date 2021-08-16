@@ -44,7 +44,7 @@ if (!function_exists("human_rate")) {
       } else if ($cs < 0.1 && $cs < 0) {
          return (1 / 10) * $scoreRight;
       } else {
-         return 0.0;
+         return 3.0;
       }
    }
 }
