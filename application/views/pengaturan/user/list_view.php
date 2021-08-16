@@ -19,7 +19,7 @@
     						<div class="box-title">Data User</div>
     						<div class="box-tools pull-right">
     							<div class="dropdown pull-right">
-    								<a href="<?php echo current_url(); ?>/index/add">Tambah User</a>
+    								<a href="<?php echo current_url(); ?>/index/add" class="btn btn-success">Tambah User</a>
     							</div>
     						</div>
                     </div><!-- /.box-header -->
