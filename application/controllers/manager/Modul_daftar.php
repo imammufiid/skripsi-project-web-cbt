@@ -104,15 +104,15 @@ class Modul_daftar extends Member_Controller
 						$tipe_soal = 'Essay';
 					}
 
-					if (!empty($temp->soal_audio)) {
-						$posisi = $this->config->item('upload_path') . '/topik_' . $temp->soal_topik_id;
-						$soal = $soal . '<br />
-							<audio controls>
-							<source src="' . base_url() . $posisi . '/' . $temp->soal_audio . '" type="audio/mpeg">
-							Your browser does not support the audio element.
-							</audio>
-						';
-					}
+					// if (!empty($temp->soal_audio)) {
+					// 	$posisi = $this->config->item('upload_path') . '/topik_' . $temp->soal_topik_id;
+					// 	$soal = $soal . '<br />
+					// 		<audio controls>
+					// 		<source src="' . base_url() . $posisi . '/' . $temp->soal_audio . '" type="audio/mpeg">
+					// 		Your browser does not support the audio element.
+					// 		</audio>
+					// 	';
+					// }
 
 					$soal_table = $soal_table . '
 							<tr>

@@ -52,7 +52,7 @@ class Modul_soal extends Member_Controller {
         	$soal = str_replace(base_url(),"[base_url]", $soal);
         	$tipe = $this->input->post('tambah-tipe', TRUE);
         	$kesulitan = $this->input->post('tambah-kesulitan', TRUE);
-        	$audio = $_FILES['tambah-audio']['name'];
+        	// $audio = $_FILES['tambah-audio']['name'];
 
         	if($id_topik=='kosong'){
         		$status['status'] = 0;
@@ -64,34 +64,34 @@ class Modul_soal extends Member_Controller {
 	        	$data['soal_difficulty'] = $kesulitan;
 	        	$data['soal_aktif'] = 1;
 
-	        	if(!empty($audio)){
-	        		$data['soal_audio_play'] = $this->input->post('tambah-putar', TRUE);;
+	        	// if(!empty($audio)){
+	        	// 	$data['soal_audio_play'] = $this->input->post('tambah-putar', TRUE);;
 
-	        		$posisi = $this->config->item('upload_path').'/topik_'.$id_topik.'';
+	        	// 	$posisi = $this->config->item('upload_path').'/topik_'.$id_topik.'';
 
-	        		if(!is_dir($posisi)){
-	        			mkdir($posisi);
-	        		}
+	        	// 	if(!is_dir($posisi)){
+	        	// 		mkdir($posisi);
+	        	// 	}
 
-	        		$field_name = 'tambah-audio';
+	        	// 	$field_name = 'tambah-audio';
 
-	        		$config['upload_path'] = $posisi;
-				    $config['allowed_types'] = 'mp3';
-				    $config['max_size']	= '0';
-				    $config['overwrite'] = true;
-				    $config['file_name'] = strtolower($_FILES[$field_name]['name']);
+	        	// 	$config['upload_path'] = $posisi;
+				//     $config['allowed_types'] = 'mp3';
+				//     $config['max_size']	= '0';
+				//     $config['overwrite'] = true;
+				//     $config['file_name'] = strtolower($_FILES[$field_name]['name']);
 
-				    $this->load->library('upload', $config);
-				    if (!$this->upload->do_upload($field_name)){
-			        	$status['status_upload'] = 0;
-			            $status['pesan_upload'] = $this->upload->display_errors();
-			        }else{
-			        	$upload_data = $this->upload->data();
-						$status['status_upload'] = 1;
-			            $status['pesan_upload'] = 'File '.$upload_data['file_name'].' BERHASIL di IMPORT';
-			        }
-			        $data['soal_audio'] = $upload_data['file_name'];
-	        	}
+				//     $this->load->library('upload', $config);
+				//     if (!$this->upload->do_upload($field_name)){
+			    //     	$status['status_upload'] = 0;
+			    //         $status['pesan_upload'] = $this->upload->display_errors();
+			    //     }else{
+			    //     	$upload_data = $this->upload->data();
+				// 		$status['status_upload'] = 1;
+			    //         $status['pesan_upload'] = 'File '.$upload_data['file_name'].' BERHASIL di IMPORT';
+			    //     }
+			    //     $data['soal_audio'] = $upload_data['file_name'];
+	        	// }
 
 	        	$this->cbt_soal_model->save($data);
 

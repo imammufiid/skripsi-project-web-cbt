@@ -46,15 +46,15 @@ class Modul_jawaban extends Member_Controller {
 	        		$soal = $query_soal->soal_detail;
 					$soal = str_replace("[base_url]", base_url(), $soal);
 
-					if(!empty($query_soal->soal_audio)){
-						$posisi = $this->config->item('upload_path').'/topik_'.$query_soal->soal_topik_id;
-						$soal = $soal.'
-							<audio controls>
-							  <source src="'.base_url().$posisi.'/'.$query_soal->soal_audio.'" type="audio/mpeg">
-							Your browser does not support the audio element.
-							</audio>
-						';
-					}
+					// if(!empty($query_soal->soal_audio)){
+					// 	$posisi = $this->config->item('upload_path').'/topik_'.$query_soal->soal_topik_id;
+					// 	$soal = $soal.'
+					// 		<audio controls>
+					// 		  <source src="'.base_url().$posisi.'/'.$query_soal->soal_audio.'" type="audio/mpeg">
+					// 		Your browser does not support the audio element.
+					// 		</audio>
+					// 	';
+					// }
 
 					$data['soal'] = $soal;
 
