@@ -118,6 +118,15 @@
             </form>
         </div>
     </div>
+    <div class="modal" id="modal-proses" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    Data Sedang diproses...
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </section><!-- /.content -->
 
 
@@ -154,6 +163,7 @@
     }
 
     function koreksi_semua() {
+        $("#modal-proses").modal('show');
         let tesId = $('#tes-id').val();
         $.ajax({
             url: "<?php echo site_url() . '/' . $url; ?>/cosine_similarity_all_corection/" + tesId,
