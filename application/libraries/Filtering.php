@@ -180,13 +180,13 @@ class Filtering
     public function getToken($token, $nbrwords2 = 5)
     {
         // include 'koneksi.php';
-        $filter = str_word_count($token, 1);
+        $filter = str_word_count($token, 1); // mengambil term
         array_walk($filter, array(
             $this,
             'filter'
         ));
-        $filter = array_diff($filter, $this->stopwords2);
-        $wordCount = array_count_values($filter);
+        $filter = array_diff($filter, $this->stopwords2); // mencari yg beda antar 2 array
+        $wordCount = array_count_values($filter); // menghitung jumlah kata yg sama
         arsort($wordCount);
 
         $jumlah = count($wordCount);
@@ -195,7 +195,7 @@ class Filtering
         foreach ($wordCount as $key => $hasil) {
             $hasilFilter = $key;
         }
-        $wordCount = array_slice($wordCount, 0, $nbrwords2);
+        $wordCount = array_slice($wordCount, 0);
         array_keys($wordCount);
         return $hasilFilter;
     }
