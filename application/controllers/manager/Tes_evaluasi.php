@@ -228,7 +228,7 @@ class Tes_evaluasi extends Member_Controller
 		$calc = 0;
 		if (empty($termFrecuency["answer"]) || empty($termFrecuency["key"])) {
 			$data['tessoal_nilai'] = 0;
-			$data['tessoal_human_point'] = 0;
+			$data['tessoal_human_point'] = human_rate(3, $scoreRight);;
 		} else {
 			$this->load->library("MyCs");
 			$calc = $this->mycs->calculate($termFrecuency["answer"], $termFrecuency["key"]);
