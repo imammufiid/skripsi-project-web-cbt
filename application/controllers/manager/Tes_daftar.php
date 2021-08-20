@@ -158,11 +158,11 @@ class Tes_daftar extends Member_Controller {
             	$record[] = 'Tidak';
             }
 
-            if($temp->tes_token==1){
-            	$record[] = 'Ya';
-            }else{
-            	$record[] = 'Tidak';
-            }
+            // if($temp->tes_token==1){
+            // 	$record[] = 'Ya';
+            // }else{
+            // 	$record[] = 'Tidak';
+            // }
 
             
             $record[] = '

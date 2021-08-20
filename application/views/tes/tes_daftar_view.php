@@ -40,9 +40,9 @@
                                 <th class="none">Waktu Tes</th>
                                 <th class="none">Poin Dasar</th>
                                 <th class="none">Tunjukkan Hasil</th>
-                                <th class="none">Token</th>
-                                <th class="all"></th>
-                                <th class="all"></th>
+                                <!-- <th class="none">Token</th> -->
+                                <th class="all">Aksi</th>
+                                <th class="all">Pilih</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -55,7 +55,7 @@
                                 <td> </td>
                                 <td> </td>
                                 <td> </td>
-                                <td> </td>
+                                <!-- <td> </td> -->
                                 <td> </td>
                                 <td> </td>
                             </tr>
@@ -262,10 +262,10 @@
                     "bSearchable": false,
                     "bSortable": false
                 },
-                {
-                    "bSearchable": false,
-                    "bSortable": false
-                },
+                // {
+                //     "bSearchable": false,
+                //     "bSortable": false
+                // },
                 {
                     "bSearchable": false,
                     "bSortable": false,
