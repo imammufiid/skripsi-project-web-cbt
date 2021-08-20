@@ -48,7 +48,8 @@ class Prepocessing
    function tokenization($resultCaseFolding = "")
    {
       $hasilToken = [];
-      // menghitung jumlah dan memecah kata dalam kalimat
+      // memecah kata dalam kalimat
+      // param ke-2 == 1 => Returns an array with the words from the string
       $token = str_word_count(strtolower($resultCaseFolding), 1);
       foreach ($token as $key => $val) {
          array_push($hasilToken, $val);
