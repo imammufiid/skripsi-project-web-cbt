@@ -420,34 +420,34 @@ class Tes_kerjakan extends Tes_Controller
                     $soal = str_replace("[base_url]", base_url(), $soal);
 
                     // memberi file audio jika ada
-                    if (!empty($query_soal->soal_audio)) {
-                        $audio_play = 0;
-                        if ($query_soal->soal_audio_play == 1) {
-                            $audio_play = 1;
-                        }
-                        // jika batasan play audio masih bernilai 0
-                        if ($query_soal->tessoal_audio_play == 0) {
-                            $posisi = $this->config->item('upload_path') . '/topik_' . $query_soal->soal_topik_id;
-                            $soal = $soal . '
-                                <audio volume="1.0" id="audio-player" onended="audio_ended(\'' . $audio_play . '\')">
-                                  <source src="' . base_url() . $posisi . '/' . $query_soal->soal_audio . '" type="audio/mpeg">
-                                    Your browser does not support the audio element.
-                                </audio>
-                                <div style="max-width:350px" id="audio-control">
-                                    <div class="box">
-                                        <div class="box-body">
-                                            <input type="hidden" id="audio-player-status" value="0" />
-                                            <input type="hidden" id="audio-player-update" value="0" />
-                                            <a class="btn btn-app" onclick="audio(\'' . $audio_play . '\')">
-                                                <i class="fa fa-play" id="audio-player-judul-logo"></i> <span id="audio-player-judul">Play</span>
-                                            </a>
-                                            &nbsp;&nbsp;Klik Play untuk memutar Audio
-                                        </div>
-                                    </div>
-                                </div>
-                            ';
-                        }
-                    }
+                    // if (!empty($query_soal->soal_audio)) {
+                    //     $audio_play = 0;
+                    //     if ($query_soal->soal_audio_play == 1) {
+                    //         $audio_play = 1;
+                    //     }
+                    //     // jika batasan play audio masih bernilai 0
+                    //     if ($query_soal->tessoal_audio_play == 0) {
+                    //         $posisi = $this->config->item('upload_path') . '/topik_' . $query_soal->soal_topik_id;
+                    //         $soal = $soal . '
+                    //             <audio volume="1.0" id="audio-player" onended="audio_ended(\'' . $audio_play . '\')">
+                    //               <source src="' . base_url() . $posisi . '/' . $query_soal->soal_audio . '" type="audio/mpeg">
+                    //                 Your browser does not support the audio element.
+                    //             </audio>
+                    //             <div style="max-width:350px" id="audio-control">
+                    //                 <div class="box">
+                    //                     <div class="box-body">
+                    //                         <input type="hidden" id="audio-player-status" value="0" />
+                    //                         <input type="hidden" id="audio-player-update" value="0" />
+                    //                         <a class="btn btn-app" onclick="audio(\'' . $audio_play . '\')">
+                    //                             <i class="fa fa-play" id="audio-player-judul-logo"></i> <span id="audio-player-judul">Play</span>
+                    //                         </a>
+                    //                         &nbsp;&nbsp;Klik Play untuk memutar Audio
+                    //                     </div>
+                    //                 </div>
+                    //             </div>
+                    //         ';
+                    //     }
+                    // }
 
                     $soal = $soal . '<hr />';
 
