@@ -48,7 +48,7 @@
                                 <input type="text" name="tes-nilai" id="tes-nilai" class="form-control input-sm" value="<?php if(!empty($nilai)){ echo $nilai; } ?>" readonly>
                             </div>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="display: none;">
                             <label class="col-sm-3 control-label">Benar</label>
                             <div class="col-sm-9">
                                 <input type="text" name="tes-benar" id="tes-benar" class="form-control input-sm" value="<?php if(!empty($benar)){ echo $benar; } ?>" readonly>
